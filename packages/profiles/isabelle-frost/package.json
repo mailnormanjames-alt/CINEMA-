@@ -7,7 +7,7 @@
   "main": "index.html",
   "scripts": {
     "dev": "npx serve .",
-    "build": "echo 'Static profile — no build needed'"
+    "build": "vite build"
   },
   "workspaces": [
     "../.."
