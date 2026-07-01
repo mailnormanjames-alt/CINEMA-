@@ -7,7 +7,7 @@
       setTimeout(function () {
         preloader.classList.add('is-hidden');
         initAnimations();
-      }, 1800);
+      }, 2500);
     }
   }
 
