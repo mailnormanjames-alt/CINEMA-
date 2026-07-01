@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.7.0] — 2026-07-01
+
+### Added — Smooth Transitions Mandate (GRANDMASTER rule)
+All page transitions, section reveals, and element animations MUST use smooth easing curves. Added to FASHION-SOTD-GRANDMASTER.SKILL.md as Rule XXX.
+
+### Added — Amin Hassani images
+Integrated 14 AI-generated images into Amin Hassani profile:
+- 4 hero images (rotating background)
+- 10 work/filmstrip images (4 in filmstrip, 1 in about portrait, 5备用)
+
+### Fixed — Amin Hassani preloader timing
+Preloader now has 2.5s minimum duration, slower progress animation, and waits for hero image to load before starting.
+
 ## [v1.6.0] — 2026-07-01
 
 ### Removed — "Atelier Noir" branding
