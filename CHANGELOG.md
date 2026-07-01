@@ -15,6 +15,11 @@ Integrated 14 AI-generated images into Amin Hassani profile:
 ### Fixed — Amin Hassani preloader timing
 Preloader now has 2.5s minimum duration, slower progress animation, and waits for hero image to load before starting.
 
+### Updated — Footer across all 10 profiles
+Added phone number +91 9833274308 to footer credit:
+- © Norman James
+- made with ❤️ by Empathy Studio +91 9833274308
+
 ## [v1.6.0] — 2026-07-01
 
 ### Removed — "Atelier Noir" branding
