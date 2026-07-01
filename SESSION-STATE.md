@@ -66,12 +66,12 @@ Replaced with unique brand names:
 | Amin Hassani | 14 | assets/images/hero/ | ✅ Complete |
 | Clara Voss | 15 | alt-08-film-archive.jpg | ✅ Complete |
 | Isabelle Frost | 18 | the-archive.jpg | ✅ Complete |
-| Kofi Mensah | 15 | hero.jpg | ✅ Complete |
+| Kofi Mensah | 13 | hero.jpg | ✅ Complete |
+| Nadia Okafor | 29 | portrait.jpg | ✅ Complete |
 | Thomas Renard | 0 | — | ⏳ Needs images |
 | Léa Moreau | 0 | — | ⏳ Needs images |
 | Yuki Tanaka | 0 | — | ⏳ Needs images |
 | Rafael Santos | 0 | — | ⏳ Needs images |
-| Nadia Okafor | 0 | — | ⏳ Needs images |
 
 ### Image Prompts Ready
 All Leonardo AI prompts saved in `PROMPTS/` directory:
