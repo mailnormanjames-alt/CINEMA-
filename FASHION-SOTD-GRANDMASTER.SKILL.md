@@ -1079,6 +1079,35 @@ Efficient animation systems.
 
 Performance supports emotion.
 
+XXX. SMOOTH TRANSITIONS MANDATE
+All page transitions, section reveals, and element animations MUST use smooth easing curves.
+
+NEVER use linear transitions for visual elements.
+
+Required easing:
+
+Micro (buttons, hovers): 0.2–0.3s cubic-bezier(0.25, 0.1, 0.25, 1)
+
+Medium (section reveals): 0.4–0.6s cubic-bezier(0.16, 1, 0.3, 1)
+
+Macro (page transitions): 0.8–1.2s cubic-bezier(0.23, 1, 0.32, 1)
+
+Preloader dismiss: minimum 1s fade with 0.3s delay before fade starts.
+
+Hero entrance: minimum 0.3s delay after preloader completes, stagger elements 0.1–0.15s apart.
+
+Scroll reveals: elements enter from 20–40px offset, never jump into place.
+
+EVERY interactive element must have a transition state.
+
+Hover effects must ease in AND out.
+
+Focus states must be visible and smooth.
+
+The eye must never catch a hard cut unless intentional.
+
+If a transition feels instant, it is broken.
+
 XXX. EXPERIENCE AUDIT
 Before shipping, ask:
 
