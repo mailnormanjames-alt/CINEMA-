@@ -1,8 +1,9 @@
 # SESSION STATE — Cinema SOTD Project
 
 **Last Updated:** 2026-07-01
-**Current Version:** v1.7.0
+**Current Version:** v1.8.0
 **GitHub:** https://github.com/mailnormanjames-alt/CINEMA-
+**Vercel:** https://cinema-sotd.vercel.app
 
 ---
 
@@ -56,34 +57,30 @@ Replaced with unique brand names:
 - Rafael Santos → "Santos Compositions"
 - Nadia Okafor → "Okafor Costume"
 
+### ✅ Images Added to All Profiles (v1.8.0)
+All 10 profiles now have local images — zero Unsplash URLs remaining.
+
+### ✅ Vercel Deployment (v1.8.0)
+- Deployed to https://cinema-sotd.vercel.app
+- All profiles accessible at subdirectories (e.g. `/marie-dubois/`)
+- Root index page links to all 10 profiles
+
 ---
 
 ## IMAGE STATUS
 
-| Profile | Images | Hero Source | Status |
-|---------|--------|-------------|--------|
-| Marie Dubois | 18 | Local assets | ✅ Complete |
-| Amin Hassani | 14 | assets/images/hero/ | ✅ Complete |
-| Clara Voss | 15 | alt-08-film-archive.jpg | ✅ Complete |
-| Isabelle Frost | 18 | the-archive.jpg | ✅ Complete |
-| Kofi Mensah | 13 | hero.jpg | ✅ Complete |
-| Nadia Okafor | 29 | portrait.jpg | ✅ Complete |
-| Thomas Renard | 0 | — | ⏳ Needs images |
-| Léa Moreau | 0 | — | ⏳ Needs images |
-| Yuki Tanaka | 0 | — | ⏳ Needs images |
-| Rafael Santos | 0 | — | ⏳ Needs images |
-
-### Image Prompts Ready
-All Leonardo AI prompts saved in `PROMPTS/` directory:
-- thomas-renard.txt (4 images)
-- kofi-mensah.txt (5 images)
-- lea-moreau.txt (4 images)
-- yuki-tanaka.txt (5 images)
-- clara-voss.txt (5 images)
-- amin-hassani.txt (0 images, CSS/Canvas only)
-- isabelle-frost.txt (8 images)
-- rafael-santos.txt (5 images)
-- nadia-okafor.txt (16 images)
+| Profile | Images | Location | Status |
+|---------|--------|----------|--------|
+| Marie Dubois | 18 | assets/images/ | ✅ Complete |
+| Amin Hassani | 14 | assets/images/ | ✅ Complete |
+| Clara Voss | 15 | assets/images/ | ✅ Complete |
+| Isabelle Frost | 18 | assets/images/ | ✅ Complete |
+| Kofi Mensah | 13 | assets/images/ | ✅ Complete |
+| Nadia Okafor | 29 | assets/images/ | ✅ Complete |
+| Thomas Renard | 14 | public/assets/images/ | ✅ Complete |
+| Léa Moreau | 14 | public/assets/images/ | ✅ Complete |
+| Yuki Tanaka | 16 | public/assets/images/ | ✅ Complete |
+| Rafael Santos | 6 | public/assets/images/ | ✅ Complete |
 
 ---
 
@@ -94,28 +91,82 @@ All Leonardo AI prompts saved in `PROMPTS/` directory:
 3. **CSS gradients as placeholders** — For profiles without images
 4. **Preloader minimum 2.5s** — With image loading awareness
 5. **Hero images: 25% opacity, desaturated** — Background overlay style
+6. **Vite `base: './'`** — Required for subdirectory deployment on Vercel
+7. **Images in `public/assets/images/`** — For profiles referencing images via HTML `<img src>` or CSS `background-image`
+8. **Images imported via JS** — For profiles like Marie Dubois where Vite processes/hashes them
+9. **CSS reveal fallback** — Rafael Santos has CSS `@keyframes` animation as fallback if GSAP fails
+10. **GeometricReveal removed** — Nadia Okafor had broken import that crashed entire page
+
+---
+
+## CRITICAL FIXES APPLIED
+
+### Nadia Okafor — Fatal JS Crash
+- **Problem:** `import { GeometricReveal }` (named import) on `export default` class killed entire script
+- **Result:** Page showed nothing — no preloader, no animations, no nav
+- **Fix:** Removed broken import and all references
+
+### Rafael Santos — Images Not Loading
+- **Problem:** CSS `background-image: var(--poster)` with inline styles didn't work
+- **Fix:** Switched to `<img>` tags, added CSS fallback animation
+
+### All Profiles — Vercel Deployment Broken
+- **Problem:** Vite default `base: '/'` produced absolute paths (`/assets/...`) which broke subdirectory routing
+- **Fix:** Added `base: './'` to all 10 vite.config.ts files
+
+### Isabelle Frost — No Build Output
+- **Problem:** `package.json` build command was `echo 'Static profile'` — produced no dist
+- **Fix:** Changed to `vite build`
+
+---
+
+## VERCEL DEPLOYMENT
+
+### Build Process
+```
+turbo run build → vite build (per profile) → deploy.js copies to dist/
+```
+
+### Deploy Command
+```bash
+vercel --prod --yes --scope pixelart-projects
+```
+
+### Output Structure
+```
+dist/
+├── index.html (root hub linking all profiles)
+├── marie-dubois/
+├── amin-hassani/
+├── clara-voss/
+├── isabelle-frost/
+├── kofi-mensah/
+├── nadia-okafor/
+├── thomas-renard/
+├── rafael-santos/
+├── lea-moreau/
+└── yuki-tanaka/
+```
 
 ---
 
 ## NEXT STEPS
 
-1. **Generate/add images for remaining 7 profiles**
-   - Thomas Renard (4 images)
-   - Kofi Mensah (5 images)
-   - Léa Moreau (4 images)
-   - Yuki Tanaka (5 images)
-   - Isabelle Frost (8 images)
-   - Rafael Santos (5 images)
-   - Nadia Okafor (16 images)
-
-2. **Audit all profiles for smooth transitions compliance**
+1. **Audit all profiles for smooth transitions compliance (Rule XXX)**
    - Check all hover effects ease in AND out
    - Verify preloader timing meets 2.5s minimum
    - Confirm scroll reveals use 20-40px offset
 
-3. **Deploy to Vercel**
-   - Repo: https://github.com/mailnormanjames-alt/CINEMA-
-   - Vercel: https://vercel.com/mailnormanjames-5014s-projects
+2. **Test all profiles on Vercel**
+   - Verify images load correctly
+   - Check preloader animations
+   - Test responsive design
+   - Verify all links work
+
+3. **Performance optimization**
+   - Optimize large images (Amin Hassani hero is 2.8MB)
+   - Consider lazy loading for below-fold images
+   - Verify LCP < 2.5s, FID < 100ms, CLS < 0.1
 
 ---
 
@@ -125,6 +176,8 @@ All Leonardo AI prompts saved in `PROMPTS/` directory:
 - **Changelog:** `CHANGELOG.md`
 - **Image prompts:** `PROMPTS/*.txt`
 - **Profiles:** `packages/profiles/*/index.html`
+- **Deploy script:** `scripts/deploy.js`
+- **Vercel config:** `vercel.json`
 - **This file:** `SESSION-STATE.md`
 
 ---
@@ -137,3 +190,5 @@ All Leonardo AI prompts saved in `PROMPTS/` directory:
 - Smooth transitions mandatory (Rule XXX)
 - Preloader: minimum 2.5s, smooth fade
 - Every change → update CHANGELOG.md + SESSION-STATE.md
+- Images: Use `public/assets/images/` for HTML `<img src>` references
+- Vite config: Always include `base: './'` for subdirectory deployment

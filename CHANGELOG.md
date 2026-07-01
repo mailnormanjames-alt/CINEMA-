@@ -2,6 +2,47 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.8.0] — 2026-07-01
+
+### Added — Images to all remaining profiles
+All 10 profiles now have local images — zero Unsplash URLs remaining.
+- Thomas Renard: 14 images (work-01 through work-14)
+- Léa Moreau: 14 images (filmstrip-01 through filmstrip-14)
+- Yuki Tanaka: 16 images (creative options, spaces, portrait)
+- Rafael Santos: 6 images (film-01 through film-04, portrait, hero-bg)
+
+### Added — Vercel deployment
+Deployed all 10 profiles to https://cinema-sotd.vercel.app
+- Created deploy.js script to copy built profiles to root dist/
+- Created root index.html hub linking all profiles
+- Added vercel.json configuration
+
+### Fixed — Vite base path for subdirectory deployment
+All 10 vite.config.ts files now include `base: './'` to produce relative asset paths.
+Without this, assets loaded from `/assets/...` instead of `./assets/...`, breaking subdirectory routing.
+
+### Fixed — Isabelle Frost build command
+Changed `package.json` build from `echo 'Static profile'` to `vite build` so dist is actually produced.
+
+### Fixed — Nadia Okafor fatal JS crash
+Removed broken `import { GeometricReveal }` (named import on export default class) that crashed entire script. Page showed nothing — no preloader, no animations, no nav.
+
+### Fixed — Rafael Santos images not loading
+Switched from CSS `background-image: var(--poster)` with inline styles to `<img>` tags. Added CSS `@keyframes` fallback animation if GSAP fails.
+
+### Added — Hero background image to Thomas Renard
+Added work-06.jpg as hero header background image.
+
+### Added — Hero background image to Rafael Santos
+Added hero-bg.jpg as hero background with 25% opacity.
+
+### Fixed — Footer format across remaining profiles
+All profiles now have consistent footer:
+```
+© Norman James
+made with ❤️ by Empathy Studio +91 9833274308
+```
+
 ## [v1.7.0] — 2026-07-01
 
 ### Added — Smooth Transitions Mandate (GRANDMASTER rule)
