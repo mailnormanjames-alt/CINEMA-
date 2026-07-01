@@ -1,0 +1,6 @@
+{
+  "buildCommand": "pnpm run build && node scripts/deploy.js",
+  "outputDirectory": "dist",
+  "framework": null,
+  "installCommand": "pnpm install"
+}
