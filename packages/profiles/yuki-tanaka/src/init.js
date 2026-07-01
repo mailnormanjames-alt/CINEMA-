@@ -51,7 +51,7 @@
       yPercent: -100,
       duration: 0.8,
       ease: 'power3.inOut'
-    }, 1.4)
+    }, 1.8)
     .set(preloader, { display: 'none' });
   }
 
