@@ -65,11 +65,11 @@ Replaced with unique brand names:
 | Marie Dubois | 18 | Local assets | ✅ Complete |
 | Amin Hassani | 14 | assets/images/hero/ | ✅ Complete |
 | Clara Voss | 15 | alt-08-film-archive.jpg | ✅ Complete |
+| Isabelle Frost | 18 | casting-tape-01.jpg | ✅ Complete |
 | Thomas Renard | 0 | — | ⏳ Needs images |
 | Kofi Mensah | 0 | — | ⏳ Needs images |
 | Léa Moreau | 0 | — | ⏳ Needs images |
 | Yuki Tanaka | 0 | — | ⏳ Needs images |
-| Isabelle Frost | 0 | — | ⏳ Needs images |
 | Rafael Santos | 0 | — | ⏳ Needs images |
 | Nadia Okafor | 0 | — | ⏳ Needs images |
 
