@@ -8,10 +8,13 @@ import { FrequencySpectrum } from './components/FrequencySpectrum.js';
   const vuNeedle = document.querySelector('.vu-needle');
   const dbDisplay = document.querySelector('.preloader__db');
   let loadProgress = 0;
+  let preloaderReady = false;
+  const MIN_PRELOADER_TIME = 2500;
+  const preloaderStartTime = Date.now();
 
   function updatePreloader() {
-    loadProgress += Math.random() * 15;
-    if (loadProgress > 100) loadProgress = 100;
+    loadProgress += Math.random() * 4 + 1;
+    if (loadProgress > 95) loadProgress = 95;
 
     const dbValue = -60 + (loadProgress * 0.6);
     dbDisplay.textContent = dbValue.toFixed(1) + ' dB';
@@ -21,24 +24,48 @@ import { FrequencySpectrum } from './components/FrequencySpectrum.js';
       vuNeedle.style.transform = `rotate(${angle}deg)`;
     }
 
-    if (loadProgress < 100) {
+    if (loadProgress < 95) {
       requestAnimationFrame(updatePreloader);
     } else {
-      setTimeout(dismissPreloader, 400);
+      checkPreloaderComplete();
+    }
+  }
+
+  function checkPreloaderComplete() {
+    const elapsed = Date.now() - preloaderStartTime;
+    if (elapsed >= MIN_PRELOADER_TIME) {
+      dismissPreloader();
+    } else {
+      setTimeout(dismissPreloader, MIN_PRELOADER_TIME - elapsed);
     }
   }
 
   function dismissPreloader() {
-    preloader.style.transition = 'opacity 0.8s cubic-bezier(0.23, 1, 0.32, 1), visibility 0.8s';
-    preloader.style.opacity = '0';
-    preloader.style.visibility = 'hidden';
+    if (preloaderReady) return;
+    preloaderReady = true;
+
+    loadProgress = 100;
+    if (dbDisplay) dbDisplay.textContent = '0.0 dB';
+    if (vuNeedle) vuNeedle.style.transform = 'rotate(40deg)';
+
     setTimeout(() => {
-      preloader.style.display = 'none';
-      initAnimations();
-    }, 800);
+      preloader.style.transition = 'opacity 1s cubic-bezier(0.23, 1, 0.32, 1), visibility 1s';
+      preloader.style.opacity = '0';
+      preloader.style.visibility = 'hidden';
+      setTimeout(() => {
+        preloader.style.display = 'none';
+        initAnimations();
+      }, 1000);
+    }, 300);
   }
 
-  requestAnimationFrame(updatePreloader);
+  const heroImg = document.getElementById('heroBgImg');
+  if (heroImg) {
+    heroImg.onload = () => { requestAnimationFrame(updatePreloader); };
+    if (heroImg.complete) requestAnimationFrame(updatePreloader);
+  } else {
+    requestAnimationFrame(updatePreloader);
+  }
 
   // LENIS SMOOTH SCROLL
   const lenis = new Lenis({
