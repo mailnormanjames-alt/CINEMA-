@@ -380,6 +380,20 @@ img {
   border-bottom: 1px solid var(--border);
 }
 
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero__bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.25;
+  filter: saturate(0.6) contrast(1.1);
+}
+
 .hero__grain {
   position: absolute;
   inset: 0;
@@ -901,6 +915,19 @@ img {
   opacity: 0.7;
 }
 
+.filmstrip__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2px;
+  filter: saturate(0.7) contrast(1.05);
+  transition: filter 0.4s ease;
+}
+
+.filmstrip__item:hover .filmstrip__img {
+  filter: saturate(0.9) contrast(1.1);
+}
+
 .filmstrip__meta {
   display: flex;
   justify-content: space-between;
@@ -994,6 +1021,18 @@ img {
 .about__portrait-waveform {
   width: 100%;
   height: 100%;
+}
+
+.about__portrait-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.7) contrast(1.05);
+  transition: filter 0.4s ease;
+}
+
+.about__portrait:hover .about__portrait-img {
+  filter: saturate(0.9) contrast(1.1);
 }
 
 .about__text {
