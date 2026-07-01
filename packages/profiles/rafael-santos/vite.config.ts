@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 import path from 'path';
 
 export default defineConfig({
+  base: './',
   resolve: {
     alias: {
       '@cinema-sotd/core': path.resolve(__dirname, '../../core/src/index.ts'),
