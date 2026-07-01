@@ -1,0 +1,37 @@
+# AMIN HASSANI — Sound Designer | Image Prompts
+# 0 images needed — CSS/SVG/Canvas only
+
+---
+
+## NOTES
+
+Amin Hassani's profile requires NO images. All visuals are built from:
+
+- **CSS animations** — VU meters, waveform bars, frequency visualizations
+- **SVG elements** — Waveform portraits, audio signal graphics
+- **HTML canvas** — Interactive frequency spectrum with mouse tracking
+- **CSS gradients** — Background atmosphere, VU meter glows
+
+The profile uses a purely digital/synthetic aesthetic that matches the sound designer's world — mixing stages, consoles, and screens.
+
+If you WANT to add a hero image for visual richness, use this prompt:
+
+---
+
+## OPTIONAL: hero.jpg — Hero Image
+**Section:** Hero background (optional)
+**Prompt:**
+Cinematic photograph of a professional sound mixing stage at 2am. Large studio monitors glow with warm amber VU meter lights in a dark, acoustically treated room. A mixing console with hundreds of faders and knobs fills the foreground, illuminated by the soft glow of meter bridges. Headphones rest on the console. Through the glass partition, a dimly visible recording booth. The atmosphere is immersive, technical, and nocturnal. Shot on Kodak Vision3 500T. Fine 35mm grain. Wide-angle lens capturing the full mixing stage. Practical LED panel lighting and VU meter glow as key sources. Color grade: cool shadows, warm amber highlight rolloff from meters. Aspect ratio 16:9. Mood: the sonic architect at work.
+
+**Negative prompt:**
+cartoon, anime, illustration, drawing, sketch, blurry, low quality, oversaturated, people, faces, text, watermarks, logos, daylight, bright lighting
+
+---
+
+## LEONARDO AI SETTINGS
+- Mode: PhotoReal
+- Aspect ratio: 16:9 (landscape)
+- Resolution: 1360x768 or higher
+- Style: Cinematic / Photography
+- Alchemy V2: ON
+- Generate 4 variations per prompt, select best

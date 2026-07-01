@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thomas Renard — Producer</title>
+  <meta name="description" content="Thomas Renard — Film Producer. Lyon. Producing clarity from chaos.">
+  <meta name="theme-color" content="#08090c">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="src/styles/thomas-renard.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+</head>
+
+<body>
+  <div class="noise-overlay" data-cinema-noise></div>
+  <canvas id="webgl-canvas" data-cinema-webgl></canvas>
+  <div class="scroll-progress" data-cinema-progress></div>
+
+  <!-- PRELOADER — Technical boot sequence -->
+  <div class="preloader" data-cinema-preloader>
+    <div class="preloader-inner">
+      <div class="preloader-grid">
+        <div class="preloader-cell" style="--i:0"></div>
+        <div class="preloader-cell" style="--i:1"></div>
+        <div class="preloader-cell" style="--i:2"></div>
+        <div class="preloader-cell" style="--i:3"></div>
+        <div class="preloader-cell" style="--i:4"></div>
+        <div class="preloader-cell" style="--i:5"></div>
+      </div>
+      <div class="preloader-data">
+        <div class="preloader-label">RENARD PRODUCTION</div>
+        <div class="preloader-count">000</div>
+        <div class="preloader-status">INITIALIZING SYSTEMS</div>
+      </div>
+      <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor" id="cursor" data-cinema-cursor>
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+  <div class="cursor-text" id="cursorText"></div>
+
+  <!-- NAVIGATION — Minimal top bar -->
+  <nav class="nav">
+    <div class="nav-left">
+      <span class="nav-logo magnetic" data-cursor="pointer">RENARD</span>
+      <span class="nav-divider">/</span>
+      <span class="nav-role">PRODUCTION</span>
+    </div>
+    <div class="nav-right">
+      <a href="#equipment" class="magnetic" data-cursor="pointer">Equipment</a>
+      <a href="#filmography" class="magnetic" data-cursor="pointer">Films</a>
+      <a href="#approach" class="magnetic" data-cursor="pointer">Approach</a>
+      <a href="#contact" class="magnetic" data-cursor="pointer">Contact</a>
+    </div>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#equipment">Equipment</a>
+    <a href="#filmography">Films</a>
+    <a href="#approach">Approach</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- SIDE LABELS -->
+  <div class="side-label side-label-left">Producer — Lyon</div>
+  <div class="side-label side-label-right">69002</div>
+
+  <!-- HERO — Tech Spec Sheet -->
+  <section class="hero" id="hero">
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-image"></div>
+    <div class="hero-content">
+      <div class="hero-spec-header">
+        <span class="hero-spec-id">TR—2027</span>
+        <span class="hero-spec-line"></span>
+        <span class="hero-spec-status">AVAILABLE</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="line"><span class="word">Thomas</span></span>
+        <span class="line"><span class="word"><em>Renard</em></span></span>
+      </h1>
+      <div class="hero-spec-grid">
+        <div class="hero-spec-item">
+          <span class="hero-spec-label">DISCIPLINE</span>
+          <span class="hero-spec-value">Producer</span>
+        </div>
+        <div class="hero-spec-item">
+          <span class="hero-spec-label">BASED IN</span>
+          <span class="hero-spec-value">Lyon, France</span>
+        </div>
+        <div class="hero-spec-item">
+          <span class="hero-spec-label">FILMS</span>
+          <span class="hero-spec-value">12</span>
+        </div>
+        <div class="hero-spec-item">
+          <span class="hero-spec-label">YEARS</span>
+          <span class="hero-spec-value">15</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-cue">
+      <span class="hero-scroll-text">Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- STATEMENT — Precision quote -->
+  <section class="statement">
+    <div class="statement-bg"></div>
+    <div class="statement-inner">
+      <p class="statement-quote">
+        "A film is twenty thousand decisions made before the camera ever rolls. My job is making sure none of them are wrong."
+      </p>
+      <p class="statement-attr">— Thomas Renard, Cahiers du Cinéma, 2024</p>
+    </div>
+  </section>
+
+  <!-- EQUIPMENT — Signature Interaction -->
+  <section class="equipment" id="equipment">
+    <div class="equipment-bg"></div>
+    <div class="equipment-header">
+      <div class="section-label">Equipment</div>
+      <h2 class="equipment-title">The tools of <em>clarity</em></h2>
+    </div>
+    <div class="equipment-grid">
+      <div class="equipment-card" data-cursor="pointer">
+        <div class="equipment-card-num">01</div>
+        <div class="equipment-card-name">ARRI ALEXA 35</div>
+        <div class="equipment-card-spec">4.6K Open Gate</div>
+        <div class="equipment-card-desc">Primary capture system. Unmatched dynamic range for narrative work.</div>
+        <div class="equipment-card-line"></div>
+      </div>
+      <div class="equipment-card" data-cursor="pointer">
+        <div class="equipment-card-num">02</div>
+        <div class="equipment-card-name">Zeiss Master Primes</div>
+        <div class="equipment-card-spec">T1.3 — Full Set</div>
+        <div class="equipment-card-desc">Clean, distortion-free optics. The lens family for serious storytelling.</div>
+        <div class="equipment-card-line"></div>
+      </div>
+      <div class="equipment-card" data-cursor="pointer">
+        <div class="equipment-card-num">03</div>
+        <div class="equipment-card-name">DIT Station</div>
+        <div class="equipment-card-spec">Live Grade + Backup</div>
+        <div class="equipment-card-desc">On-set color management. Every frame verified before it leaves the set.</div>
+        <div class="equipment-card-line"></div>
+      </div>
+      <div class="equipment-card" data-cursor="pointer">
+        <div class="equipment-card-num">04</div>
+        <div class="equipment-card-name">Sound Devices 888</div>
+        <div class="equipment-card-spec">12-Channel Mixer</div>
+        <div class="equipment-card-desc">Broadcast-grade audio capture. Sound is half the film.</div>
+        <div class="equipment-card-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILMSTRIP — Gallery -->
+  <section class="filmstrip" id="filmography">
+    <div class="filmstrip-bg"></div>
+    <div class="filmstrip-header">
+      <div>
+        <div class="section-label">Filmography</div>
+        <h2 class="filmstrip-title">Selected <em>works</em></h2>
+      </div>
+      <div class="filmstrip-counter">01 — 04</div>
+    </div>
+    <div class="filmstrip-track">
+      <div class="filmstrip-item" data-cursor="view">
+        <div class="filmstrip-item-img"><img src="assets/images/work-01.jpg" alt="Industrie Silence" loading="lazy"></div>
+        <div class="filmstrip-item-gradient"></div>
+        <div class="filmstrip-item-border"></div>
+        <div class="filmstrip-item-info">
+          <div class="filmstrip-item-num">001 — Documentary</div>
+          <div class="filmstrip-item-title">Industrie Silence</div>
+          <div class="filmstrip-item-desc">The hidden cost of fast fashion in Eastern Europe. Venice Days.</div>
+        </div>
+      </div>
+      <div class="filmstrip-item" data-cursor="view">
+        <div class="filmstrip-item-img"><img src="assets/images/work-02.jpg" alt="Le Contrat" loading="lazy"></div>
+        <div class="filmstrip-item-gradient"></div>
+        <div class="filmstrip-item-border"></div>
+        <div class="filmstrip-item-info">
+          <div class="filmstrip-item-num">002 — Feature Film</div>
+          <div class="filmstrip-item-title">Le Contrat</div>
+          <div class="filmstrip-item-desc">Corporate thriller in the French wine industry. César nomination.</div>
+        </div>
+      </div>
+      <div class="filmstrip-item" data-cursor="view">
+        <div class="filmstrip-item-img"><img src="assets/images/work-03.jpg" alt="L'Usine" loading="lazy"></div>
+        <div class="filmstrip-item-gradient"></div>
+        <div class="filmstrip-item-border"></div>
+        <div class="filmstrip-item-info">
+          <div class="filmstrip-item-num">003 — Documentary</div>
+          <div class="filmstrip-item-title">L'Usine</div>
+          <div class="filmstrip-item-desc">Inside the last textile factory in northern France. IDFA premiere.</div>
+        </div>
+      </div>
+      <div class="filmstrip-item" data-cursor="view">
+        <div class="filmstrip-item-img"><img src="assets/images/work-04.jpg" alt="Nuit Blanche" loading="lazy"></div>
+        <div class="filmstrip-item-gradient"></div>
+        <div class="filmstrip-item-border"></div>
+        <div class="filmstrip-item-info">
+          <div class="filmstrip-item-num">004 — Feature Film</div>
+          <div class="filmstrip-item-title">Les Lumières de Lyon</div>
+          <div class="filmstrip-item-desc">A family saga spanning three generations of Lyon silk workers.</div>
+        </div>
+      </div>
+    </div>
+    <div class="filmstrip-sprockets">
+      <div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+      <div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+      <div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+      <div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+    </div>
+  </section>
+
+  <!-- APPROACH — Split layout -->
+  <section class="approach" id="approach">
+    <div class="approach-bg"></div>
+    <div class="approach-left">
+      <div class="section-label">Approach</div>
+      <h2 class="approach-title">
+        <span class="line"><span class="word">I build</span></span>
+        <span class="line"><span class="word">the <em>machine</em></span></span>
+        <span class="line"><span class="word">that makes</span></span>
+        <span class="line"><span class="word"><em>films</em></span></span>
+        <span class="line"><span class="word">possible.</span></span>
+      </h2>
+    </div>
+    <div class="approach-right">
+      <div class="approach-text">
+        <p>My grandfather ran a textile factory in Lyon's Croix-Rousse. I grew up watching him manage 200 workers, coordinate deliveries across three time zones, and still make it home for dinner. Production management is in my blood — I just apply it to celluloid instead of silk.</p>
+        <p>After ten years as a line producer on other people's films, I started Renard Production to develop my own projects. The first commission I ever got was a documentary about Lyon's last working Jacquard loom. The director needed access to a factory that hadn't allowed cameras in forty years. I made three phone calls and we were shooting the next week.</p>
+        <p>Twelve films later, I still get the same satisfaction from solving the impossible logistics that my grandfather found in getting a silk order to Tokyo by Thursday.</p>
+      </div>
+      <div class="approach-quote">
+        <p>"The best compliment I can receive is when a director says they forgot about the budget entirely. That means I did my job."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="services-bg"></div>
+    <div class="services-header">
+      <div class="section-label">Services</div>
+      <h2 class="services-title">What I do</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-row" data-cursor="pointer">
+        <span class="service-num">01</span>
+        <span class="service-name">Feature Film Production</span>
+        <span class="service-arrow">&rarr;</span>
+      </div>
+      <div class="service-row" data-cursor="pointer">
+        <span class="service-num">02</span>
+        <span class="service-name">Documentary Production</span>
+        <span class="service-arrow">&rarr;</span>
+      </div>
+      <div class="service-row" data-cursor="pointer">
+        <span class="service-num">03</span>
+        <span class="service-name">Line Producing</span>
+        <span class="service-arrow">&rarr;</span>
+      </div>
+      <div class="service-row" data-cursor="pointer">
+        <span class="service-num">04</span>
+        <span class="service-name">Post-Production Supervision</span>
+        <span class="service-arrow">&rarr;</span>
+      </div>
+      <div class="service-row" data-cursor="pointer">
+        <span class="service-num">05</span>
+        <span class="service-name">Budget & Scheduling</span>
+        <span class="service-arrow">&rarr;</span>
+      </div>
+      <div class="service-row" data-cursor="pointer">
+        <span class="service-num">06</span>
+        <span class="service-name">Festival Strategy</span>
+        <span class="service-arrow">&rarr;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stats-bg"></div>
+    <div class="stat">
+      <div class="stat-num" data-cinema-counter data-count="12">0</div>
+      <div class="stat-label">Films</div>
+      <div class="stat-line"></div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" data-cinema-counter data-count="8">0</div>
+      <div class="stat-label">Awards</div>
+      <div class="stat-line"></div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" data-cinema-counter data-count="6">0</div>
+      <div class="stat-label">Festivals</div>
+      <div class="stat-line"></div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" data-cinema-counter data-count="15">0</div>
+      <div class="stat-label">Years</div>
+      <div class="stat-line"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-bg"></div>
+    <div class="contact-inner">
+      <div class="section-label" style="justify-content:center;">Contact</div>
+      <h2 class="contact-title">
+        <span class="line"><span class="word">Your</span></span>
+        <span class="line"><span class="word">film</span></span>
+        <span class="line"><span class="word">deserves</span></span>
+        <span class="line"><span class="word"><em>precision</em></span></span>
+      </h2>
+      <a href="mailto:thomas@renardprod.com" class="contact-email magnetic" data-cursor="pointer">thomas@renardprod.com</a>
+      <div class="contact-location">69002, Lyon, France</div>
+      <div class="contact-social">
+        <a href="#" class="magnetic" data-cursor="pointer">LinkedIn</a>
+        <a href="#" class="magnetic" data-cursor="pointer">IMDb</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER — TheWorkshop -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">RENARD PRODUCTION</div>
+      <div class="footer-tagline">The logistics of impossible stories</div>
+    </div>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-col-title">Location</div>
+        <div class="footer-col-text">69002, Lyon, France</div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Contact</div>
+        <div class="footer-col-text">thomas@renardprod.com</div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Social</div>
+        <div class="footer-col-text">LinkedIn · IMDb</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">&copy; 2026 Thomas Renard. All rights reserved.</div>
+      <div class="footer-workshop">The Workshop</div>
+    </div>
+  </footer>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <div class="site-footer-copy">&copy; Norman James</div>
+      <div class="site-footer-studio">made with love <span style="color:#e53e3e;">&#10084;</span> by Empathy Studio</div>
+    </div>
+  </footer>
+
+  <script type="module" src="src/init.js"></script>
+</body>
+</html>

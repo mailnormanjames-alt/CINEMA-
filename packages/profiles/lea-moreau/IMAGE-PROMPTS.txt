@@ -1,0 +1,46 @@
+# Léa Moreau — IMAGE-PROMPTS.txt
+# Literary Manuscript · Sage green · Paris · Manuscript/paper texture
+# Usage: Copy each prompt into your image generation tool
+
+## Hero
+1. A writer's desk in a Parisian apartment at dusk, manuscript pages scattered, warm lamp light, sage green accents, vintage typewriter, 35mm film grain, cinematic, literary atmosphere, shallow depth of field
+
+## Statement
+2. Close-up of hands typing on a vintage typewriter, warm amber light, paper texture visible, shallow depth of field, 50mm lens, literary, intimate
+3. A manuscript page with handwritten notes in the margins, warm light, paper texture, close-up, literary, intimate
+
+## Filmography
+4. A woman reading letters by a window, soft natural light, warm tones, intimate, cinematic, 85mm lens
+5. A family on a beach at sunset, warm golden light, emotional, cinematic, wide shot, coastal setting
+6. A translator at a desk with multiple screens, warm office light, focused, professional, documentary style
+7. An ancient forest with shafts of light, ecological beauty, wide shot, cinematic, natural wonder
+
+## Scripts
+8. A stack of screenplay pages with brass fastener, warm lamp light, literary, close-up, shallow depth of field
+9. A screenwriter reviewing notes in a manuscript, warm amber light, focused, intimate, 50mm
+10. Close-up of a script page with highlighted dialogue, warm light, paper texture, literary, detailed
+11. A writer's notebook with character sketches, warm desk lamp, intimate, literary atmosphere
+
+## About
+12. Portrait of a screenwriter at a café in Paris, Saint-Germain-des-Prés, warm afternoon light, literary, 85mm
+13. A Sorbonne library, warm light, books, intellectual atmosphere, documentary style
+14. A screenwriter reviewing a script on a tablet, warm cafe light, Paris street visible through window, cinematic
+15. A writer walking along the Seine at dusk, warm golden light, Parisian atmosphere, cinematic, wide shot
+
+## Services
+16. A screenplay being read under a desk lamp, warm light, paper texture, literary, intimate
+17. A book being adapted into a screenplay, open book and script side by side, warm light, literary
+18. A script doctor's desk with notes and red pen, warm light, professional, detailed
+19. A writers' room for series development, warm collaborative space, creative atmosphere, documentary
+
+## Work
+20. Feature film still: a woman reading secret letters, warm interior light, emotional, intimate, cinematic
+21. Feature film still: a family on a beach at dusk, warm golden light, emotional, wide shot, cinematic
+22. Short film still: a translator at a desk, multiple screens, warm office light, focused, professional
+23. Feature film still: an ancient forest, shafts of light, ecological beauty, wide shot, cinematic
+
+## Stats
+24. A screenwriter's shelf with awards and framed scripts, warm light, literary atmosphere, professional
+
+## Contact
+25. Parisian café terrace at dusk, warm golden light, Seine in background, literary atmosphere, cinematic, atmospheric

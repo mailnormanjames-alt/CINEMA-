@@ -1,0 +1,46 @@
+# Amin Hassani — IMAGE-PROMPTS.txt
+# Desert Noir · Sand tones · Marrakech / London · Waveform pattern
+# Usage: Copy each prompt into your image generation tool
+
+## Hero
+1. A sound mixing console at dusk, warm amber light, desert visible through window, sand tones, cinematic, professional, atmospheric
+
+## Statement
+2. Close-up of audio waveforms on a monitor, warm light, shallow depth of field, 50mm, professional, cinematic
+3. A sound designer adjusting controls on a mixing desk, warm ambient light, professional, focused
+
+## Filmography
+4. A film editor's hands on a mixing console, multiple screens, warm light, professional, cinematic
+5. The Sahara desert at golden hour, vast landscape, warm tones, documentary style, wide shot
+6. A Moroccan medina alley, warm light, atmospheric, architectural, documentary
+7. An empty sound studio, warm ambient light, professional equipment, atmospheric
+
+## Soundscapes
+8. A frequency spectrum visualization on a monitor, warm colors, professional, close-up, detailed
+9. A subwoofer vibrating with bass frequencies, visible vibration, warm light, professional
+10. A microphone capturing mid-range frequencies, studio setting, warm light, professional
+11. High-frequency audio waveforms on screen, detailed, professional, close-up
+
+## About
+12. Portrait of a sound designer in a studio, warm ambient light, professional, 85mm
+13. A Moroccan medina at dusk, warm golden light, atmospheric, wide shot
+14. A sound mixing studio, multiple monitors, warm light, professional, cinematic
+15. A field recording session in the desert, microphone and equipment, warm light, documentary
+
+## Services
+16. A film sound mix in progress, multiple monitors, professional suite, warm light
+17. Documentary sound recording in the field, natural environment, professional equipment
+18. Foley work in a studio, sound effects creation, warm light, professional
+19. A sound mastering session, monitors and equipment, professional, warm ambient light
+
+## Work
+20. Feature film still: a sound designer at work, multiple monitors, warm light, professional
+21. Documentary still: Sahara desert at golden hour, vast landscape, warm tones
+22. Feature film still: Moroccan medina at dusk, warm light, atmospheric
+23. Feature film still: empty sound studio, warm ambient light, atmospheric
+
+## Stats
+24. A sound designer's desk with awards and equipment, warm light, professional, atmospheric
+
+## Contact
+25. Marrakech skyline at dusk, warm golden light, atmospheric, cinematic, architectural

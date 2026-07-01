@@ -1,0 +1,17 @@
+{
+  "name": "@cinema-sotd/core",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./utils": "./src/utils/index.ts",
+    "./styles/*": "./src/styles/*"
+  },
+  "peerDependencies": {
+    "gsap": "^3.12.0",
+    "split-type": "^0.3.0"
+  }
+}

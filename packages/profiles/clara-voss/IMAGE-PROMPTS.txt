@@ -1,0 +1,46 @@
+# Clara Voss — IMAGE-PROMPTS.txt
+# Industrial Chic · Steel gray · Berlin · Timeline interface
+# Usage: Copy each prompt into your image generation tool
+
+## Hero
+1. A film edit suite at night, multiple monitors showing footage timelines, steel gray walls, industrial lighting, Berlin loft space, 35mm film grain, cinematic, professional
+
+## Statement
+2. Close-up of a timeline on a monitor, playhead moving, footage visible, shallow depth of field, 50mm, professional, cinematic
+3. Hands on a keyboard in an edit suite, multiple screens visible, industrial lighting, professional, focused
+
+## Filmography
+4. A film editor working at a station, multiple monitors, dark room, timeline visible, professional, cinematic
+5. A nightclub scene with pulsing lights, Berlin underground, documentary style, dynamic, energetic
+6. A montage of memory fragments, black and white with color accents, artistic, cinematic
+7. An empty editing room with equipment, steel walls, industrial, minimal, atmospheric
+
+## Process
+8. A timeline interface on a monitor, waveforms visible, professional edit suite, close-up, detailed
+9. A fast-cut montage sequence visible on screen, multiple clips, energetic, professional
+10. A slow dissolve between two shots on a monitor, artistic, professional, cinematic
+11. A match cut comparison on screen, two images side by side, professional, artistic
+
+## About
+12. Portrait of a film editor in a dark suite, monitors glowing, focused, professional, 85mm
+13. A Berlin edit studio, industrial space, equipment visible, professional, atmospheric
+14. A film editor reviewing footage, multiple screens, focused, professional, cinematic
+15. A timeline being scrubbed on a monitor, playhead visible, professional, detailed
+
+## Services
+16. A film editor working on a feature film, multiple monitors, professional suite, focused
+17. A documentary being edited, footage on screen, professional, cinematic
+18. A series being cut, multiple episodes visible on timeline, professional
+19. A music video edit, rhythmic cuts visible on timeline, professional, dynamic
+
+## Work
+20. Feature film still: an editor at work, multiple monitors, dark room, professional, cinematic
+21. Documentary still: Berlin nightclub, pulsing lights, energetic, documentary style
+22. Feature film still: a montage sequence, artistic, black and white, cinematic
+23. Feature film still: fragments being reassembled, artistic, professional
+
+## Stats
+24. An edit suite desk with awards and film memorabilia, professional, atmospheric, cinematic
+
+## Contact
+25. Berlin skyline at dusk, industrial buildings, Spree river, cinematic, atmospheric

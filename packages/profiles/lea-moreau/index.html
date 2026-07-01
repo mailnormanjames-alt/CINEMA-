@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Léa Moreau — Screenwriter & Artistic Auteur</title>
+    <meta name="description" content="Léa Moreau — Writing silence between the words. Original screenplays, adaptations, and cinematic storytelling from Paris.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=DM+Serif+Display:ital@0;1&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/lea-moreau.css">
+</head>
+<body>
+
+    <!-- PRELOADER — Typewriter Animation -->
+    <div class="preloader" id="preloader">
+        <div class="preloader__inner">
+            <div class="preloader__page">
+                <div class="preloader__margin-line"></div>
+                <div class="preloader__content">
+                    <div class="preloader__line preloader__line--1">
+                        <span class="preloader__scene-heading">FADE IN:</span>
+                    </div>
+                    <div class="preloader__line preloader__line--2">
+                        <span class="preloader__action">A typewriter begins to</span>
+                    </div>
+                    <div class="preloader__line preloader__line--3">
+                        <span class="preloader__action">speak. Letters appear</span>
+                    </div>
+                    <div class="preloader__line preloader__line--4">
+                        <span class="preloader__action">one by one, each a</span>
+                    </div>
+                    <div class="preloader__line preloader__line--5">
+                        <span class="preloader__action preloader__action--indent">small revelation.</span>
+                    </div>
+                    <div class="preloader__line preloader__line--6">
+                        <span class="preloader__character">LÉA</span>
+                    </div>
+                    <div class="preloader__line preloader__line--7">
+                        <span class="preloader__dialogue">(whispering)</span>
+                    </div>
+                    <div class="preloader__line preloader__line--8">
+                        <span class="preloader__dialogue">"Every story begins</span>
+                    </div>
+                    <div class="preloader__line preloader__line--9">
+                        <span class="preloader__dialogue preloader__dialogue--indent">with silence."</span>
+                    </div>
+                </div>
+                <div class="preloader__cursor"></div>
+            </div>
+            <div class="preloader__progress">
+                <div class="preloader__progress-bar"></div>
+            </div>
+            <div class="preloader__page-number">1</div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION — Editorial Script Style -->
+    <nav class="nav" id="nav">
+        <div class="nav__inner">
+            <div class="nav__left">
+                <a href="#" class="nav__name">
+                    <span class="nav__name-first">Léa</span>
+                    <span class="nav__name-last">Moreau</span>
+                </a>
+                <span class="nav__divider">/</span>
+                <span class="nav__role">Screenwriter</span>
+            </div>
+            <div class="nav__center">
+                <div class="nav__acts">
+                    <span class="nav__act-label">Acts:</span>
+                    <a href="#voice" class="nav__act" data-act="I">Voice</a>
+                    <a href="#scripts" class="nav__act" data-act="II">Scripts</a>
+                    <a href="#filmstrip" class="nav__act" data-act="III">Filmstrip</a>
+                    <a href="#about" class="nav__act" data-act="IV">About</a>
+                    <a href="#services" class="nav__act" data-act="V">Services</a>
+                    <a href="#contact" class="nav__act" data-act="VI">Contact</a>
+                </div>
+            </div>
+            <div class="nav__right">
+                <a href="#contact" class="nav__cta">Let's Write</a>
+                <button class="nav__menu-btn" id="menuBtn" aria-label="Open menu">
+                    <span class="nav__menu-line"></span>
+                    <span class="nav__menu-line"></span>
+                    <span class="nav__menu-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu__inner">
+            <div class="mobile-menu__header">
+                <span class="mobile-menu__label">Script Navigation</span>
+                <button class="mobile-menu__close" id="menuClose" aria-label="Close menu">×</button>
+            </div>
+            <div class="mobile-menu__acts">
+                <a href="#voice" class="mobile-menu__act">
+                    <span class="mobile-menu__act-num">Act I</span>
+                    <span class="mobile-menu__act-name">Voice</span>
+                </a>
+                <a href="#scripts" class="mobile-menu__act">
+                    <span class="mobile-menu__act-num">Act II</span>
+                    <span class="mobile-menu__act-name">Scripts</span>
+                </a>
+                <a href="#filmstrip" class="mobile-menu__act">
+                    <span class="mobile-menu__act-num">Act III</span>
+                    <span class="mobile-menu__act-name">Filmstrip</span>
+                </a>
+                <a href="#about" class="mobile-menu__act">
+                    <span class="mobile-menu__act-num">Act IV</span>
+                    <span class="mobile-menu__act-name">About</span>
+                </a>
+                <a href="#services" class="mobile-menu__act">
+                    <span class="mobile-menu__act-num">Act V</span>
+                    <span class="mobile-menu__act-name">Services</span>
+                </a>
+                <a href="#contact" class="mobile-menu__act">
+                    <span class="mobile-menu__act-num">Act VI</span>
+                    <span class="mobile-menu__act-name">Contact</span>
+                </a>
+            </div>
+            <div class="mobile-menu__footer">
+                <p class="mobile-menu__tagline">"Writing silence between the words"</p>
+                <p class="mobile-menu__location">Paris, France</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCROLL PROGRESS -->
+    <div class="scroll-progress" id="scrollProgress">
+        <div class="scroll-progress__bar"></div>
+        <span class="scroll-progress__label">Scene <span id="sceneNumber">1</span></span>
+    </div>
+
+    <!-- HERO — Manuscript Page Layout -->
+    <header class="hero" id="hero">
+        <div class="hero__paper">
+            <div class="hero__paper-texture"></div>
+            <div class="hero__margin-rule"></div>
+            <div class="hero__fold"></div>
+            <div class="hero__content">
+                <div class="hero__header">
+                    <div class="hero__scene-number">SCENE 1</div>
+                    <div class="hero__slugline">INT. LÉA'S WORLD — NIGHT</div>
+                </div>
+                <div class="hero__title-block">
+                    <p class="hero__action-line">A screenwriter sits alone. The cursor blinks.</p>
+                    <h1 class="hero__title">
+                        <span class="hero__title-line hero__title-line--1">Léa</span>
+                        <span class="hero__title-line hero__title-line--2">Moreau</span>
+                    </h1>
+                    <div class="hero__character-name">LÉA</div>
+                    <p class="hero__dialogue">(to the audience)</p>
+                    <p class="hero__dialogue-text">"Writing silence between the words."</p>
+                </div>
+                <div class="hero__footer">
+                    <div class="hero__credit">Screenwriter / Artistic Auteur</div>
+                    <div class="hero__location">Paris, France</div>
+                    <div class="hero__fade-out">FADE TO BLACK.</div>
+                </div>
+            </div>
+            <div class="hero__page-number">1</div>
+        </div>
+    </header>
+
+    <!-- VOICE STATEMENT -->
+    <section class="voice" id="voice">
+        <div class="voice__inner">
+            <div class="voice__margin"></div>
+            <div class="voice__content">
+                <div class="voice__label">Act I — The Voice</div>
+                <blockquote class="voice__statement">
+                    <p class="voice__line voice__line--1">I don't write dialogue.</p>
+                    <p class="voice__line voice__line--2">I write the breath</p>
+                    <p class="voice__line voice__line--3">between what characters</p>
+                    <p class="voice__line voice__line--4">can no longer say.</p>
+                </blockquote>
+                <div class="voice__attribution">
+                    <span class="voice__dash">—</span>
+                    <span class="voice__author">Léa Moreau, in her notebook</span>
+                </div>
+                <div class="voice__annotation">
+                    <p class="voice__note">Every script is a negotiation between the visible and the hidden. The best scenes are the ones where the audience leans forward, unsure if they're watching or listening.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCRIPT BEATS — Signature Interaction -->
+    <section class="scripts" id="scripts">
+        <div class="scripts__inner">
+            <div class="scripts__margin"></div>
+            <div class="scripts__header">
+                <span class="scripts__label">Act II — Script Beats</span>
+                <h2 class="scripts__title">Selected Works</h2>
+                <p class="scripts__subtitle">Hover to read the first beat</p>
+            </div>
+            <div class="scripts__grid">
+                <article class="script-card" data-year="2024">
+                    <div class="script-card__inner">
+                        <div class="script-card__page">
+                            <div class="script-card__margin"></div>
+                            <div class="script-card__content">
+                                <div class="script-card__meta">
+                                    <span class="script-card__type">Feature Script</span>
+                                    <span class="script-card__year">2024</span>
+                                </div>
+                                <h3 class="script-card__title">Les Mots Manquants</h3>
+                                <p class="script-card__title-en">The Missing Words</p>
+                                <div class="script-card__beat" data-beat="INT. APARTMENT — DAWN">
+                                    <span class="script-card__scene">INT. MARIE'S APARTMENT — DAWN</span>
+                                    <span class="script-card__action">Marie sits at a desk covered in crumpled pages. She holds a single sheet to the light. It reads: "I never learned how to say goodbye."</span>
+                                    <span class="script-card__dialogue">MARIE<br>(whispering)<br>Where did all the words go?</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="script-card__corner"></div>
+                    </div>
+                </article>
+                <article class="script-card" data-year="2023">
+                    <div class="script-card__inner">
+                        <div class="script-card__page">
+                            <div class="script-card__margin"></div>
+                            <div class="script-card__content">
+                                <div class="script-card__meta">
+                                    <span class="script-card__type">Short Script</span>
+                                    <span class="script-card__year">2023</span>
+                                </div>
+                                <h3 class="script-card__title">Après la Pluie</h3>
+                                <p class="script-card__title-en">After the Rain</p>
+                                <div class="script-card__beat" data-beat="EXT. RIVERBANK — DUSK">
+                                    <span class="script-card__scene">EXT. RIVERBANK — DUSK</span>
+                                    <span class="script-card__action">Two figures sit on opposite sides of a rain-slicked bench. A shared umbrella lies between them, closed.</span>
+                                    <span class="script-card__dialogue">ANTOINE<br>We said everything.<br>(pause)<br>That was the problem.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="script-card__corner"></div>
+                    </div>
+                </article>
+                <article class="script-card" data-year="2024">
+                    <div class="script-card__inner">
+                        <div class="script-card__page">
+                            <div class="script-card__margin"></div>
+                            <div class="script-card__content">
+                                <div class="script-card__meta">
+                                    <span class="script-card__type">Feature Film</span>
+                                    <span class="script-card__year">2024</span>
+                                </div>
+                                <h3 class="script-card__title">Les Silences</h3>
+                                <p class="script-card__title-en">The Silences</p>
+                                <div class="script-card__beat" data-beat="INT. LIBRARY — NIGHT">
+                                    <span class="script-card__scene">INT. LIBRARY — NIGHT</span>
+                                    <span class="script-card__action">Clara runs her fingers along spines of books, stopping at one with no title. She opens it. The pages are blank.</span>
+                                    <span class="script-card__dialogue">CLARA<br>(to herself)<br>This one is mine.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="script-card__corner"></div>
+                    </div>
+                </article>
+                <article class="script-card" data-year="2023">
+                    <div class="script-card__inner">
+                        <div class="script-card__page">
+                            <div class="script-card__margin"></div>
+                            <div class="script-card__content">
+                                <div class="script-card__meta">
+                                    <span class="script-card__type">Feature Film</span>
+                                    <span class="script-card__year">2023</span>
+                                </div>
+                                <h3 class="script-card__title">Le Dernier Été</h3>
+                                <p class="script-card__title-en">The Last Summer</p>
+                                <div class="script-card__beat" data-beat="EXT. VILLAGE SQUARE — HIGH NOON">
+                                    <span class="script-card__scene">EXT. VILLAGE SQUARE — HIGH NOON</span>
+                                    <span class="script-card__action">The clock tower strikes thirteen. No one looks up. Only a child in the square notices.</span>
+                                    <span class="script-card__dialogue">CHILD<br>Madame, the clock is wrong.<br><br>WOMAN<br>(without turning)<br>The clock is never wrong.<br>We are.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="script-card__corner"></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FILMSTRIP -->
+    <section class="filmstrip" id="filmstrip">
+        <div class="filmstrip__inner">
+            <div class="filmstrip__header">
+                <span class="filmstrip__label">Act III — Filmstrip</span>
+                <h2 class="filmstrip__title">Visual Notes</h2>
+            </div>
+            <div class="filmstrip__reel">
+                <div class="filmstrip__frame filmstrip__frame--1">
+                    <div class="filmstrip__image" style="background-image: url('https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&q=80')"></div>
+                    <div class="filmstrip__holes">
+                        <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                    <div class="filmstrip__caption">Script meeting — Paris</div>
+                </div>
+                <div class="filmstrip__frame filmstrip__frame--2">
+                    <div class="filmstrip__image" style="background-image: url('https://images.unsplash.com/photo-1524712245354-2c4e5e7121c0?w=800&q=80')"></div>
+                    <div class="filmstrip__holes">
+                        <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                    <div class="filmstrip__caption">Handwritten draft</div>
+                </div>
+                <div class="filmstrip__frame filmstrip__frame--3">
+                    <div class="filmstrip__image" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80')"></div>
+                    <div class="filmstrip__holes">
+                        <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                    <div class="filmstrip__caption">Director's chair</div>
+                </div>
+                <div class="filmstrip__frame filmstrip__frame--4">
+                    <div class="filmstrip__image" style="background-image: url('https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=80')"></div>
+                    <div class="filmstrip__holes">
+                        <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                    <div class="filmstrip__caption">Silence between takes</div>
+                </div>
+            </div>
+            <div class="filmstrip__sprocket-line"></div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="about__inner">
+            <div class="about__margin"></div>
+            <div class="about__content">
+                <span class="about__label">Act IV — About</span>
+                <div class="about__grid">
+                    <div class="about__bio">
+                        <h2 class="about__name">Léa Moreau</h2>
+                        <div class="about__role">Screenwriter & Artistic Auteur</div>
+                        <div class="about__bio-text">
+                            <p>Born in Lyon, raised between Paris and the countryside, Léa Moreau discovered cinema through literature. Her first scripts were written in the margins of novels — dialogue fragments hidden between the lines of Camus and Duras.</p>
+                            <p>After studying at La Fémis and assisting several established screenwriters, she developed a signature style that privileges atmosphere over exposition. Her scripts are known for their rhythmic silences, their trust in the audience, and their refusal to explain what can be felt.</p>
+                            <p>Her work has been selected at Cannes, Berlin, and Venice, and she has collaborated with directors across Europe and beyond. She believes that the best stories are the ones that trust the spaces between words.</p>
+                        </div>
+                    </div>
+                    <div class="about__details">
+                        <div class="about__detail-group">
+                            <h3 class="about__detail-title">Recognition</h3>
+                            <ul class="about__list">
+                                <li>Cannes Film Festival — Un Certain Regard Selection</li>
+                                <li>European Film Awards — Best Screenplay Nomination</li>
+                                <li>Berlin International Film Festival — Forum Selection</li>
+                                <li>Venice Film Festival — Horizons Selection</li>
+                                <li>César Award — Best Original Screenplay</li>
+                            </ul>
+                        </div>
+                        <div class="about__detail-group">
+                            <h3 class="about__detail-title">Education</h3>
+                            <ul class="about__list">
+                                <li>La Fémis — Screenwriting Department</li>
+                                <li>Sorbonne — Comparative Literature</li>
+                                <li>University of Oxford — Film Studies</li>
+                            </ul>
+                        </div>
+                        <div class="about__detail-group">
+                            <h3 class="about__detail-title">Languages</h3>
+                            <ul class="about__list">
+                                <li>French — Native</li>
+                                <li>English — Fluent</li>
+                                <li>Italian — Conversational</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+        <div class="services__inner">
+            <div class="services__margin"></div>
+            <div class="services__content">
+                <span class="services__label">Act V — Services</span>
+                <h2 class="services__title">What I Write</h2>
+                <div class="services__grid">
+                    <div class="service" data-service="1">
+                        <div class="service__number">01</div>
+                        <h3 class="service__name">Original Screenplays</h3>
+                        <p class="service__desc">Feature-length original scripts built from concept to final draft. Character-driven stories that trust the audience's intelligence.</p>
+                    </div>
+                    <div class="service" data-service="2">
+                        <div class="service__number">02</div>
+                        <h3 class="service__name">Adaptations</h3>
+                        <p class="service__desc">Translating literature, memoir, and true stories into cinematic language while preserving the soul of the source material.</p>
+                    </div>
+                    <div class="service" data-service="3">
+                        <div class="service__number">03</div>
+                        <h3 class="service__name">Script Doctoring</h3>
+                        <p class="service__desc">Refining existing screenplays — strengthening structure, deepening character, and finding the story that was always there.</p>
+                    </div>
+                    <div class="service" data-service="4">
+                        <div class="service__number">04</div>
+                        <h3 class="service__name">Series Development</h3>
+                        <p class="service__desc">Long-form narrative architecture for limited series and episodic formats. Building worlds that sustain across seasons.</p>
+                    </div>
+                    <div class="service" data-service="5">
+                        <div class="service__number">05</div>
+                        <h3 class="service__name">Short Film Scripts</h3>
+                        <p class="service__desc">Economy of storytelling in its purest form. Every word earns its place on the page.</p>
+                    </div>
+                    <div class="service" data-service="6">
+                        <div class="service__number">06</div>
+                        <h3 class="service__name">Workshops & Mentoring</h3>
+                        <p class="service__desc">One-on-one and group sessions for emerging writers. Finding your voice, not someone else's.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="contact__inner">
+            <div class="contact__margin"></div>
+            <div class="contact__content">
+                <span class="contact__label">Act VI — Contact</span>
+                <div class="contact__grid">
+                    <div class="contact__left">
+                        <h2 class="contact__title">Let's Write<br>Something<br>Honest.</h2>
+                        <p class="contact__note">Every collaboration begins with a conversation about what matters. If you have a story that keeps you up at night, I'd like to hear it.</p>
+                    </div>
+                    <div class="contact__right">
+                        <form class="contact__form" id="contactForm">
+                            <div class="contact__field">
+                                <label class="contact__label-text">Your Name</label>
+                                <input type="text" class="contact__input" placeholder="As it appears on the page" required>
+                            </div>
+                            <div class="contact__field">
+                                <label class="contact__label-text">Email</label>
+                                <input type="email" class="contact__input" placeholder="Where the dialogue begins" required>
+                            </div>
+                            <div class="contact__field">
+                                <label class="contact__label-text">Project Type</label>
+                                <select class="contact__select" required>
+                                    <option value="" disabled selected>Select a genre</option>
+                                    <option value="original">Original Screenplay</option>
+                                    <option value="adaptation">Adaptation</option>
+                                    <option value="doctoring">Script Doctoring</option>
+                                    <option value="series">Series Development</option>
+                                    <option value="short">Short Film</option>
+                                    <option value="workshop">Workshop / Mentoring</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="contact__field">
+                                <label class="contact__label-text">Your Message</label>
+                                <textarea class="contact__textarea" rows="5" placeholder="Tell me about the silence in your story" required></textarea>
+                            </div>
+                            <button type="submit" class="contact__submit">
+                                <span class="contact__submit-text">Send Draft</span>
+                                <span class="contact__submit-arrow">→</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER — TheCredits -->
+    <footer class="footer" id="footer">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <div class="footer__credits-line">
+                    <span class="footer__credit-item">Written by</span>
+                    <span class="footer__credit-item footer__credit-item--name">Léa Moreau</span>
+                </div>
+                <div class="footer__credits-line">
+                    <span class="footer__credit-item">Directed by</span>
+                    <span class="footer__credit-item footer__credit-item--name">The Story</span>
+                </div>
+                <div class="footer__credits-line">
+                    <span class="footer__credit-item">Produced by</span>
+                    <span class="footer__credit-item footer__credit-item--name">Patience</span>
+                </div>
+            </div>
+            <div class="footer__middle">
+                <div class="footer__logo">
+                    <span class="footer__logo-text">TheCredits</span>
+                    <span class="footer__logo-divider">—</span>
+                    <span class="footer__logo-sub">by Léa Moreau</span>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__info">
+                    <span class="footer__email">lea@moreau-scripts.fr</span>
+                    <span class="footer__location">Paris, France</span>
+                </div>
+                <div class="footer__legal">
+                    <span>© 2024 Léa Moreau</span>
+                    <span class="footer__legal-sep">|</span>
+                    <span>All rights reserved</span>
+                </div>
+                <div class="footer__closing">
+                    <span class="footer__fade">FADE OUT.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CURSOR -->
+    <div class="cursor" id="cursor">
+        <div class="cursor__dot"></div>
+        <div class="cursor__ring"></div>
+        <div class="cursor__text"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="src/init.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+# Yuki Tanaka — IMAGE-PROMPTS.txt
+# Geometric Zen · Pure black/white · Tokyo / Los Angeles · Minimal void
+# Usage: Copy each prompt into your image generation tool
+
+## Hero
+1. A minimal production design studio, white walls, black furniture, geometric shapes, clean lines, natural light from floor-to-ceiling windows, 35mm film grain, cinematic, zen atmosphere
+
+## Statement
+2. Close-up of architectural models on a white table, geometric shapes, natural light, shallow depth of field, 50mm, minimal, precise
+3. A designer reviewing blueprints on a light table, natural light, minimal workspace, focused, professional
+
+## Filmography
+4. A transparent glass house at dusk, interior visible, warm light inside, cool blue outside, architectural, cinematic, wide shot
+5. A black and white world, geometric architecture, dramatic shadows, minimal, artistic, wide angle
+6. Neon-lit Tokyo alley at night, Shibuya district, dramatic lighting, urban, cinematic, atmospheric
+7. An empty concrete room with a single window, light streaming in, minimal, architectural, dramatic
+
+## Spaces
+8. An empty white room with a single geometric sculpture, natural light, minimal, architectural, zen
+9. Light streaming through a window creating geometric shadows on white walls, architectural, precise, beautiful
+10. Close-up of textured concrete wall with natural patina, detail shot, minimal, architectural
+11. Geometric shapes arranged in a minimal composition, black and white, precise, architectural
+
+## About
+12. Portrait of a production designer in a minimal white studio, architectural models visible, natural light, 85mm
+13. A Kyoto temple garden, minimal, zen, natural beauty, wide shot, architectural
+14. A production designer sketching on a tablet, minimal workspace, natural light, focused, professional
+15. A minimal architectural interior, geometric shapes, natural light, beautiful, cinematic
+
+## Services
+16. A film set being constructed, geometric structures, crew working, professional, wide shot
+17. Concept art sketches for a film set, architectural drawings, minimal, professional
+18. A set decorator placing objects in a minimal space, precise, professional, cinematic
+19. Location scouting in a modern architectural building, natural light, minimal, professional
+
+## Work
+20. Feature film still: a glass house interior, transparent walls, warm light, architectural, cinematic
+21. Feature film still: a black and white world, geometric architecture, dramatic shadows, artistic
+22. Series still: neon-lit Tokyo street, dramatic lighting, urban, cinematic
+23. Feature film still: an empty concrete room with light, minimal, architectural, dramatic
+
+## Stats
+24. A production designer's desk with geometric models, minimal workspace, white and black, professional
+
+## Contact
+25. Tokyo skyline at dusk, minimal architectural buildings, geometric shapes, cinematic, atmospheric

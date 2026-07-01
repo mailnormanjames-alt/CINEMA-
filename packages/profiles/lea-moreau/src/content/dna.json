@@ -1,0 +1,55 @@
+{
+  "profile": {
+    "id": "lea-moreau",
+    "name": "Léa Moreau",
+    "role": "Screenwriter",
+    "archetype": "Artistic Auteur",
+    "tagline": "Writing silence between the words",
+    "email": "lea@moreau-scripts.fr",
+    "social": {
+      "twitter": "https://twitter.com/leamoreau"
+    },
+    "bio": "Screenwriter exploring memory, identity, and the spaces between language."
+  },
+  "heroSystem": "DirectorsChair",
+  "hero": {
+    "image": "/images/hero.jpg",
+    "overline": "Léa Moreau",
+    "title": "Writing silence between the words",
+    "subtitle": "Screenwriter — Bordeaux",
+    "ctaLabel": "Read Scripts"
+  },
+  "scenes": [
+    { "id": "hero", "type": "hero" },
+    { "id": "voice", "type": "text" },
+    { "id": "work", "type": "gallery" },
+    { "id": "signature", "type": "interaction" },
+    { "id": "about", "type": "text" },
+    { "id": "filmography", "type": "list" },
+    { "id": "footer", "type": "footer" }
+  ],
+  "footer": {
+    "identity": "TheCredits"
+  },
+  "imageContinuity": {
+    "palette": "warm",
+    "treatment": "grain",
+    "anchor": "natural-light"
+  },
+  "work": [
+    {
+      "title": "Les Mots Manquants",
+      "year": "2024",
+      "category": "Feature Script",
+      "image": "/images/work-01.jpg",
+      "description": "A mute woman finds her voice through handwriting."
+    },
+    {
+      "title": "Après la Pluie",
+      "year": "2023",
+      "category": "Short Script",
+      "image": "/images/work-02.jpg",
+      "description": "Two strangers share a bench during a rainstorm."
+    }
+  ]
+}

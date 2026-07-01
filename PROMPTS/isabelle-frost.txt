@@ -1,0 +1,92 @@
+# ISABELLE FROST — Casting Director | Image Prompts
+# 8 images needed (4 casting tapes + 4 film stills)
+
+---
+
+## 1. casting-tape-01.jpg — "The Discovery" Portrait
+**Section:** Casting Tape Mosaic 01
+**Prompt:**
+Cinematic casting tape portrait. A young woman in her early 30s with dark hair and expressive eyes. She looks directly into the camera with quiet intensity. The background is a neutral casting room — soft beige wall, warm reading lamp glow. The lighting is warm and intimate, casting soft shadows across her face. She wears minimal makeup, natural and authentic. The atmosphere is vulnerable, honest, and captivating. Shot on Kodak Portra 400. Fine 35mm grain. 85mm portrait lens. Warm practical lamp light. Color grade: warm skin tones, soft shadows, intimate framing. Aspect ratio 4:5 (portrait). Mood: the moment of discovery.
+
+**Negative prompt:**
+cartoon, anime, illustration, glamour, heavy makeup, fashion pose, studio backdrop, text, watermarks, logos, cold lighting
+
+---
+
+## 2. casting-tape-02.jpg — "New Faces" Portrait
+**Section:** Casting Tape Mosaic 02
+**Prompt:**
+Cinematic casting tape portrait. A young man in his mid-20s with close-cropped hair and a thoughtful expression. He looks slightly off-camera, as if listening to direction. The background is a casting room — warm wood paneling, soft light. The lighting is natural and supportive, highlighting his features without harshness. He wears a simple dark shirt. The atmosphere is hopeful, raw, and authentic. Shot on Kodak Portra 400. Fine 35mm grain. 85mm portrait lens. Warm overhead light. Color grade: warm skin tones, natural shadows, authentic feel. Aspect ratio 4:5 (portrait). Mood: new talent, raw potential.
+
+**Negative prompt:**
+cartoon, anime, illustration, glamour, posed, studio backdrop, text, watermarks, logos, cold lighting, heavy styling
+
+---
+
+## 3. casting-tape-03.jpg — "The Ensemble" Portrait
+**Section:** Casting Tape Mosaic 03
+**Prompt:**
+Cinematic casting tape portrait. A man in his mid-40s with distinguished grey temples and warm brown eyes. He has the bearing of a conductor — posture, presence, command. The background is a casting room — soft focus, warm tones. The lighting is theatrical but supportive, creating depth without harshness. He wears a dark blazer over a simple shirt. The atmosphere is authoritative, warm, and experienced. Shot on Kodak Portra 400. Fine 35mm grain. 85mm portrait lens. Warm key light with soft fill. Color grade: warm skin tones, rich shadows, theatrical depth. Aspect ratio 4:5 (portrait). Mood: the conductor, the ensemble builder.
+
+**Negative prompt:**
+cartoon, anime, illustration, young, casual, studio backdrop, text, watermarks, logos, cold lighting, stiff pose
+
+---
+
+## 4. casting-tape-04.jpg — "First Read" Portrait
+**Section:** Casting Tape Mosaic 04
+**Prompt:**
+Cinematic casting tape portrait. A woman in her late 20s with auburn hair and intelligent eyes. She holds a script pages in her hands, mid-read. The background is a casting room — warm, intimate, personal. The lighting is soft and encouraging, like a reading lamp. She wears a simple sweater. The atmosphere is focused, creative, and deeply personal. Shot on Kodak Portra 400. Fine 35mm grain. 85mm portrait lens. Warm practical lamp light. Color grade: warm skin tones, soft shadows, script page tones. Aspect ratio 4:5 (portrait). Mood: the first read, the beginning of discovery.
+
+**Negative prompt:**
+cartoon, anime, illustration, glamour, posed, studio backdrop, text, watermarks, logos, cold lighting, no script
+
+---
+
+## 5. filmstrip-01.jpg — "The Discovery" (Feature Film)
+**Section:** Filmstrip 01
+**Prompt:**
+Cinematic still from a film about a casting director discovering an unknown actress. A casting room seen from the doorway. An empty chair sits under a warm reading lamp. Script pages are scattered on a small table. Through the window, soft afternoon light filters in. The atmosphere is expectant, intimate, and full of possibility. Shot on Kodak Portra 400. Fine 35mm grain. 35mm lens. Warm practical lighting. Color grade: warm gold, soft shadows, intimate space. Aspect ratio 16:9. Mood: the empty chair, waiting for the right person.
+
+**Negative prompt:**
+cartoon, anime, illustration, crowded, bright, modern office, text, watermarks, logos, cold lighting
+
+---
+
+## 6. filmstrip-02.jpg — "New Faces" (Documentary)
+**Section:** Filmstrip 02
+**Prompt:**
+Cinematic documentary still from a film following young actors through the audition process. A hallway outside a casting room. Young actors sit on chairs along the wall, script pages in hand. Some read nervously, others stare into space. The fluorescent hallway light mixes with warm light spilling from the open casting room door. The atmosphere is anxious, hopeful, and deeply human. Shot on Kodak Portra 400. Fine 35mm grain. 35mm lens. Mixed fluorescent and practical lighting. Color grade: warm skin tones, cool fluorescent shadows, authentic feel. Aspect ratio 16:9. Mood: the waiting, the hope, the audition.
+
+**Negative prompt:**
+cartoon, anime, illustration, bright, happy, text, watermarks, logos, modern waiting room, posed
+
+---
+
+## 7. filmstrip-03.jpg — "The Ensemble" (Feature Film)
+**Section:** Filmstrip 03
+**Prompt:**
+Cinematic still from a musical drama where the casting itself becomes the story. Five actors sit in a semi-circle in a rehearsal space, reading from scripts. Warm overhead light illuminates them. The space is simple — wooden floors, plain walls, music stands. The actors are focused, connected, becoming a family. The atmosphere is collaborative, creative, and emotionally charged. Shot on Kodak Portra 400. Fine 35mm grain. 35mm lens. Warm overhead practical lighting. Color grade: warm wood tones, skin tones, collaborative warmth. Aspect ratio 16:9. Mood: five strangers becoming a family.
+
+**Negative prompt:**
+cartoon, anime, illustration, bright, stage, audience, costumes, text, watermarks, logos, cold lighting
+
+---
+
+## 8. filmstrip-04.jpg — "First Read" (Short Film)
+**Section:** Filmstrip 04
+**Prompt:**
+Cinematic still from a meditative short about a casting director revisiting old tapes. A vintage VCR and stack of casting tapes sit on a desk. A small monitor shows a frozen frame of a young actor's audition from years ago. The casting director's hand reaches for the rewind button. Warm lamplight illuminates the scene. The atmosphere is nostalgic, reflective, and deeply personal. Shot on Kodak Portra 400. Fine 35mm grain. 50mm lens. Warm practical lamp light. Color grade: warm amber, VHS nostalgia, soft shadows. Aspect ratio 16:9. Mood: memory, tape, the passage of time.
+
+**Negative prompt:**
+cartoon, anime, illustration, modern, digital, computer, text, watermarks, logos, cold lighting, bright
+
+---
+
+## LEONARDO AI SETTINGS
+- Mode: PhotoReal
+- Aspect ratio: 4:5 (portrait) for casting tapes, 16:9 (landscape) for film stills
+- Resolution: 1360x768 or higher
+- Style: Cinematic / Photography
+- Alchemy V2: ON
+- Generate 4 variations per prompt, select best

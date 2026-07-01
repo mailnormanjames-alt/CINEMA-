@@ -1,0 +1,439 @@
+/* ============================================
+   @cinema-sotd/core — Design System
+   ============================================ */
+
+/* --- Reset --- */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* --- CSS Variables --- */
+:root {
+  /* Colors — Override per profile */
+  --cinema-ink: #0a0a0a;
+  --cinema-ink-2: #111;
+  --cinema-ink-3: #1a1a1a;
+  --cinema-paper: #f0ebe4;
+  --cinema-paper-60: rgba(240,235,228,0.6);
+  --cinema-paper-30: rgba(240,235,228,0.3);
+  --cinema-paper-10: rgba(240,235,228,0.1);
+  --cinema-paper-05: rgba(240,235,228,0.05);
+  --cinema-accent: #C9A96E;
+  --cinema-accent-60: rgba(201,169,110,0.6);
+  --cinema-accent-20: rgba(201,169,110,0.2);
+  --cinema-accent-08: rgba(201,169,110,0.08);
+
+  /* Typography — Override per profile */
+  --cinema-font-display: 'Cormorant Garamond', Georgia, serif;
+  --cinema-font-body: 'Inter', -apple-system, sans-serif;
+  --cinema-font-mono: 'IBM Plex Mono', monospace;
+
+  /* Motion Timing Architecture — Great-Grandmaster §Motion Grammar */
+  /* Micro: 150–250ms — hovers, toggles, feedback */
+  --cinema-duration-micro: 200ms;
+  /* Macro: 600–1200ms — section reveals, transitions */
+  --cinema-duration-macro: 800ms;
+  /* Cinematic: 1.5–3s — hero sequences, narrative peaks */
+  --cinema-duration-cinematic: 2s;
+  /* Ambient: 8–20s — continuous background motion */
+  --cinema-duration-ambient: 12s;
+  /* Stagger: +80–120ms per item */
+  --cinema-stagger: 100ms;
+
+  /* Easing Library — Great-Grandmaster §Custom Easing Library */
+  --cinema-ease-cinematic: cubic-bezier(0.16, 1, 0.3, 1);   /* Expo out — powerful */
+  --cinema-ease-dramatic: cubic-bezier(0.87, 0, 0.13, 1);   /* Custom extreme */
+  --cinema-ease-elastic: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --cinema-ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);       /* Material Design */
+  --cinema-ease-emphasize: cubic-bezier(0.2, 0, 0, 1);      /* Apple-style */
+  --cinema-ease-gentle: cubic-bezier(0.25, 0.1, 0.25, 1);   /* CSS ease */
+  --cinema-ease-precise: cubic-bezier(0.4, 0.1, 0.2, 1);    /* Controlled */
+  /* Legacy aliases */
+  --cinema-ease-out-expo: var(--cinema-ease-cinematic);
+  --cinema-ease-out-quart: var(--cinema-ease-smooth);
+
+  /* Spacing */
+  --cinema-section-padding: 8rem 3rem;
+  --cinema-gutter: 3rem;
+
+  /* Parallax — will-change guidance */
+  /* All parallax elements should have: will-change: transform */
+  /* This is applied via JS in components, documented here for reference */
+}
+
+/* --- Base --- */
+html {
+  background: var(--cinema-ink);
+  color: var(--cinema-paper);
+  font-family: var(--cinema-font-body);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+
+body {
+  overflow-x: hidden;
+  background: var(--cinema-ink);
+}
+
+::selection { background: var(--cinema-accent); color: var(--cinema-ink); }
+a { color: inherit; text-decoration: none; }
+img { display: block; width: 100%; height: 100%; object-fit: cover; }
+button { background: none; border: none; color: inherit; font: inherit; cursor: pointer; }
+
+/* --- Section Layout --- */
+.cinema-section {
+  position: relative;
+  z-index: 2;
+  padding: var(--cinema-section-padding);
+}
+
+.cinema-section-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* --- Section Label --- */
+.cinema-label {
+  font-size: 0.55rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--cinema-accent);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cinema-label::before {
+  content: '';
+  width: 20px;
+  height: 1px;
+  background: var(--cinema-accent);
+}
+
+/* --- Section Title --- */
+.cinema-title {
+  font-family: var(--cinema-font-display);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+.cinema-title em {
+  font-style: italic;
+  color: var(--cinema-accent);
+}
+
+.cinema-title .line {
+  display: block;
+  overflow: hidden;
+}
+
+.cinema-title .word {
+  display: inline-block;
+  transform: translateY(110%);
+}
+
+/* --- Background Images --- */
+.cinema-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.cinema-bg img {
+  opacity: 0.2;
+}
+
+.cinema-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10,10,10,0.5) 0%, transparent 30%, transparent 70%, rgba(10,10,10,0.5) 100%);
+}
+
+/* --- Navigation --- */
+.cinema-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  mix-blend-mode: difference;
+}
+
+.cinema-nav-logo {
+  font-family: var(--cinema-font-display);
+  font-size: 0.65rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.cinema-nav-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.cinema-nav-links a {
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 400;
+  opacity: 0.5;
+  transition: opacity 0.4s;
+  position: relative;
+}
+
+.cinema-nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--cinema-accent);
+  transition: width 0.4s var(--cinema-ease-out-expo);
+}
+
+.cinema-nav-links a:hover { opacity: 1; }
+.cinema-nav-links a:hover::after { width: 100%; }
+
+/* --- Side Labels --- */
+.cinema-side-label {
+  position: fixed;
+  z-index: 100;
+  mix-blend-mode: difference;
+  font-family: var(--cinema-font-body);
+  font-size: 0.5rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+
+.cinema-side-label--left {
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: center;
+}
+
+.cinema-side-label--right {
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  transform-origin: center;
+}
+
+/* --- Hero Scroll Cue --- */
+.cinema-scroll-cue {
+  position: absolute;
+  bottom: 5rem;
+  right: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  opacity: 0;
+  z-index: 2;
+}
+
+.cinema-scroll-text {
+  font-size: 0.5rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  opacity: 0.4;
+}
+
+.cinema-scroll-line {
+  width: 1px;
+  height: 80px;
+  background: var(--cinema-paper-10);
+  position: relative;
+  overflow: hidden;
+}
+
+.cinema-scroll-line::after {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--cinema-accent);
+  animation: cinemaScrollPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes cinemaScrollPulse {
+  0% { top: -100%; }
+  50% { top: 0; }
+  100% { top: 100%; }
+}
+
+/* --- Stats --- */
+.cinema-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  text-align: center;
+}
+
+.cinema-stat-num {
+  font-family: var(--cinema-font-display);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 300;
+  color: var(--cinema-accent);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.cinema-stat-label {
+  font-size: 0.55rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  opacity: 0.4;
+}
+
+.cinema-stat-line {
+  width: 30px;
+  height: 1px;
+  background: var(--cinema-accent-20);
+  margin: 1rem auto 0;
+}
+
+/* --- Services --- */
+.cinema-service-row {
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  gap: 3rem;
+  align-items: center;
+  padding: 2.5rem 0;
+  border-top: 1px solid var(--cinema-paper-05);
+  cursor: pointer;
+  transition: background 0.5s;
+  position: relative;
+}
+
+.cinema-service-row:last-child {
+  border-bottom: 1px solid var(--cinema-paper-05);
+}
+
+.cinema-service-row::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: var(--cinema-accent-08);
+  transition: width 0.6s var(--cinema-ease-out-expo);
+}
+
+.cinema-service-row:hover::before { width: 100%; }
+
+.cinema-service-num {
+  font-family: var(--cinema-font-display);
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--cinema-accent);
+  position: relative;
+  z-index: 1;
+}
+
+.cinema-service-name {
+  font-family: var(--cinema-font-display);
+  font-size: clamp(1.3rem, 2.5vw, 2rem);
+  font-weight: 300;
+  position: relative;
+  z-index: 1;
+}
+
+.cinema-service-arrow {
+  font-size: 1.2rem;
+  opacity: 0.2;
+  transition: opacity 0.4s, transform 0.4s var(--cinema-ease-out-expo);
+  position: relative;
+  z-index: 1;
+}
+
+.cinema-service-row:hover .cinema-service-arrow {
+  opacity: 0.8;
+  transform: translateX(8px);
+}
+
+/* --- Footer --- */
+.cinema-footer {
+  position: relative;
+  z-index: 2;
+  padding: 2.5rem 3rem;
+  border-top: 1px solid var(--cinema-paper-05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cinema-footer-left,
+.cinema-footer-right {
+  font-size: 0.55rem;
+  letter-spacing: 0.15em;
+  opacity: 0.25;
+}
+
+.cinema-footer-center {
+  font-family: var(--cinema-font-display);
+  font-size: 0.6rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--cinema-accent);
+  opacity: 0.3;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  :root {
+    --cinema-section-padding: 5rem 1.5rem;
+    --cinema-gutter: 1.5rem;
+  }
+
+  .cinema-nav { padding: 1.5rem; }
+  .cinema-nav-links { display: none; }
+  .cinema-side-label { display: none; }
+  .cinema-scroll-cue { display: none; }
+  .cinema-stats { grid-template-columns: repeat(2, 1fr); }
+  .cinema-service-row {
+    grid-template-columns: 50px 1fr;
+    gap: 1.5rem;
+  }
+  .cinema-service-arrow { display: none; }
+  .cinema-footer {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+/* --- Reduced Motion --- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .lenis.lenis-smooth { scroll-behavior: auto !important; }
+}

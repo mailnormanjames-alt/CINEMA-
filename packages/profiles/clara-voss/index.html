@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clara Voss — Editor / Technical Master</title>
+  <meta name="description" content="Clara Voss — Film Editor. Berlin. Rhythm is the invisible narrator.">
+  <meta name="theme-color" content="#0c0c0c">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="src/styles/clara-voss.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+</head>
+
+<body>
+  <div class="noise-overlay"></div>
+  <canvas id="webgl-canvas"></canvas>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- PRELOADER — Cut/Splice vertical lines -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-cut-lines">
+      <div class="preloader-cut" style="--i:0"></div>
+      <div class="preloader-cut" style="--i:1"></div>
+      <div class="preloader-cut" style="--i:2"></div>
+      <div class="preloader-cut" style="--i:3"></div>
+      <div class="preloader-cut" style="--i:4"></div>
+      <div class="preloader-cut" style="--i:5"></div>
+      <div class="preloader-cut" style="--i:6"></div>
+      <div class="preloader-cut" style="--i:7"></div>
+    </div>
+    <div class="preloader-center">
+      <div class="preloader-timecode" id="preloaderTimecode">00:00:00:00</div>
+      <div class="preloader-label">VOSS EDIT</div>
+      <div class="preloader-status" id="preloaderStatus">SPLICING</div>
+    </div>
+    <div class="preloader-bar"><div class="preloader-bar-fill" id="preloaderBarFill"></div></div>
+    <div class="preloader-bottom-label">BERLIN</div>
+  </div>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor" id="cursor">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+  <div class="cursor-text" id="cursorText"></div>
+
+  <!-- NAVIGATION — Timeline bar with cut markers -->
+  <nav class="nav" id="nav">
+    <div class="nav-timeline-bar">
+      <div class="nav-cut-marker" data-nav="0"></div>
+      <div class="nav-cut-marker" data-nav="1"></div>
+      <div class="nav-cut-marker" data-nav="2"></div>
+      <div class="nav-cut-marker" data-nav="3"></div>
+      <div class="nav-cut-marker" data-nav="4"></div>
+      <div class="nav-cut-marker" data-nav="5"></div>
+    </div>
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo magnetic" data-cursor="pointer">VOSS</a>
+      <div class="nav-timecode" id="navTimecode">00:00:00</div>
+      <div class="nav-links">
+        <a href="#philosophy" class="nav-link magnetic" data-cursor="pointer" data-section="0">Philosophy</a>
+        <a href="#cut-rhythm" class="nav-link magnetic" data-cursor="pointer" data-section="1">CutRhythm</a>
+        <a href="#filmstrip" class="nav-link magnetic" data-cursor="pointer" data-section="2">Films</a>
+        <a href="#about" class="nav-link magnetic" data-cursor="pointer" data-section="3">About</a>
+        <a href="#services" class="nav-link magnetic" data-cursor="pointer" data-section="4">Services</a>
+        <a href="#contact" class="nav-link magnetic" data-cursor="pointer" data-section="5">Contact</a>
+      </div>
+      <button class="nav-menu-btn" id="menuBtn" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-timecode" id="mobileTimecode">00:00:00</div>
+    <a href="#philosophy" class="mobile-menu-link">Philosophy</a>
+    <a href="#cut-rhythm" class="mobile-menu-link">CutRhythm</a>
+    <a href="#filmstrip" class="mobile-menu-link">Films</a>
+    <a href="#about" class="mobile-menu-link">About</a>
+    <a href="#services" class="mobile-menu-link">Services</a>
+    <a href="#contact" class="mobile-menu-link">Contact</a>
+    <div class="mobile-menu-label">TheWorkshop</div>
+  </div>
+
+  <!-- SIDE LABELS -->
+  <div class="side-label side-label-left">Editor / Technical Master</div>
+  <div class="side-label side-label-right">Berlin — 10115</div>
+
+  <!-- HERO — Timeline Interface -->
+  <section class="hero" id="hero">
+    <div class="hero-timeline-overlay">
+      <div class="hero-tl-line" style="--y:10%"></div>
+      <div class="hero-tl-line" style="--y:20%"></div>
+      <div class="hero-tl-line" style="--y:30%"></div>
+      <div class="hero-tl-line" style="--y:40%"></div>
+      <div class="hero-tl-line" style="--y:50%"></div>
+      <div class="hero-tl-line" style="--y:60%"></div>
+      <div class="hero-tl-line" style="--y:70%"></div>
+      <div class="hero-tl-line" style="--y:80%"></div>
+      <div class="hero-tl-line" style="--y:90%"></div>
+    </div>
+    <div class="hero-tl-timecodes">
+      <span class="hero-tl-tc" style="--y:10%">00:00:01:00</span>
+      <span class="hero-tl-tc" style="--y:30%">00:00:03:00</span>
+      <span class="hero-tl-tc" style="--y:50%">00:00:05:00</span>
+      <span class="hero-tl-tc" style="--y:70%">00:00:07:00</span>
+      <span class="hero-tl-tc" style="--y:90%">00:00:09:00</span>
+    </div>
+    <div class="hero-playhead" id="heroPlayhead">
+      <div class="hero-playhead-line"></div>
+      <div class="hero-playhead-handle"></div>
+    </div>
+    <div class="hero-image"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <div class="hero-eyebrow-line"></div>
+        <div class="hero-eyebrow-text">Berlin — 10115</div>
+      </div>
+      <h1 class="hero-title">
+        <span class="line"><span class="word">Clara</span></span>
+        <span class="line"><span class="word"><em>Voss</em></span></span>
+      </h1>
+      <div class="hero-subtitle">
+        <span class="hero-subtitle-role">Editor / Technical Master</span>
+        <span class="hero-subtitle-divider">|</span>
+        <span class="hero-subtitle-tagline">Rhythm is the invisible narrator</span>
+      </div>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Timecode</span>
+          <span class="hero-meta-value" id="heroTimecode">00:00:00:00</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Frame Rate</span>
+          <span class="hero-meta-value">24fps</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Status</span>
+          <span class="hero-meta-value hero-meta-available">AVAILABLE</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-cue">
+      <span class="hero-scroll-text">SCROLL</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY STATEMENT -->
+  <section class="philosophy" id="philosophy">
+    <div class="philosophy-bg"></div>
+    <div class="philosophy-inner">
+      <div class="philosophy-tl-ruler">
+        <div class="philosophy-tl-mark" style="--pos:0%"></div>
+        <div class="philosophy-tl-mark" style="--pos:25%"></div>
+        <div class="philosophy-tl-mark" style="--pos:50%"></div>
+        <div class="philosophy-tl-mark" style="--pos:75%"></div>
+        <div class="philosophy-tl-mark" style="--pos:100%"></div>
+      </div>
+      <div class="section-label">01 — Philosophy</div>
+      <p class="philosophy-quote" id="philosophyQuote">
+        "The cut is the heartbeat of the film. I listen for it in the dailies — that moment when the footage starts breathing on its own."
+      </p>
+      <p class="philosophy-attr">— Clara Voss, European Film Academy interview, 2024</p>
+      <div class="philosophy-note">
+        <span class="philosophy-note-label">Edit</span>
+        <span class="philosophy-note-value">Every frame is a decision. Every transition is a statement.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CUT RHYTHM — Signature Interaction -->
+  <section class="cut-rhythm" id="cut-rhythm">
+    <div class="cut-rhythm-bg"></div>
+    <div class="cut-rhythm-inner">
+      <div class="section-label">02 — CutRhythm</div>
+      <h2 class="cut-rhythm-title">The rhythm of <em>the cut</em></h2>
+      <div class="cut-rhythm-timeline" id="cutRhythmTimeline">
+        <div class="cut-rhythm-track">
+          <div class="cut-rhythm-bar" data-cut-type="fast">
+            <div class="cut-rhythm-bar-inner">
+              <div class="cut-rhythm-segment" style="--w:15%"></div>
+              <div class="cut-rhythm-cut"></div>
+              <div class="cut-rhythm-segment" style="--w:8%"></div>
+              <div class="cut-rhythm-cut"></div>
+              <div class="cut-rhythm-segment" style="--w:20%"></div>
+              <div class="cut-rhythm-cut"></div>
+              <div class="cut-rhythm-segment" style="--w:10%"></div>
+              <div class="cut-rhythm-cut"></div>
+              <div class="cut-rhythm-segment" style="--w:12%"></div>
+              <div class="cut-rhythm-cut"></div>
+              <div class="cut-rhythm-segment" style="--w:8%"></div>
+              <div class="cut-rhythm-cut"></div>
+              <div class="cut-rhythm-segment" style="--w:15%"></div>
+            </div>
+            <div class="cut-rhythm-label">
+              <span class="cut-rhythm-label-name">Fast Cut</span>
+              <span class="cut-rhythm-label-desc">Energy. Urgency. The world is falling apart and you can feel it in your bones.</span>
+            </div>
+          </div>
+          <div class="cut-rhythm-bar" data-cut-type="slow">
+            <div class="cut-rhythm-bar-inner">
+              <div class="cut-rhythm-segment" style="--w:45%"></div>
+              <div class="cut-rhythm-cut"></div>
+              <div class="cut-rhythm-segment" style="--w:50%"></div>
+            </div>
+            <div class="cut-rhythm-label">
+              <span class="cut-rhythm-label-name">Slow Dissolve</span>
+              <span class="cut-rhythm-label-desc">Patience. Weight. Time bends and stretches. The audience breathes with the film.</span>
+            </div>
+          </div>
+          <div class="cut-rhythm-bar" data-cut-type="match">
+            <div class="cut-rhythm-bar-inner">
+              <div class="cut-rhythm-segment" style="--w:30%"></div>
+              <div class="cut-rhythm-cut cut-match"></div>
+              <div class="cut-rhythm-segment" style="--w:30%"></div>
+              <div class="cut-rhythm-cut cut-match"></div>
+              <div class="cut-rhythm-segment" style="--w:35%"></div>
+            </div>
+            <div class="cut-rhythm-label">
+              <span class="cut-rhythm-label-name">Match Cut</span>
+              <span class="cut-rhythm-label-desc">Connection. Juxtaposition. Two worlds collide in a single frame.</span>
+            </div>
+          </div>
+          <div class="cut-rhythm-bar" data-cut-type="jump">
+            <div class="cut-rhythm-bar-inner">
+              <div class="cut-rhythm-segment" style="--w:20%"></div>
+              <div class="cut-rhythm-cut cut-jump"></div>
+              <div class="cut-rhythm-segment" style="--w:5%"></div>
+              <div class="cut-rhythm-cut cut-jump"></div>
+              <div class="cut-rhythm-segment" style="--w:25%"></div>
+              <div class="cut-rhythm-cut cut-jump"></div>
+              <div class="cut-rhythm-segment" style="--w:8%"></div>
+              <div class="cut-rhythm-cut cut-jump"></div>
+              <div class="cut-rhythm-segment" style="--w:30%"></div>
+            </div>
+            <div class="cut-rhythm-label">
+              <span class="cut-rhythm-label-name">Jump Cut</span>
+              <span class="cut-rhythm-label-desc">Disruption. Time skips. The audience is forced to fill the gaps.</span>
+            </div>
+          </div>
+        </div>
+        <div class="cut-rhythm-playhead">
+          <div class="cut-rhythm-playhead-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILMSTRIP -->
+  <section class="filmstrip" id="filmstrip">
+    <div class="filmstrip-bg"></div>
+    <div class="filmstrip-header">
+      <div>
+        <div class="section-label">03 — Filmography</div>
+        <h2 class="filmstrip-title">Selected <em>works</em></h2>
+      </div>
+      <div class="filmstrip-counter">01 — 04</div>
+    </div>
+    <div class="filmstrip-track">
+      <div class="filmstrip-item" data-cursor="view">
+        <div class="filmstrip-item-img"><img src="assets/images/work-01.jpg" alt="Sequenz Null" loading="lazy"></div>
+        <div class="filmstrip-item-gradient"></div>
+        <div class="filmstrip-item-tc">00:01:23:08</div>
+        <div class="filmstrip-item-border"></div>
+        <div class="filmstrip-item-info">
+          <div class="filmstrip-item-num">001 — Feature Film</div>
+          <div class="filmstrip-item-title">Sequenz Null</div>
+          <div class="filmstrip-item-year">2024</div>
+          <div class="filmstrip-item-desc">A meditation on zero — the moment before the cut.</div>
+        </div>
+      </div>
+      <div class="filmstrip-item" data-cursor="view">
+        <div class="filmstrip-item-img"><img src="assets/images/work-02.jpg" alt="Cut/Paste" loading="lazy"></div>
+        <div class="filmstrip-item-gradient"></div>
+        <div class="filmstrip-item-tc">00:00:45:12</div>
+        <div class="filmstrip-item-border"></div>
+        <div class="filmstrip-item-info">
+          <div class="filmstrip-item-num">002 — Short Film</div>
+          <div class="filmstrip-item-title">Cut/Paste</div>
+          <div class="filmstrip-item-year">2023</div>
+          <div class="filmstrip-item-desc">Two editors, one timeline, no rules.</div>
+        </div>
+      </div>
+      <div class="filmstrip-item" data-cursor="view">
+        <div class="filmstrip-item-img"><img src="assets/images/work-03.jpg" alt="The Assembly" loading="lazy"></div>
+        <div class="filmstrip-item-gradient"></div>
+        <div class="filmstrip-item-tc">00:02:10:03</div>
+        <div class="filmstrip-item-border"></div>
+        <div class="filmstrip-item-info">
+          <div class="filmstrip-item-num">003 — Documentary</div>
+          <div class="filmstrip-item-title">The Assembly</div>
+          <div class="filmstrip-item-year">2022</div>
+          <div class="filmstrip-item-desc">How films are built, frame by frame.</div>
+        </div>
+      </div>
+      <div class="filmstrip-item" data-cursor="view">
+        <div class="filmstrip-item-img"><img src="assets/images/work-04.jpg" alt="Frame by Frame" loading="lazy"></div>
+        <div class="filmstrip-item-gradient"></div>
+        <div class="filmstrip-item-tc">00:01:55:20</div>
+        <div class="filmstrip-item-border"></div>
+        <div class="filmstrip-item-info">
+          <div class="filmstrip-item-num">004 — Feature Film</div>
+          <div class="filmstrip-item-title">Frame by Frame</div>
+          <div class="filmstrip-item-year">2023</div>
+          <div class="filmstrip-item-desc">The invisible art of making time visible.</div>
+        </div>
+      </div>
+    </div>
+    <div class="filmstrip-sprockets">
+      <div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+      <div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+      <div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+      <div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-bg"></div>
+    <div class="about-left">
+      <div class="section-label">04 — About</div>
+      <h2 class="about-title">
+        <span class="line"><span class="word">I sculpt</span></span>
+        <span class="line"><span class="word">time</span></span>
+        <span class="line"><span class="word">into <em>rhythm</em></span></span>
+      </h2>
+      <div class="about-tl-ruler">
+        <div class="about-tl-mark" style="--pos:0%"></div>
+        <div class="about-tl-mark" style="--pos:50%"></div>
+        <div class="about-tl-mark" style="--pos:100%"></div>
+      </div>
+    </div>
+    <div class="about-right">
+      <div class="about-text">
+        <p>I started editing on a borrowed Avid in a basement in Hamburg. My first project was a forty-minute documentary about a fisherman on the Elbe — three hundred hours of footage about a man who barely spoke. I learned to find the story in the silences between his words.</p>
+        <p>After moving to Berlin, I cut my teeth on German television dramas before transitioning to features. My editors' note from film school still sits on my desk: "The rhythm is wrong." It was the best criticism anyone ever gave me, because it taught me that editing isn't about what you keep — it's about what you feel when you remove it.</p>
+        <p>Every film has a natural pulse. My job is finding it, then amplifying it until the audience can't help but breathe in time with the story.</p>
+      </div>
+      <div class="about-quote">
+        <p>"The best edit is the one that makes you forget you're watching a film. You're just... living inside it."</p>
+      </div>
+      <div class="about-stats">
+        <div class="about-stat">
+          <span class="about-stat-num" data-count="16">0</span>
+          <span class="about-stat-label">Films</span>
+        </div>
+        <div class="about-stat">
+          <span class="about-stat-num" data-count="9">0</span>
+          <span class="about-stat-label">Awards</span>
+        </div>
+        <div class="about-stat">
+          <span class="about-stat-num" data-count="11">0</span>
+          <span class="about-stat-label">Years</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="services-bg"></div>
+    <div class="services-header">
+      <div class="section-label">05 — Services</div>
+      <h2 class="services-title">What I do</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-row" data-cursor="pointer">
+        <span class="service-num">01</span>
+        <span class="service-name">Feature Film Editing</span>
+        <span class="service-arrow">&rarr;</span>
+      </div>
+      <div class="service-row" data-cursor="pointer">
+        <span class="service-num">02</span>
+        <span class="service-name">Documentary Editing</span>
+        <span class="service-arrow">&rarr;</span>
+      </div>
+      <div class="service-row" data-cursor="pointer">
+        <span class="service-num">03</span>
+        <span class="service-name">Commercial Editing</span>
+        <span class="service-arrow">&rarr;</span>
+      </div>
+      <div class="service-row" data-cursor="pointer">
+        <span class="service-num">04</span>
+        <span class="service-name">Music Video Editing</span>
+        <span class="service-arrow">&rarr;</span>
+      </div>
+      <div class="service-row" data-cursor="pointer">
+        <span class="service-num">05</span>
+        <span class="service-name">Color Grading</span>
+        <span class="service-arrow">&rarr;</span>
+      </div>
+      <div class="service-row" data-cursor="pointer">
+        <span class="service-num">06</span>
+        <span class="service-name">Post-Production Supervision</span>
+        <span class="service-arrow">&rarr;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-bg"></div>
+    <div class="contact-inner">
+      <div class="contact-tl-ruler">
+        <div class="contact-tl-mark" style="--pos:0%"></div>
+        <div class="contact-tl-mark" style="--pos:25%"></div>
+        <div class="contact-tl-mark" style="--pos:50%"></div>
+        <div class="contact-tl-mark" style="--pos:75%"></div>
+        <div class="contact-tl-mark" style="--pos:100%"></div>
+      </div>
+      <div class="section-label" style="justify-content:center;">06 — Contact</div>
+      <h2 class="contact-title">
+        <span class="line"><span class="word">Ready</span></span>
+        <span class="line"><span class="word">to find</span></span>
+        <span class="line"><span class="word">your <em>rhythm</em></span></span>
+      </h2>
+      <a href="mailto:clara@voss-edit.de" class="contact-email magnetic" data-cursor="pointer">clara@voss-edit.de</a>
+      <div class="contact-location">10115, Berlin, Germany</div>
+      <div class="contact-social">
+        <a href="#" class="magnetic" data-cursor="pointer">Instagram</a>
+        <a href="#" class="magnetic" data-cursor="pointer">IMDb</a>
+        <a href="#" class="magnetic" data-cursor="pointer">Vimeo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER — TheWorkshop identity -->
+  <footer class="footer" id="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-identity">TheWorkshop</div>
+        <div class="footer-tl-ruler">
+          <div class="footer-tl-seg"></div>
+          <div class="footer-tl-seg"></div>
+          <div class="footer-tl-seg"></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-left">&copy; 2026 Clara Voss</div>
+        <div class="footer-center">
+          <span class="footer-cut-label">CutRhythm</span>
+          <span class="footer-divider">/</span>
+          <span class="footer-location">Berlin</span>
+        </div>
+        <div class="footer-right">
+          <a href="mailto:clara@voss-edit.de" class="magnetic" data-cursor="pointer">clara@voss-edit.de</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <div class="site-footer-copy">&copy; Norman James</div>
+      <div class="site-footer-studio">made with love <span style="color:#e53e3e;">&#10084;</span> by Empathy Studio</div>
+    </div>
+  </footer>
+
+  <script src="src/init.js"></script>
+</body>
+</html>

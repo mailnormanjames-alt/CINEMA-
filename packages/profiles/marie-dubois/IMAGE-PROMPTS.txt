@@ -1,0 +1,138 @@
+# ============================================================
+# IMAGE-PROMPTS.TXT
+# Project: Marie Dubois — Director | Atelier Noir
+# Filmmaker: Marie Dubois
+# Total Images: 22
+# Generated: June 27, 2026
+# ============================================================
+
+# PROJECT CONTINUITY ANCHORS
+# Apply to every image in this project:
+# Color Palette    → desaturated teal shadows, warm amber highlights
+# Film Stock       → Kodak Vision3 500T
+# Grain            → fine 35mm grain
+# Lens Family      → Zeiss Master Primes
+# Lighting Style   → natural available light, high contrast
+# Color Grade      → teal-orange cinematic, muted midtones
+# Atmosphere       → quiet, melancholy, contemplative
+
+# ============================================================
+# HERO — 1 IMAGE
+# ============================================================
+
+HERO-01
+Cinematic wide-angle shot of a narrow Parisian alley at night, wet cobblestones reflecting warm amber streetlamp light, teal shadows pooling in doorways, a lone silhouette standing at the far end, shot on ARRI ALEXA 35, 35mm Zeiss Master Prime lens, f/2.0 aperture, Kodak Vision3 500T film stock, eye level framing, wide establishing shot, natural available light from vintage Parisian streetlamps, teal-orange cinematic grade with muted midtones, fine 35mm grain texture, cinematic composition, 8K ultra-realistic, photorealistic, sharp focus, 2.39:1 aspect ratio, ultra-high resolution, hyperdetailed,
+--no cartoon, illustration, painting, digital art, 3D render, CGI, artificial lighting, overexposed, underexposed, blurry, distorted, watermark, text overlay, logo, low quality, compression artifact, stock photo aesthetic, oversaturated, amateur framing
+
+# ============================================================
+# SCENE I — INVITATION — 2 IMAGES
+# ============================================================
+
+INVITATION-01
+Extreme close-up of frosted glass panel on a vintage Parisian apartment window at night, warm amber light bleeding through from inside, rain droplets catching light on the glass surface, teal shadows in the reflection, shot on ARRI ALEXA 35, 85mm Zeiss Master Prime lens, f/1.4 aperture, Kodak Vision3 500T, close-up framing, soft diffusion from practical interior light, teal-orange grade, fine 35mm grain, cinematic composition, 8K, photorealistic, 16:9, ultra-high resolution,
+--no cartoon, illustration, painting, 3D render, artificial, overexposed, blurry, stock photo, generic
+
+INVITATION-02
+Deep perspective shot down a narrow Parisian alley at night, wet surfaces reflecting neon and amber light, steam rising from a café vent, teal shadows on ancient stone walls, shot on ARRI ALEXA 35, 28mm Zeiss Master Prime, f/2.8, Kodak Vision3 500T, low angle establishing, wide framing, natural available light, high contrast, teal-orange cinematic grade, fine grain, 8K photorealistic, 2.39:1,
+--no cartoon, illustration, CGI, artificial lighting, overexposed, blurry, watermark, stock photo
+
+# ============================================================
+# SCENE II — VISION — 1 IMAGE
+# ============================================================
+
+VISION-01
+Cinematic portrait of a woman director in a dimly lit Paris editing suite at 3am, warm amber monitor glow illuminating her face from the side, deep teal shadows behind her, film reels and editing equipment visible in soft focus background, shot on ARRI ALEXA 35, 75mm Zeiss Master Prime, f/1.8, Kodak Vision3 500T, eye level medium close-up, natural practical lighting from monitors, teal-orange grade with muted midtones, fine 35mm grain, cinematic composition, 8K photorealistic, 3:4 portrait,
+--no cartoon, illustration, 3D render, artificial, overexposed, blurry, stock photo, generic, posed
+
+# ============================================================
+# SCENE III — WORK (Film Stills) — 6 IMAGES
+# ============================================================
+
+WORK-01
+Cinematic still from an art film — a woman standing at the edge of the Canal Saint-Martin at dusk, teal water reflecting the last amber light, her silhouette sharp against the fading sky, shot on ARRI ALEXA 35, 50mm Zeiss Master Prime, f/2.0, Kodak Vision3 500T, eye level wide shot, natural golden hour light, teal-orange grade, fine grain, 8K photorealistic, 2.39:1 widescreen,
+--no cartoon, illustration, 3D render, artificial, overexposed, blurry, stock photo
+
+WORK-02
+Cinematic still — three figures silhouetted in a sunlit doorway of a Mediterranean house, summer heat haze visible, warm amber light flooding through, teal shadows in the interior, shot on ARRI ALEXA 35, 40mm Zeiss Master Prime, f/2.8, Kodak Vision3 500T, eye level wide, natural harsh daylight with deep shadows, teal-orange grade, fine grain, 8K photorealistic, 2.39:1,
+--no cartoon, illustration, 3D render, artificial, blurry, stock photo
+
+WORK-03
+Cinematic still — an empty Paris apartment with rain on the windows, warm amber lamplight casting long shadows across wooden floors, teal twilight visible through the glass, dust particles floating in the light beam, shot on ARRI ALEXA 35, 35mm Zeiss Master Prime, f/2.0, Kodak Vision3 500T, wide establishing, natural available light, teal-orange grade, fine grain, 8K photorealistic, 2.39:1,
+--no cartoon, illustration, 3D render, artificial, blurry, stock photo
+
+WORK-04
+Cinematic still — close-up of hands holding a vintage film reel, warm amber light from a desk lamp, teal shadows on the wall behind, texture of the celluloid visible, shot on ARRI ALEXA 35, 100mm macro Zeiss Master Prime, f/2.8, Kodak Vision3 500T, extreme close-up, practical desk lamp lighting, teal-orange grade, fine grain, 8K photorealistic, 16:9,
+--no cartoon, illustration, 3D render, artificial, blurry, stock photo
+
+WORK-05
+Cinematic still — a woman walking through a rain-soaked Parisian street at night, neon reflections in puddles, warm amber shop lights, teal-blue night sky, shot on ARRI ALEXA 35, 50mm Zeiss Master Prime, f/1.4, Kodak Vision3 500T, medium tracking shot, natural available light from neon and streetlamps, teal-orange grade, fine grain, 8K photorealistic, 2.39:1,
+--no cartoon, illustration, 3D render, artificial, blurry, stock photo
+
+WORK-06
+Cinematic still — a fashion model in a dark studio, single warm amber spotlight from above, deep teal shadows filling the rest of the frame, fabric catching the light, shot on ARRI ALEXA 35, 85mm Zeiss Master Prime, f/1.8, Kodak Vision3 500T, medium shot, dramatic single-source lighting, teal-orange grade, fine grain, 8K photorealistic, 2.39:1,
+--no cartoon, illustration, 3D render, artificial, overexposed, blurry, stock photo
+
+# ============================================================
+# SCENE IV — PROCESS (Script-to-Screen) — 2 IMAGES
+# ============================================================
+
+PROCESS-01
+Overhead shot of a screenplay script on a wooden desk in a Paris editing suite, warm amber desk lamp illuminating the pages, teal shadows in the corners, a coffee cup and pen nearby, shot on Hasselblad 500C/M, 50mm lens, f/4, Kodak Vision3 500T, overhead flat lay, warm practical lighting, teal-orange grade, fine grain, 8K photorealistic, 4:5,
+--no cartoon, illustration, 3D render, artificial, blurry, stock photo
+
+PROCESS-02
+Cinematic frame — a narrow Parisian alley at night seen through a camera viewfinder overlay, the scene in focus through the lens, warm amber and teal tones, shot on ARRI ALEXA 35, 35mm Zeiss Master Prime, f/2.0, Kodak Vision3 500T, POV through viewfinder, natural night lighting, teal-orange grade, fine grain, 8K photorealistic, 2.39:1,
+--no cartoon, illustration, 3D render, artificial, blurry, stock photo
+
+# ============================================================
+# SCENE V — CRAFT — 2 IMAGES
+# ============================================================
+
+CRAFT-01
+Extreme close-up of a vintage 35mm film camera lens, warm amber light reflecting off the glass elements, teal shadows in the body, mechanical details visible, shot on ARRI ALEXA 35, 100mm macro Zeiss Master Prime, f/2.8, Kodak Vision3 500T, extreme close-up, warm practical light, teal-orange grade, fine grain, 8K photorealistic, 1:1,
+--no cartoon, illustration, 3D render, artificial, blurry, stock photo
+
+CRAFT-02
+Close-up of celluloid film strip running through an editing machine, warm amber light from the machine's lamp, teal shadows on the metal, sprocket holes visible, shot on ARRI ALEXA 35, 50mm Zeiss Master Prime, f/2.0, Kodak Vision3 500T, close-up, practical machine lighting, teal-orange grade, fine grain, 8K photorealistic, 16:9,
+--no cartoon, illustration, 3D render, artificial, blurry, stock photo
+
+# ============================================================
+# SCENE VI — TRANSFORMATION — 3 IMAGES
+# ============================================================
+
+TRANSFORM-01
+Cinematic wide shot of a film set from above — lights, crew silhouettes, a scene being filmed in the center, warm amber practical lights and teal ambient fill, shot on ARRI ALEXA 35, 28mm Zeiss Master Prime, f/4, Kodak Vision3 500T, overhead wide, mixed practical and studio lighting, teal-orange grade, fine grain, 8K photorealistic, 2.39:1,
+--no cartoon, illustration, 3D render, artificial, blurry, stock photo
+
+TRANSFORM-02
+Cinematic still — a woman director watching a monitor on set, warm amber screen glow on her face, teal shadows behind, focused expression, shot on ARRI ALEXA 35, 75mm Zeiss Master Prime, f/1.8, Kodak Vision3 500T, medium close-up, practical monitor lighting, teal-orange grade, fine grain, 8K photorealistic, 3:4,
+--no cartoon, illustration, 3D render, artificial, blurry, stock photo, posed
+
+TRANSFORM-03
+Cinematic still — audience in a dark cinema screening room, warm amber light from the screen illuminating their faces, teal darkness surrounding them, shot on ARRI ALEXA 35, 50mm Zeiss Master Prime, f/1.4, Kodak Vision3 500T, wide from behind, screen light as key source, teal-orange grade, fine grain, 8K photorealistic, 2.39:1,
+--no cartoon, illustration, 3D render, artificial, blurry, stock photo
+
+# ============================================================
+# SCENE VII — CONNECTION — 2 IMAGES
+# ============================================================
+
+CONNECT-01
+Cinematic portrait — a woman standing at a Parisian window at dawn, warm amber sunrise light streaming in, teal night shadows still visible in the room behind her, shot on ARRI ALEXA 35, 85mm Zeiss Master Prime, f/1.8, Kodak Vision3 500T, medium shot, natural dawn light, teal-orange grade, fine grain, 8K photorealistic, 3:4,
+--no cartoon, illustration, 3D render, artificial, blurry, stock photo, posed
+
+CONNECT-02
+Cinematic wide — the Canal Saint-Martin at dawn, first amber light hitting the water, teal mist rising, empty towpath, Parisian buildings reflected in still water, shot on ARRI ALEXA 35, 35mm Zeiss Master Prime, f/4, Kodak Vision3 500T, wide establishing, natural dawn light, teal-orange grade, fine grain, 8K photorealistic, 2.39:1,
+--no cartoon, illustration, 3D render, artificial, blurry, stock photo
+
+# ============================================================
+# FOOTER — 1 IMAGE
+# ============================================================
+
+FOOTER-01
+Cinematic wide — a narrow Parisian alley at night from a low angle, looking up at warm amber streetlamps, teal sky visible between buildings, wet cobblestones reflecting light, empty and quiet, shot on ARRI ALEXA 35, 24mm Zeiss Master Prime, f/2.8, Kodak Vision3 500T, low angle wide, natural streetlamp lighting, teal-orange grade, fine grain, 8K photorealistic, 2.39:1,
+--no cartoon, illustration, 3D render, artificial, blurry, stock photo
+
+# ============================================================
+# TOTAL: 22 prompts
+# All images share project continuity anchors above.
+# ============================================================

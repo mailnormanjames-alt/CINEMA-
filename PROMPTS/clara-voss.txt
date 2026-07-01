@@ -1,0 +1,62 @@
+# CLARA VOSS — Editor | Image Prompts
+# 5 images needed (1 hero + 4 work stills)
+
+---
+
+## 1. hero.jpg — Hero Image
+**Section:** Hero background
+**Prompt:**
+Cinematic photograph of a professional film editing suite at night. Three monitors display timeline interfaces with video tracks, audio waveforms, and color grading panels. The screens cast a cool blue-white glow across the dark room. An editing console with jog wheels and faders sits on the desk. A single coffee cup glows under the monitor light. The timeline shows precise cuts marked with colored flags. The atmosphere is clinical, precise, and focused. Shot on Kodak Vision3 500T. Fine 35mm grain. 35mm lens capturing the full workstation. Monitor light as key source. Color grade: cool clinical tones, high contrast, clean blacks. Aspect ratio 16:9. Mood: the cut that reveals the truth.
+
+**Negative prompt:**
+cartoon, anime, illustration, drawing, sketch, blurry, low quality, oversaturated, people, faces, text, watermarks, logos, warm tones, messy desk
+
+---
+
+## 2. work-01.jpg — "Sequenz Null" (Feature Film)
+**Section:** Filmstrip / Work Card 01
+**Prompt:**
+Cinematic still from a film about the moment before the cut. A film reel hangs from a projector, the celluloid caught mid-frame — one frame visible, the next frame blank. The projector light casts a warm glow across the reel. Dust particles float in the light beam. The atmosphere is suspended, anticipatory, and meta-cinematic. Shot on Kodak Vision3 500T. Fine 35mm grain. 50mm lens. Projector light as key source. Color grade: warm amber, deep shadows, film grain emphasis. Aspect ratio 16:9. Mood: the zero point, the breath before the cut.
+
+**Negative prompt:**
+cartoon, anime, illustration, digital, modern, computer, text, watermarks, logos, bright, colorful
+
+---
+
+## 3. work-02.jpg — "Cut/Paste" (Short Film)
+**Section:** Filmstrip / Work Card 02
+**Prompt:**
+Cinematic still from a short film about two editors sharing one timeline. Two editing stations face each other across a desk. Two pairs of hands hover over two keyboards. The monitors show the same timeline from different perspectives. The room is dark, lit only by screen glow. The atmosphere is collaborative, tense, and creative. Shot on Kodak Vision3 500T. Fine 35mm grain. 35mm lens. Monitor light as key source. Color grade: cool blue tones, high contrast, screen glow highlights. Aspect ratio 16:9. Mood: creative tension, shared vision.
+
+**Negative prompt:**
+cartoon, anime, illustration, bright, single person, text, watermarks, logos, warm lighting, office
+
+---
+
+## 4. work-03.jpg — "The Assembly" (Documentary)
+**Section:** Filmstrip / Work Card 03
+**Prompt:**
+Cinematic documentary still from a film about how films are built frame by frame. A film editing bay with celluloid strips laid out on a light table. Individual frames are visible — faces, landscapes, moments. A hand holds a splicer, carefully joining two strips. The light table illuminates the film from below, creating a warm glow. The atmosphere is methodical, craft-focused, and reverent. Shot on Kodak Vision3 500T. Fine 35mm grain. 50mm lens. Light table as key source. Color grade: warm amber from light table, cool shadows, film grain emphasis. Aspect ratio 16:9. Mood: the craft of assembly, frame by frame.
+
+**Negative prompt:**
+cartoon, anime, illustration, digital, computer, non-linear, text, watermarks, logos, bright, modern
+
+---
+
+## 5. work-04.jpg — "Frame by Frame" (Feature Film)
+**Section:** Filmstrip / Work Card 04
+**Prompt:**
+Cinematic still from a film about the invisible art of making time visible. A close-up of a film editor's eyes reflected in a monitor screen. The timeline is visible in the reflection — cuts, transitions, audio waves. The editor's face is focused, intense, absorbed. The room is dark, lit only by the screen. The atmosphere is intimate, psychological, and deeply focused. Shot on Kodak Vision3 500T. Fine 35mm grain. 85mm lens. Screen light as key source. Color grade: cool blue tones, high contrast, intimate framing. Aspect ratio 16:9. Mood: the editor's eye, seeing time.
+
+**Negative prompt:**
+cartoon, anime, illustration, bright, wide shot, text, watermarks, logos, warm lighting, casual
+
+---
+
+## LEONARDO AI SETTINGS
+- Mode: PhotoReal
+- Aspect ratio: 16:9 (landscape)
+- Resolution: 1360x768 or higher
+- Style: Cinematic / Photography
+- Alchemy V2: ON
+- Generate 4 variations per prompt, select best

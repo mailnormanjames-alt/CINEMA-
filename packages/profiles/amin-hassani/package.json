@@ -1,0 +1,17 @@
+{
+  "name": "@cinema-sotd/profile-amin-hassani",
+  "version": "1.0.0",
+  "description": "Amin Hassani — Sound Designer | Desert Noir",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@cinema-sotd/core": "workspace:*"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
+  }
+}

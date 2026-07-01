@@ -1,0 +1,56 @@
+{
+  "profile": {
+    "id": "clara-voss",
+    "name": "Clara Voss",
+    "role": "Editor",
+    "archetype": "Technical Master",
+    "tagline": "Rhythm is the invisible narrator",
+    "email": "clara@voss-edit.de",
+    "social": {
+      "vimeo": "https://vimeo.com/clara-voss",
+      "linkedin": "https://linkedin.com/in/claravoss"
+    },
+    "bio": "Editor who treats the timeline like a musical score — every cut a rest, every transition a crescendo."
+  },
+  "heroSystem": "BTSInvitation",
+  "hero": {
+    "image": "/images/hero.jpg",
+    "overline": "Clara Voss",
+    "title": "Rhythm is the invisible narrator",
+    "subtitle": "Editor — Berlin",
+    "ctaLabel": "View Cuts"
+  },
+  "scenes": [
+    { "id": "hero", "type": "hero" },
+    { "id": "philosophy", "type": "text" },
+    { "id": "work", "type": "gallery" },
+    { "id": "signature", "type": "interaction" },
+    { "id": "about", "type": "text" },
+    { "id": "filmography", "type": "list" },
+    { "id": "footer", "type": "footer" }
+  ],
+  "footer": {
+    "identity": "TheWorkshop"
+  },
+  "imageContinuity": {
+    "palette": "neutral",
+    "treatment": "clean",
+    "anchor": "studio-light"
+  },
+  "work": [
+    {
+      "title": "Sequenz Null",
+      "year": "2024",
+      "category": "Feature Film",
+      "image": "/images/work-01.jpg",
+      "description": "Non-linear narrative assembled from 400 hours of footage."
+    },
+    {
+      "title": "Cut/Paste",
+      "year": "2023",
+      "category": "Short Film",
+      "image": "/images/work-02.jpg",
+      "description": "Essay film on the ethics of editing."
+    }
+  ]
+}

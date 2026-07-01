@@ -1,0 +1,45 @@
+# Thomas Renard — IMAGE-PROMPTS.txt
+# Blueprint Precision · Electric blue · Lyon · Mechanical precision
+# Usage: Copy each prompt into your image generation tool
+
+## Hero
+1. Wide shot of a minimalist production office at night, Lyon cityscape visible through floor-to-ceiling windows, a single desk lamp casting electric blue light on production documents, 35mm film grain, cinematic color grading, blueprint grid overlay, high contrast, professional atmosphere
+
+## Statement
+2. Close-up of hands reviewing storyboard spreadsheets on a light table, electric blue accent light from a monitor, production documents scattered, shallow depth of field, 50mm lens, moody, professional
+
+## Filmography
+3. Behind-the-scenes documentary still, factory floor with workers and film crew, dramatic chiaroscuro lighting, industrial setting, 35mm film grain, cinematic composition
+4. A corporate boardroom at night, a single figure standing by a window, Lyon skyline in the background, tension and power, teal and orange color grading
+5. A dimly lit wine cellar, barrels receding into darkness, a figure with a clipboard, documentary style, natural light from a doorway
+6. A textile factory floor at dawn, rows of machines, a lone worker, dramatic shafts of light through windows, documentary realism, 35mm
+
+## Equipment
+7. ARRI ALEXA 35 camera on a professional tripod in a studio setting, blue accent lighting, clean minimal background, product photography style, 85mm
+8. A row of Zeiss Master Prime lenses on a matte black shelf, blue accent light, clean product shot, shallow depth of field
+9. A DIT station with multiple monitors showing color-graded footage, blue glow, professional setup, night shoot atmosphere
+10. Sound Devices 888 mixer with cables and headphones, blue accent lighting, professional audio setup, documentary style
+
+## About
+11. Portrait of a producer reviewing notes on a tablet, Lyon office, night, electric blue light from a monitor, cinematic, professional, 85mm lens
+12. Wide shot of a film set from above, crew at work, blue hour, industrial location, documentary style, high angle
+13. Close-up of a production schedule on a tablet, electric blue screen glow, night shoot, shallow depth of field
+14. A producer standing on a bridge in Lyon at night, city lights reflecting on the river, blue hour, cinematic
+
+## Services
+15. Wide shot of a film set, crew preparing for a take, blue hour light, industrial location, cinematic, high contrast
+16. Behind-the-scenes of a documentary shoot, crew with camera and sound equipment, factory setting, natural light, documentary realism
+17. A post-production suite with color grading monitors, blue ambient light, professional workspace, cinematic
+18. A festival screening room, red carpet visible, projection screen, cinematic atmosphere, night
+
+## Work
+19. Documentary still: a factory worker at a sewing machine, dramatic window light, 35mm film grain, human story, emotional
+20. Feature film still: a figure in a dark office, Lyon skyline at night through window, tension, thriller aesthetic, cinematic
+21. Documentary still: interior of an old textile mill, shafts of light, dust particles, 35mm film grain, poetic realism
+22. Night cityscape of Lyon, Les Halles district, electric lights, cinematic atmosphere, blue hour
+
+## Stats
+23. A production office wall with framed film posters and festival laurels, blue accent light, professional, cinematic atmosphere
+
+## Contact
+24. Minimalist Lyon skyline at blue hour, river Saône reflecting city lights, cinematic, professional, atmospheric

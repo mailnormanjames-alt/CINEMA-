@@ -1,0 +1,56 @@
+{
+  "profile": {
+    "id": "kofi-mensah",
+    "name": "Kofi Mensah",
+    "role": "Cinematographer",
+    "archetype": "Technical Master",
+    "tagline": "Light is the first actor",
+    "email": "kofi@mensahlens.com",
+    "social": {
+      "vimeo": "https://vimeo.com/kofimensah",
+      "instagram": "https://instagram.com/kofi.lens"
+    },
+    "bio": "Cinematographer whose visual language bridges West African tradition and European minimalism."
+  },
+  "heroSystem": "CinematicFrame",
+  "hero": {
+    "image": "/images/hero.jpg",
+    "overline": "Kofi Mensah",
+    "title": "Light is the first actor",
+    "subtitle": "Cinematographer — Accra / Berlin",
+    "ctaLabel": "View Reel"
+  },
+  "scenes": [
+    { "id": "hero", "type": "hero" },
+    { "id": "philosophy", "type": "text" },
+    { "id": "work", "type": "gallery" },
+    { "id": "signature", "type": "interaction" },
+    { "id": "gear", "type": "text" },
+    { "id": "filmography", "type": "list" },
+    { "id": "footer", "type": "footer" }
+  ],
+  "footer": {
+    "identity": "TheCredits"
+  },
+  "imageContinuity": {
+    "palette": "warm",
+    "treatment": "grain",
+    "anchor": "natural-light"
+  },
+  "work": [
+    {
+      "title": "Golden Hour Protocol",
+      "year": "2024",
+      "category": "Feature Film",
+      "image": "/images/work-01.jpg",
+      "description": "Visual study of light across three continents."
+    },
+    {
+      "title": "Between Shadows",
+      "year": "2023",
+      "category": "Short Film",
+      "image": "/images/work-02.jpg",
+      "description": "Chiaroscuro portraiture in urban Accra."
+    }
+  ]
+}

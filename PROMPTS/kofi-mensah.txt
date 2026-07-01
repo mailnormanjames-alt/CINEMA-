@@ -1,0 +1,62 @@
+# KOFI MENSAH — Cinematographer | Image Prompts
+# 5 images needed (1 hero + 4 work stills)
+
+---
+
+## 1. hero.jpg — Hero Image
+**Section:** Hero background
+**Prompt:**
+Cinematic wide-angle portrait of golden hour light streaming through a cinematographer's viewfinder. The viewfinder rests on a wooden table, its glass reflecting a warm, painterly scene of an African landscape at sunset. Dust particles float in the amber light beam. Behind the viewfinder, soft-focus camera lenses and light meters are arranged with intention. The light creates a chiaroscuro effect — deep shadows contrasting with the golden warmth. Shot on Kodak Vision3 500T. Fine 35mm grain. Zeiss Master Prime 50mm lens. Natural available light, high contrast. Color grade: teal-orange cinematic, muted midtones, warm golden highlights. Aspect ratio 16:9. Mood: intimate, contemplative, the poetry of light.
+
+**Negative prompt:**
+cartoon, anime, illustration, drawing, sketch, blurry, low quality, oversaturated, people, faces, text, watermarks, logos, harsh lighting
+
+---
+
+## 2. work-01.jpg — "The Weight of Gold" (Feature Film)
+**Section:** Filmstrip / Work Card 01
+**Prompt:**
+Cinematic still from a film about a boxer's journey from Accra to London. A young Ghanaian boxer stands in a dimly lit gym in Accra, sweat glistening on his shoulders. Late afternoon light streams through dusty windows, creating golden shafts across the boxing ring. His shadow stretches long across the canvas. The atmosphere is raw, determined, and deeply human. Shot on Kodak Vision3 500T. Fine 35mm grain. 50mm lens. Natural available light with golden hour warmth. Color grade: warm golden tones, deep shadows, rich skin tones. Aspect ratio 16:9. Mood: ambition, struggle, the weight of dreams.
+
+**Negative prompt:**
+cartoon, anime, illustration, bright, colorful, gym equipment, modern, text, watermarks, logos, cold lighting
+
+---
+
+## 3. work-02.jpg — "Still Water" (Documentary)
+**Section:** Filmstrip / Work Card 02
+**Prompt:**
+Cinematic documentary still from a film about the vanishing lakes of East Africa. A vast, cracked lake bed stretches to the horizon under a dramatic sky. A lone figure walks across the dry earth, their silhouette small against the immense landscape. The last remaining water reflects the golden sunset. The atmosphere is epic, melancholic, and urgent. Shot on Kodak Vision3 500T. Fine 35mm grain. Wide-angle lens. Natural available light at golden hour. Color grade: warm earth tones, dramatic sky, deep shadows. Aspect ratio 16:9. Mood: environmental elegy, beauty in crisis.
+
+**Negative prompt:**
+cartoon, anime, illustration, bright, lush, green, text, watermarks, logos, modern buildings, people in groups
+
+---
+
+## 4. work-03.jpg — "Nocturne in Blue" (Music Video)
+**Section:** Filmstrip / Work Card 03
+**Prompt:**
+Cinematic still from a visual album for a Ghanaian-British artist. A figure stands in a blue-lit recording studio, surrounded by vintage synthesizers and studio monitors. The blue light creates a dreamlike atmosphere, with warm amber accents from VU meters. Smoke or haze drifts through the light beams. The atmosphere is musical, nocturnal, and deeply atmospheric. Shot on Kodak Vision3 500T. Fine 35mm grain. 35mm lens. Mixed blue and amber practical lighting. Color grade: deep blue shadows, warm amber highlights, rich contrast. Aspect ratio 16:9. Mood: musical poetry, nocturnal creativity.
+
+**Negative prompt:**
+cartoon, anime, illustration, bright, daylight, pop, colorful, text, watermarks, logos, clean studio
+
+---
+
+## 5. work-04.jpg — "The Keeper" (Feature Film)
+**Section:** Filmstrip / Work Card 04
+**Prompt:**
+Cinematic still from a film about a lighthouse keeper's solitude. An old lighthouse stands on a rocky cliff at dusk. The keeper's silhouette is visible in the lantern room, tending the light. Waves crash against the rocks below. The sky is a deep gradient of orange, purple, and blue. The lighthouse beam cuts through the gathering darkness. The atmosphere is solitary, majestic, and timeless. Shot on Kodak Vision3 500T. Fine 35mm grain. 35mm lens. Natural available light at dusk. Color grade: deep blue shadows, warm sunset highlights, rich contrast. Aspect ratio 16:9. Mood: solitude, dedication, the beauty of isolation.
+
+**Negative prompt:**
+cartoon, anime, illustration, bright, modern, city, text, watermarks, logos, calm water, people
+
+---
+
+## LEONARDO AI SETTINGS
+- Mode: PhotoReal
+- Aspect ratio: 16:9 (landscape)
+- Resolution: 1360x768 or higher
+- Style: Cinematic / Photography
+- Alchemy V2: ON
+- Generate 4 variations per prompt, select best

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marie Dubois — Director | Dubois</title>
+  <meta name="description" content="Marie Dubois — Film Director. Paris-based. Cinematic storytelling that haunts.">
+  <meta name="theme-color" content="#050505">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+  <!-- Profile styles (includes cinema-core.css variables) -->
+  <link rel="stylesheet" href="src/styles/marie-dubois.css">
+
+  <!-- Dependencies (CDN — will be replaced by bundler in production) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body>
+  <!-- ============================================
+       NOISE OVERLAY — data-cinema-noise → NoiseOverlay
+       ============================================ -->
+  <div class="noise-overlay" data-cinema-noise></div>
+
+  <!-- ============================================
+       WEBGL CANVAS — data-cinema-webgl → WebGLAmbient
+       ============================================ -->
+  <canvas id="webgl-canvas" data-cinema-webgl></canvas>
+
+  <!-- ============================================
+       SCROLL PROGRESS — data-cinema-progress → ScrollProgress
+       ============================================ -->
+  <div class="scroll-progress" data-cinema-progress></div>
+
+  <!-- ============================================
+       PRELOADER — data-cinema-preloader → Preloader
+       ============================================ -->
+  <div class="preloader" data-cinema-preloader>
+    <div class="preloader-top">
+      <div class="preloader-line-h"></div>
+      <div class="preloader-brand">Dubois</div>
+      <div class="preloader-line-h"></div>
+    </div>
+    <div class="preloader-count">0</div>
+    <div class="preloader-bottom">
+      <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+      <div class="preloader-sub">Paris</div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       CUSTOM CURSOR — data-cinema-cursor → CustomCursor
+       ============================================ -->
+  <div class="cursor" id="cursor" data-cinema-cursor>
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+  <div class="cursor-text" id="cursorText"></div>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <nav class="nav">
+    <div class="nav-logo magnetic" data-cursor="pointer">Marie Dubois</div>
+    <div class="nav-center" style="font-family:'Caveat',cursive;font-style:italic;">Dubois</div>
+    <ul class="nav-right">
+      <li><a href="#about" class="magnetic" data-cursor="pointer">About</a></li>
+      <li><a href="#filmography" class="magnetic" data-cursor="pointer">Films</a></li>
+      <li><a href="#script-reveal" class="magnetic" data-cursor="pointer">Script</a></li>
+      <li><a href="#services" class="magnetic" data-cursor="pointer">Services</a></li>
+      <li><a href="#work" class="magnetic" data-cursor="pointer">Work</a></li>
+      <li><a href="#contact" class="magnetic" data-cursor="pointer">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Side Labels -->
+  <div class="side-label side-label-left">Director — Paris</div>
+  <div class="side-label side-label-right">Dubois</div>
+
+  <!-- ============================================
+       HERO — DNA: Cinematic Frame
+       data-cinema-hero="cinematic-frame" → HeroSystem
+       ============================================ -->
+  <section class="hero" id="hero" data-cinema-hero="cinematic-frame">
+    <div class="hero-image">
+      <img src="assets/images/hero/lucid-origin_a_cinematic_photo_of_Cinematic_wide-angle_shot_of_a_narrow_Parisian_alley_at_nig-0.jpg" alt="Parisian alley at night — cinematic atmosphere" loading="eager">
+    </div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <div class="hero-eyebrow-line"></div>
+        <div class="hero-eyebrow-text">Dubois — Paris — 11e arrondissement</div>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="line"><span class="word">Marie</span></span>
+        <span class="line"><span class="word"><em>Dubois</em></span></span>
+      </h1>
+
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Discipline</span>
+          <span class="hero-meta-value">Director</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Based In</span>
+          <span class="hero-meta-value">Paris, France</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Available</span>
+          <span class="hero-meta-value">Autumn 2026</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-cue">
+      <span class="hero-scroll-text">Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       STATEMENT — Character Reveal (handled by init.js)
+       ============================================ -->
+  <section class="statement" data-scene="vision">
+    <div class="statement-bg">
+      <img src="assets/images/hero/lucid-origin_a_cinematic_photo_of_Extreme_close-up_of_frosted_glass_panel_on_vintage_Parisian-0.jpg" alt="" aria-hidden="true" loading="lazy">
+    </div>
+    <div class="statement-inner">
+      <p class="statement-quote" id="statementQuote">
+        "I don't make films. I make rooms you can't leave. Rooms where the light remembers your name and the silence has weight."
+      </p>
+
+      <p class="statement-attr">— Marie Dubois, Cahiers du Cinéma interview, 2024</p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FILMSTRIP — Gallery: Film Stills
+       data-cinema-gallery="film-stills" → FilmstripGallery
+       ============================================ -->
+  <section class="filmstrip" id="filmography" data-cinema-gallery="film-stills">
+    <div class="filmstrip-bg">
+      <img src="assets/images/hero/lucid-origin_a_cinematic_photo_of_Deep_perspective_shot_down_narrow_Parisian_alley_at_night_c-0.jpg" alt="" aria-hidden="true" loading="lazy">
+    </div>
+    <div class="filmstrip-header" data-gallery-header>
+      <div>
+        <div class="section-label">Filmography</div>
+        <h2 class="filmstrip-title">Selected <em>works</em></h2>
+
+      </div>
+      <div class="filmstrip-counter">01 — 06</div>
+    </div>
+
+    <div class="filmstrip-track" data-gallery-track>
+      <div class="filmstrip-item" data-gallery-item data-cursor="play">
+        <div class="filmstrip-item-img"><img src="assets/images/gallery/film-01-ombres.jpg" alt="Les Ombres du Canal" loading="lazy"></div>
+        <div class="filmstrip-item-gradient"></div>
+        <div class="filmstrip-item-border" data-gallery-border></div>
+        <div class="filmstrip-item-info">
+          <div class="filmstrip-item-num">001 — Feature Film</div>
+          <div class="filmstrip-item-title">Les Ombres du Canal</div>
+          <div class="filmstrip-item-desc">A meditation on loss along the Canal Saint-Martin. Premiered Festival du Film Français.</div>
+        </div>
+      </div>
+      <div class="filmstrip-item" data-gallery-item data-cursor="play">
+        <div class="filmstrip-item-img"><img src="assets/images/gallery/film-02-ete.jpg" alt="Dernier Été" loading="lazy"></div>
+        <div class="filmstrip-item-gradient"></div>
+        <div class="filmstrip-item-border" data-gallery-border></div>
+        <div class="filmstrip-item-info">
+          <div class="filmstrip-item-num">002 — Feature Film</div>
+          <div class="filmstrip-item-title">Dernier Été</div>
+          <div class="filmstrip-item-desc">Three strangers, one summer, a house by the sea. Directors' Fortnight, Cannes.</div>
+        </div>
+      </div>
+      <div class="filmstrip-item" data-gallery-item data-cursor="play">
+        <div class="filmstrip-item-img"><img src="assets/images/gallery/film-03-memoire.jpg" alt="La Mémoire des Murs" loading="lazy"></div>
+        <div class="filmstrip-item-gradient"></div>
+        <div class="filmstrip-item-border" data-gallery-border></div>
+        <div class="filmstrip-item-info">
+          <div class="filmstrip-item-num">003 — Feature Film</div>
+          <div class="filmstrip-item-title">La Mémoire des Murs</div>
+          <div class="filmstrip-item-desc">Architecture as autobiography. Best Director, Cabourg Film Festival.</div>
+        </div>
+      </div>
+      <div class="filmstrip-item" data-gallery-item data-cursor="play">
+        <div class="filmstrip-item-img"><img src="assets/images/gallery/film-04-nuit.jpg" alt="Nuit Blanche" loading="lazy"></div>
+        <div class="filmstrip-item-gradient"></div>
+        <div class="filmstrip-item-border" data-gallery-border></div>
+        <div class="filmstrip-item-info">
+          <div class="filmstrip-item-num">004 — Feature Film</div>
+          <div class="filmstrip-item-title">Nuit Blanche</div>
+          <div class="filmstrip-item-desc">One night. One city. One truth that refuses to stay hidden.</div>
+        </div>
+      </div>
+      <div class="filmstrip-item" data-gallery-item data-cursor="play">
+        <div class="filmstrip-item-img"><img src="assets/images/gallery/film-05-chanel.jpg" alt="Chanel N°5" loading="lazy"></div>
+        <div class="filmstrip-item-gradient"></div>
+        <div class="filmstrip-item-border" data-gallery-border></div>
+        <div class="filmstrip-item-info">
+          <div class="filmstrip-item-num">005 — Commercial</div>
+          <div class="filmstrip-item-title">Chanel — N°5 L'Eau</div>
+          <div class="filmstrip-item-desc">A 90-second film about the scent of a city you've never visited.</div>
+        </div>
+      </div>
+      <div class="filmstrip-item" data-gallery-item data-cursor="play">
+        <div class="filmstrip-item-img"><img src="assets/images/gallery/film-06-mondes.jpg" alt="Entre Deux Mondes" loading="lazy"></div>
+        <div class="filmstrip-item-gradient"></div>
+        <div class="filmstrip-item-border" data-gallery-border></div>
+        <div class="filmstrip-item-info">
+          <div class="filmstrip-item-num">006 — Feature Film</div>
+          <div class="filmstrip-item-title">Entre Deux Mondes</div>
+          <div class="filmstrip-item-desc">The space between who we are and who we pretend to be. César nomination.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="filmstrip-sprockets" data-gallery-sprockets>
+      <div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+      <div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+      <div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+      <div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+      <div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+      <div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+      <div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+      <div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SCRIPT-TO-SCREEN REVEAL — Signature Interaction
+       ============================================ -->
+  <section class="script-reveal" id="script-reveal" data-cinema-script-reveal data-scene="process">
+    <!-- Populated by ScriptToScreenReveal.js -->
+  </section>
+
+  <!-- ============================================
+       ABOUT — Split Layout
+       ============================================ -->
+  <section class="about" id="about" data-scene="craft">
+    <div class="about-bg">
+      <img src="assets/images/hero/lucid-origin_a_cinematic_photo_of_Rain_droplets_on_window_glass_with_warm_Parisian_street_lam-0.jpg" alt="" aria-hidden="true" loading="lazy">
+    </div>
+    <div class="about-left">
+      <div class="section-label">About</div>
+      <h2 class="about-title">
+        <span class="line"><span class="word">I make</span></span>
+        <span class="line"><span class="word"><em>films</em> that</span></span>
+        <span class="line"><span class="word">stay in</span></span>
+        <span class="line"><span class="word">your <em>body</em></span></span>
+        <span class="line"><span class="word">long after</span></span>
+        <span class="line"><span class="word">the <em>credits</em></span></span>
+        <span class="line"><span class="word">roll.</span></span>
+      </h2>
+
+    </div>
+    <div class="about-right">
+      <div class="about-text">
+        <p>Born in Lyon, raised between projector light and rain-soaked streets. I studied at La Fémis and learned from the best — not in classrooms, but in dark rooms where celluloid burned through your fingers and you understood what a frame was really for.</p>
+        <p>My work lives in the space between memory and desire. I'm interested in the silence between two people who want the same thing. In the way light falls through a window at 4am when you haven't slept. In the weight of a doorway you're afraid to walk through.</p>
+        <p>Every film I make is a question I can't answer any other way. The camera is not a tool — it's a confession. I point it at the things I'm afraid to say out loud, and I hold it there until the audience feels the same discomfort I do.</p>
+        <p>Currently developing my eighth feature, a meditation on time and architecture set across three cities — Paris, Tokyo, Marrakech. Production begins autumn 2026.</p>
+      </div>
+      <div class="about-quote">
+        <p>"Cinema is the art of making the invisible unbearable. The best films are the ones that change you without your permission."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SERVICES
+       ============================================ -->
+  <section class="services" id="services" data-scene="transformation">
+    <div class="services-bg">
+      <img src="assets/images/hero/lucid-origin_a_cinematic_photo_of_Parisian_alley_wall_with_old_drainpipe_and_electrical_wire_-0.jpg" alt="" aria-hidden="true" loading="lazy">
+    </div>
+    <div class="services-header">
+      <div class="section-label">Services</div>
+      <h2 class="services-title">What I do</h2>
+
+    </div>
+    <div class="services-grid">
+      <div class="service-row" data-cursor="pointer" data-cinema-magnetic>
+        <span class="service-num">01</span>
+        <span class="service-name">Feature Film Direction</span>
+        <span class="service-arrow">&rarr;</span>
+      </div>
+      <div class="service-row" data-cursor="pointer" data-cinema-magnetic>
+        <span class="service-num">02</span>
+        <span class="service-name">Short Film & Music Video</span>
+        <span class="service-arrow">&rarr;</span>
+      </div>
+      <div class="service-row" data-cursor="pointer" data-cinema-magnetic>
+        <span class="service-num">03</span>
+        <span class="service-name">Commercial Campaigns</span>
+        <span class="service-arrow">&rarr;</span>
+      </div>
+      <div class="service-row" data-cursor="pointer" data-cinema-magnetic>
+        <span class="service-num">04</span>
+        <span class="service-name">Screenwriting</span>
+        <span class="service-arrow">&rarr;</span>
+      </div>
+      <div class="service-row" data-cursor="pointer" data-cinema-magnetic>
+        <span class="service-num">05</span>
+        <span class="service-name">Creative Producing</span>
+        <span class="service-arrow">&rarr;</span>
+      </div>
+      <div class="service-row" data-cursor="pointer" data-cinema-magnetic>
+        <span class="service-num">06</span>
+        <span class="service-name">Script Consultation</span>
+        <span class="service-arrow">&rarr;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       WORK — Horizontal Scroll
+       ============================================ -->
+  <section class="work" id="work" data-scene="connection">
+    <div class="work-bg">
+      <img src="assets/images/hero/lucid-origin_a_cinematic_photo_of_Silhouette_of_person_standing_at_end_of_narrow_Parisian_all-0.jpg" alt="" aria-hidden="true" loading="lazy">
+    </div>
+    <div class="work-header">
+      <div>
+        <div class="section-label">Selected Work</div>
+        <h2 class="work-title">Recent projects</h2>
+
+      </div>
+      <div class="filmstrip-counter">01 — 04</div>
+    </div>
+    <div class="work-track">
+      <div class="work-card" data-cursor="view">
+        <div class="work-card-img"><img src="assets/images/gallery/work-01-ombres.jpg" alt="Les Ombres du Canal" loading="lazy"></div>
+        <div class="work-card-year">2024 — Feature Film</div>
+        <div class="work-card-title">Les Ombres du Canal</div>
+        <div class="work-card-desc">A meditation on loss, set along the Canal Saint-Martin. Premiered at Festival du Film Français.</div>
+      </div>
+      <div class="work-card" data-cursor="view">
+        <div class="work-card-img"><img src="assets/images/gallery/work-02-chanel.jpg" alt="Chanel N°5" loading="lazy"></div>
+        <div class="work-card-year">2024 — Commercial</div>
+        <div class="work-card-title">Chanel — N°5 L'Eau</div>
+        <div class="work-card-desc">A 90-second film about the scent of a city you've never visited. Shot on 35mm in Marseille.</div>
+      </div>
+      <div class="work-card" data-cursor="view">
+        <div class="work-card-img"><img src="assets/images/gallery/work-03-ete.jpg" alt="Dernier Été" loading="lazy"></div>
+        <div class="work-card-year">2023 — Feature Film</div>
+        <div class="work-card-title">Dernier Été</div>
+        <div class="work-card-desc">Three strangers, one summer, a house by the sea. Selected for Directors' Fortnight, Cannes.</div>
+      </div>
+      <div class="work-card" data-cursor="view">
+        <div class="work-card-img"><img src="assets/images/gallery/work-04-dior.jpg" alt="Dior Short" loading="lazy"></div>
+        <div class="work-card-year">2023 — Short Film</div>
+        <div class="work-card-title">Dior — L'Art du Mouvement</div>
+        <div class="work-card-desc">A 4-minute study of fabric in wind. Commissioned for Dior's autumn couture presentation.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       STATS — data-cinema-counter → CounterAnimation
+       ============================================ -->
+  <section class="stats">
+    <div class="stats-bg">
+      <img src="assets/images/hero/lucid-origin_a_cinematic_photo_of_Closed_wooden_shutter_on_Parisian_building_at_night_warm_la-0.jpg" alt="" aria-hidden="true" loading="lazy">
+    </div>
+    <div class="stat">
+      <div class="stat-num" data-cinema-counter data-count="10">0</div>
+      <div class="stat-label">Features</div>
+      <div class="stat-line"></div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" data-cinema-counter data-count="7">0</div>
+      <div class="stat-label">Awards</div>
+      <div class="stat-line"></div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" data-cinema-counter data-count="5">0</div>
+      <div class="stat-label">Festivals</div>
+      <div class="stat-line"></div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" data-cinema-counter data-count="12">0</div>
+      <div class="stat-label">Years</div>
+      <div class="stat-line"></div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CONTACT
+       ============================================ -->
+  <section class="contact" id="contact">
+    <div class="contact-bg">
+      <img src="assets/images/hero/lucid-origin_a_cinematic_photo_of_Looking_up_from_bottom_of_narrow_Parisian_alley_at_night_da-0.jpg" alt="" aria-hidden="true" loading="lazy">
+    </div>
+    <div class="section-label" style="justify-content:center;">Contact</div>
+    <h2 class="contact-title">
+      <span class="line"><span class="word">Let's</span></span>
+      <span class="line"><span class="word">make</span></span>
+      <span class="line"><span class="word">something</span></span>
+      <span class="line"><span class="word"><em>haunting</em></span></span>
+    </h2>
+
+    <a href="mailto:marie@ateliernoir.paris" class="contact-email magnetic" data-cursor="pointer">marie@ateliernoir.paris</a>
+
+    <div class="contact-location">11e arrondissement, Canal Saint-Martin, Paris</div>
+
+    <div class="contact-social">
+      <a href="#" class="magnetic" data-cursor="pointer">Vimeo</a>
+      <a href="#" class="magnetic" data-cursor="pointer">Instagram</a>
+      <a href="#" class="magnetic" data-cursor="pointer">IMDb</a>
+    </div>
+
+  </section>
+
+  <!-- ============================================
+       FOOTER — DNA: The Credits
+       ============================================ -->
+  <footer class="footer">
+    <div class="footer-left">&copy; 2026 Marie Dubois. All rights reserved.</div>
+    <div class="footer-center" style="font-family:'Caveat',cursive;font-style:italic;">Dubois</div>
+    <div class="footer-right">Paris, France</div>
+  </footer>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" style="position:relative;z-index:2;padding:3.5rem 4rem;text-align:center;border-top:1px solid rgba(245,240,232,0.06);">
+    <div style="display:flex;flex-direction:column;align-items:center;gap:0.6rem;">
+      <div style="font-size:0.6rem;letter-spacing:0.3em;text-transform:uppercase;opacity:0.3;">&copy; Norman James</div>
+      <div style="font-family:'Caveat',cursive;font-size:0.75rem;letter-spacing:0.1em;opacity:0.2;font-style:italic;">made with love <span style="color:#e53e3e;">&#10084;</span> by Empathy Studio</div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       INIT — Import from @cinema-sotd/core + profile init
+       ============================================ -->
+  <script type="module" src="src/init.js"></script>
+</body>
+</html>

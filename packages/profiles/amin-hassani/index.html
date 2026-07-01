@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amin Hassani — Sound Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=Instrument+Serif:ital@0;1&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/styles/amin-hassani.css">
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div id="preloader" class="preloader">
+    <div class="preloader__inner">
+      <div class="preloader__vu-meter">
+        <div class="vu-needle"></div>
+        <div class="vu-scale">
+          <span>-20</span><span>-10</span><span>0</span><span>+3</span><span>+5</span>
+        </div>
+      </div>
+      <div class="preloader__waveform">
+        <div class="waveform-bar"></div>
+        <div class="waveform-bar"></div>
+        <div class="waveform-bar"></div>
+        <div class="waveform-bar"></div>
+        <div class="waveform-bar"></div>
+        <div class="waveform-bar"></div>
+        <div class="waveform-bar"></div>
+        <div class="waveform-bar"></div>
+        <div class="waveform-bar"></div>
+        <div class="waveform-bar"></div>
+        <div class="waveform-bar"></div>
+        <div class="waveform-bar"></div>
+        <div class="waveform-bar"></div>
+        <div class="waveform-bar"></div>
+        <div class="waveform-bar"></div>
+        <div class="waveform-bar"></div>
+      </div>
+      <div class="preloader__text">
+        <span class="preloader__label">CALIBRATING</span>
+        <span class="preloader__db">0.0 dB</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="mainNav" class="nav">
+    <div class="nav__left">
+      <a href="#hero" class="nav__logo">
+        <svg class="nav__waveform-icon" viewBox="0 0 40 20" fill="none">
+          <path d="M0 10 Q5 2 10 10 Q15 18 20 10 Q25 2 30 10 Q35 18 40 10" stroke="currentColor" stroke-width="1.5" fill="none"/>
+        </svg>
+        <span class="nav__name">AH</span>
+      </a>
+    </div>
+    <div class="nav__center">
+      <div class="nav__vu-indicator">
+        <div class="nav__vu-bar"></div>
+        <div class="nav__vu-bar"></div>
+        <div class="nav__vu-bar"></div>
+        <div class="nav__vu-bar"></div>
+        <div class="nav__vu-bar"></div>
+      </div>
+    </div>
+    <div class="nav__right">
+      <button class="nav__menu-toggle" id="menuToggle" aria-label="Menu">
+        <span class="nav__menu-line"></span>
+        <span class="nav__menu-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu__inner">
+      <div class="mobile-menu__waveform-bg">
+        <svg viewBox="0 0 400 200" fill="none">
+          <path d="M0 100 Q50 30 100 100 Q150 170 200 100 Q250 30 300 100 Q350 170 400 100" stroke="var(--amber)" stroke-width="1" opacity="0.3"/>
+          <path d="M0 100 Q50 60 100 100 Q150 140 200 100 Q250 60 300 100 Q350 140 400 100" stroke="var(--amber)" stroke-width="0.5" opacity="0.15"/>
+        </svg>
+      </div>
+      <a href="#philosophy" class="mobile-menu__link" data-index="01">Philosophy</a>
+      <a href="#frequency" class="mobile-menu__link" data-index="02">Frequency</a>
+      <a href="#filmstrip" class="mobile-menu__link" data-index="03">Filmstrip</a>
+      <a href="#about" class="mobile-menu__link" data-index="04">About</a>
+      <a href="#services" class="mobile-menu__link" data-index="05">Services</a>
+      <a href="#contact" class="mobile-menu__link" data-index="06">Contact</a>
+    </div>
+  </div>
+
+  <!-- SCROLL PROGRESS -->
+  <div class="scroll-progress">
+    <div class="scroll-progress__fill" id="scrollProgress"></div>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero__grain"></div>
+    <div class="hero__content">
+      <div class="hero__spec-label">
+        <span class="hero__spec-tag">TECHNICAL SPECIFICATION</span>
+        <span class="hero__spec-id">SND-2024-001</span>
+      </div>
+
+      <div class="hero__spec-sheet">
+        <div class="spec-row spec-row--primary">
+          <div class="spec-cell spec-cell--label">SUBJECT</div>
+          <div class="spec-cell spec-cell--value">
+            <h1 class="hero__name">Amin Hassani</h1>
+          </div>
+        </div>
+        <div class="spec-row">
+          <div class="spec-cell spec-cell--label">DESIGNATION</div>
+          <div class="spec-cell spec-cell--value">
+            <span class="hero__role">Sound Designer</span>
+          </div>
+        </div>
+        <div class="spec-row">
+          <div class="spec-cell spec-cell--label">ARCHETYPE</div>
+          <div class="spec-cell spec-cell--value">
+            <span class="hero__archetype">The Technical Master</span>
+          </div>
+        </div>
+        <div class="spec-row">
+          <div class="spec-cell spec-cell--label">FREQUENCY RANGE</div>
+          <div class="spec-cell spec-cell--value">
+            <div class="hero__vu-display">
+              <div class="vu-meter" id="heroVuLeft">
+                <div class="vu-meter__track"></div>
+                <div class="vu-meter__fill"></div>
+                <div class="vu-meter__peak"></div>
+              </div>
+              <span class="vu-db">L</span>
+              <div class="vu-meter" id="heroVuRight">
+                <div class="vu-meter__track"></div>
+                <div class="vu-meter__fill"></div>
+                <div class="vu-meter__peak"></div>
+              </div>
+              <span class="vu-db">R</span>
+            </div>
+          </div>
+        </div>
+        <div class="spec-row">
+          <div class="spec-cell spec-cell--label">TAGLINE</div>
+          <div class="spec-cell spec-cell--value">
+            <span class="hero__tagline">The sonic architect</span>
+          </div>
+        </div>
+        <div class="spec-row">
+          <div class="spec-cell spec-cell--label">SIGNAL CHAIN</div>
+          <div class="spec-cell spec-cell--value">
+            <span class="hero__chain">Listener → Believer</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scroll-cue">
+        <div class="scroll-cue__waveform">
+          <svg viewBox="0 0 60 20" fill="none">
+            <path d="M0 10 Q7.5 3 15 10 Q22.5 17 30 10 Q37.5 3 45 10 Q52.5 17 60 10" stroke="var(--amber)" stroke-width="1" fill="none"/>
+          </svg>
+        </div>
+        <span class="scroll-cue__text">SCROLL TO EXPLORE</span>
+      </div>
+    </div>
+
+    <div class="hero__bg-lines">
+      <div class="hero__line"></div>
+      <div class="hero__line"></div>
+      <div class="hero__line"></div>
+      <div class="hero__line"></div>
+      <div class="hero__line"></div>
+      <div class="hero__line"></div>
+      <div class="hero__line"></div>
+      <div class="hero__line"></div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section id="philosophy" class="section section--philosophy">
+    <div class="section__inner">
+      <div class="philosophy__grid">
+        <div class="philosophy__left">
+          <span class="section__number">01</span>
+          <span class="section__label">PHILOSOPHY</span>
+        </div>
+        <div class="philosophy__right">
+          <blockquote class="philosophy__statement">
+            <p class="philosophy__text">
+              Sound is 50 percent of the cinema experience, yet it's the element audiences feel rather than see. I work in the space between what's audible and what's felt — layering textures, sculpting silence, and building the sonic architecture that makes a scene breathe. Every film has its own frequency. I find it.
+            </p>
+          </blockquote>
+          <div class="philosophy__refs">
+            <span class="philosophy__ref">Walter Murch</span>
+            <span class="philosophy__divider">×</span>
+            <span class="philosophy__ref">Ben Burtt</span>
+            <span class="philosophy__divider">×</span>
+            <span class="philosophy__ref">Skywalker Sound</span>
+          </div>
+          <div class="philosophy__vu-strip">
+            <div class="vu-mini" data-level="70"></div>
+            <div class="vu-mini" data-level="85"></div>
+            <div class="vu-mini" data-level="60"></div>
+            <div class="vu-mini" data-level="90"></div>
+            <div class="vu-mini" data-level="75"></div>
+            <div class="vu-mini" data-level="95"></div>
+            <div class="vu-mini" data-level="55"></div>
+            <div class="vu-mini" data-level="80"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FREQUENCY SPECTRUM (Signature Interaction) -->
+  <section id="frequency" class="section section--frequency">
+    <div class="section__inner">
+      <div class="frequency__header">
+        <div class="frequency__header-left">
+          <span class="section__number">02</span>
+          <span class="section__label">FREQUENCY SPECTRUM</span>
+        </div>
+        <div class="frequency__header-right">
+          <span class="frequency__mode-label">INTERACTIVE MODE</span>
+          <span class="frequency__mode-indicator"></span>
+        </div>
+      </div>
+      <div class="frequency__canvas-wrap" id="frequencySpectrum">
+        <canvas class="frequency__canvas" id="spectrumCanvas"></canvas>
+        <div class="frequency__overlay">
+          <div class="frequency__hz-labels">
+            <span>20 Hz</span>
+            <span>100 Hz</span>
+            <span>500 Hz</span>
+            <span>1 kHz</span>
+            <span>5 kHz</span>
+            <span>10 kHz</span>
+            <span>20 kHz</span>
+          </div>
+          <div class="frequency__db-labels">
+            <span>0 dB</span>
+            <span>-6 dB</span>
+            <span>-12 dB</span>
+            <span>-24 dB</span>
+            <span>-48 dB</span>
+          </div>
+        </div>
+        <div class="frequency__info">
+          <div class="frequency__info-item">
+            <span class="frequency__info-label">PEAK</span>
+            <span class="frequency__info-value" id="freqPeak">-3.2 dB</span>
+          </div>
+          <div class="frequency__info-item">
+            <span class="frequency__info-label">RMS</span>
+            <span class="frequency__info-value" id="freqRms">-18.7 dB</span>
+          </div>
+          <div class="frequency__info-item">
+            <span class="frequency__info-label">CREST</span>
+            <span class="frequency__info-value" id="freqCrest">15.5 dB</span>
+          </div>
+        </div>
+      </div>
+      <p class="frequency__caption">Move cursor across the spectrum to explore frequency response. Each zone represents a critical range in cinematic sound design.</p>
+    </div>
+  </section>
+
+  <!-- FILMSTRIP -->
+  <section id="filmstrip" class="section section--filmstrip">
+    <div class="section__inner">
+      <div class="filmstrip__header">
+        <div class="filmstrip__header-left">
+          <span class="section__number">03</span>
+          <span class="section__label">FILMOGRAPHY</span>
+        </div>
+        <div class="filmstrip__header-right">
+          <span class="filmstrip__count">04 PROJECTS</span>
+        </div>
+      </div>
+
+      <div class="filmstrip__grid">
+        <article class="filmstrip__item" data-year="2024">
+          <div class="filmstrip__card">
+            <div class="filmstrip__reel">
+              <div class="filmstrip__perfs">
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <div class="filmstrip__frame">
+                <div class="filmstrip__waveform-visual">
+                  <svg viewBox="0 0 200 60" fill="none">
+                    <path d="M0 30 Q25 10 50 30 Q75 50 100 30 Q125 10 150 30 Q175 50 200 30" stroke="var(--amber)" stroke-width="2" fill="none" opacity="0.8"/>
+                    <path d="M0 30 Q25 15 50 30 Q75 45 100 30 Q125 15 150 30 Q175 45 200 30" stroke="var(--amber-dim)" stroke-width="1" fill="none" opacity="0.4"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="filmstrip__perfs">
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="filmstrip__meta">
+              <span class="filmstrip__year">2024</span>
+              <span class="filmstrip__type">Documentary</span>
+            </div>
+            <h3 class="filmstrip__title">Desert Frequencies</h3>
+            <p class="filmstrip__desc">Sonic exploration of Saharan soundscapes and electromagnetic phenomena in remote desert environments.</p>
+            <div class="filmstrip__specs">
+              <span class="filmstrip__spec">7.1.4 Atmos</span>
+              <span class="filmstrip__spec">Field Recording</span>
+              <span class="filmstrip__spec">48kHz / 24-bit</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="filmstrip__item" data-year="2023">
+          <div class="filmstrip__card">
+            <div class="filmstrip__reel">
+              <div class="filmstrip__perfs">
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <div class="filmstrip__frame">
+                <div class="filmstrip__waveform-visual">
+                  <svg viewBox="0 0 200 60" fill="none">
+                    <path d="M0 30 Q20 20 40 30 Q60 40 80 30 Q100 20 120 30 Q140 40 160 30 Q180 20 200 30" stroke="var(--amber)" stroke-width="2" fill="none" opacity="0.8"/>
+                    <path d="M0 30 Q20 25 40 30 Q60 35 80 30 Q100 25 120 30 Q140 35 160 30 Q180 25 200 30" stroke="var(--amber-dim)" stroke-width="1" fill="none" opacity="0.4"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="filmstrip__perfs">
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="filmstrip__meta">
+              <span class="filmstrip__year">2023</span>
+              <span class="filmstrip__type">Feature Film</span>
+            </div>
+            <h3 class="filmstrip__title">The Silence Between</h3>
+            <p class="filmstrip__desc">A meditation on absence and presence, built entirely from the negative spaces in human conversation.</p>
+            <div class="filmstrip__specs">
+              <span class="filmstrip__spec">5.1 Surround</span>
+              <span class="filmstrip__spec">Foley Art</span>
+              <span class="filmstrip__spec">48kHz / 24-bit</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="filmstrip__item" data-year="2023">
+          <div class="filmstrip__card">
+            <div class="filmstrip__reel">
+              <div class="filmstrip__perfs">
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <div class="filmstrip__frame">
+                <div class="filmstrip__waveform-visual">
+                  <svg viewBox="0 0 200 60" fill="none">
+                    <path d="M0 30 Q15 5 30 30 Q45 55 60 30 Q75 5 90 30 Q105 55 120 30 Q135 5 150 30 Q165 55 180 30 Q195 5 200 30" stroke="var(--amber)" stroke-width="2" fill="none" opacity="0.8"/>
+                    <path d="M0 30 Q15 18 30 30 Q45 42 60 30 Q75 18 90 30 Q105 42 120 30 Q135 18 150 30 Q165 42 180 30 Q195 18 200 30" stroke="var(--amber-dim)" stroke-width="1" fill="none" opacity="0.4"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="filmstrip__perfs">
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="filmstrip__meta">
+              <span class="filmstrip__year">2023</span>
+              <span class="filmstrip__type">Short Film</span>
+            </div>
+            <h3 class="filmstrip__title">Urban Pulse</h3>
+            <p class="filmstrip__desc">Rhythmic portrait of a city's heartbeat — traffic, footsteps, and the invisible music of metropolitan life.</p>
+            <div class="filmstrip__specs">
+              <span class="filmstrip__spec">Stereo</span>
+              <span class="filmstrip__spec">Sound Design</span>
+              <span class="filmstrip__spec">96kHz / 32-bit</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="filmstrip__item" data-year="2022">
+          <div class="filmstrip__card">
+            <div class="filmstrip__reel">
+              <div class="filmstrip__perfs">
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <div class="filmstrip__frame">
+                <div class="filmstrip__waveform-visual">
+                  <svg viewBox="0 0 200 60" fill="none">
+                    <path d="M0 30 Q25 20 50 30 Q75 40 100 30 Q125 20 150 30 Q175 40 200 30" stroke="var(--amber)" stroke-width="2" fill="none" opacity="0.8"/>
+                    <path d="M0 30 Q25 25 50 30 Q75 35 100 30 Q125 25 150 30 Q175 35 200 30" stroke="var(--amber-dim)" stroke-width="1" fill="none" opacity="0.4"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="filmstrip__perfs">
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="filmstrip__meta">
+              <span class="filmstrip__year">2022</span>
+              <span class="filmstrip__type">Feature Film</span>
+            </div>
+            <h3 class="filmstrip__title">Night Shift</h3>
+            <p class="filmstrip__desc">Nocturnal soundscapes of an industrial complex, where machinery becomes music and silence becomes tension.</p>
+            <div class="filmstrip__specs">
+              <span class="filmstrip__spec">7.1 Atmos</span>
+              <span class="filmstrip__spec">Atmos Design</span>
+              <span class="filmstrip__spec">48kHz / 24-bit</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section section--about">
+    <div class="section__inner">
+      <div class="about__grid">
+        <div class="about__left">
+          <span class="section__number">04</span>
+          <span class="section__label">ABOUT</span>
+        </div>
+        <div class="about__right">
+          <div class="about__portrait">
+            <div class="about__portrait-frame">
+              <div class="about__portrait-waveform">
+                <svg viewBox="0 0 300 200" fill="none">
+                  <path d="M0 100 Q37.5 30 75 100 Q112.5 170 150 100 Q187.5 30 225 100 Q262.5 170 300 100" stroke="var(--amber)" stroke-width="1.5" fill="none" opacity="0.6"/>
+                  <path d="M0 100 Q37.5 50 75 100 Q112.5 150 150 100 Q187.5 50 225 100 Q262.5 150 300 100" stroke="var(--amber-dim)" stroke-width="1" fill="none" opacity="0.3"/>
+                  <text x="150" y="105" text-anchor="middle" fill="var(--amber)" font-family="'Space Mono', monospace" font-size="12" opacity="0.8">AH</text>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="about__bio">
+            <p class="about__text">
+              I grew up in a house where my father repaired radios. The smell of solder and the hum of vacuum tubes are my earliest memories. By twelve, I was building my own amplifiers. By twenty, I was recording the sounds of Tehran's bazaar at dawn — the call to prayer mixing with the clatter of tea glasses and the distant rumble of the metro.
+            </p>
+            <p class="about__text">
+              After studying electroacoustic composition at Berklee, I moved to Los Angeles and apprenticed at Skywalker Sound. Now I split my time between Tehran and LA, recording the sonic signatures of places most people never stop to listen to. My mixing stage is where those field recordings meet cinematic storytelling.
+            </p>
+            <div class="about__stats">
+              <div class="about__stat">
+                <span class="about__stat-value">12+</span>
+                <span class="about__stat-label">Years Experience</span>
+              </div>
+              <div class="about__stat">
+                <span class="about__stat-value">40+</span>
+                <span class="about__stat-label">Projects</span>
+              </div>
+              <div class="about__stat">
+                <span class="about__stat-value">7.1.4</span>
+                <span class="about__stat-label">Atmos Capability</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section section--services">
+    <div class="section__inner">
+      <div class="services__header">
+        <span class="section__number">05</span>
+        <span class="section__label">SERVICES</span>
+      </div>
+      <div class="services__grid">
+        <div class="service" data-service="01">
+          <div class="service__vu-bar">
+            <div class="service__vu-fill" data-level="85"></div>
+          </div>
+          <span class="service__number">01</span>
+          <h3 class="service__title">Sound Design</h3>
+          <p class="service__desc">Crafting sonic worlds from silence. Layered textures, spatial design, and emotional frequency mapping for cinematic narratives.</p>
+          <div class="service__freq-range">
+            <span>20 Hz</span>
+            <div class="service__freq-line"></div>
+            <span>20 kHz</span>
+          </div>
+        </div>
+
+        <div class="service" data-service="02">
+          <div class="service__vu-bar">
+            <div class="service__vu-fill" data-level="70"></div>
+          </div>
+          <span class="service__number">02</span>
+          <h3 class="service__title">Field Recording</h3>
+          <p class="service__desc">Capturing the authentic voice of environments. From desert winds to urban symphonies, every location has a sonic signature.</p>
+          <div class="service__freq-range">
+            <span>20 Hz</span>
+            <div class="service__freq-line"></div>
+            <span>20 kHz</span>
+          </div>
+        </div>
+
+        <div class="service" data-service="03">
+          <div class="service__vu-bar">
+            <div class="service__vu-fill" data-level="90"></div>
+          </div>
+          <span class="service__number">03</span>
+          <h3 class="service__title">Foley Art</h3>
+          <p class="service__desc">The invisible choreography of footsteps, fabric, and atmosphere. Every gesture deserves its sonic counterpart.</p>
+          <div class="service__freq-range">
+            <span>20 Hz</span>
+            <div class="service__freq-line"></div>
+            <span>20 kHz</span>
+          </div>
+        </div>
+
+        <div class="service" data-service="04">
+          <div class="service__vu-bar">
+            <div class="service__vu-fill" data-level="95"></div>
+          </div>
+          <span class="service__number">04</span>
+          <h3 class="service__title">Mixing & Mastering</h3>
+          <p class="service__desc">Precision engineering for stereo, surround, and immersive formats. Every dB matters in the final canvas.</p>
+          <div class="service__freq-range">
+            <span>20 Hz</span>
+            <div class="service__freq-line"></div>
+            <span>20 kHz</span>
+          </div>
+        </div>
+
+        <div class="service" data-service="05">
+          <div class="service__vu-bar">
+            <div class="service__vu-fill" data-level="80"></div>
+          </div>
+          <span class="service__number">05</span>
+          <h3 class="service__title">Atmos Design</h3>
+          <p class="service__desc">Three-dimensional soundscapes for Dolby Atmos and spatial audio platforms. Architecture without walls.</p>
+          <div class="service__freq-range">
+            <span>20 Hz</span>
+            <div class="service__freq-line"></div>
+            <span>20 kHz</span>
+          </div>
+        </div>
+
+        <div class="service" data-service="06">
+          <div class="service__vu-bar">
+            <div class="service__vu-fill" data-level="75"></div>
+          </div>
+          <span class="service__number">06</span>
+          <h3 class="service__title">Sound Editorial</h3>
+          <p class="service__desc">Structural assembly and creative editing of dialogue, effects, and ambience. The backbone of every mix.</p>
+          <div class="service__freq-range">
+            <span>20 Hz</span>
+            <div class="service__freq-line"></div>
+            <span>20 kHz</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section--contact">
+    <div class="section__inner">
+      <div class="contact__grid">
+        <div class="contact__left">
+          <span class="section__number">06</span>
+          <span class="section__label">CONTACT</span>
+        </div>
+        <div class="contact__right">
+          <h2 class="contact__heading">Your film deserves<br>its own voice.</h2>
+          <div class="contact__vu-display">
+            <div class="contact__vu">
+              <div class="contact__vu-track"></div>
+              <div class="contact__vu-fill" id="contactVu"></div>
+            </div>
+          </div>
+          <div class="contact__info">
+            <div class="contact__item">
+              <span class="contact__item-label">EMAIL</span>
+              <a href="mailto:amin@sonicarchitecture.com" class="contact__item-value">amin@sonicarchitecture.com</a>
+            </div>
+            <div class="contact__item">
+              <span class="contact__item-label">SIGNAL</span>
+              <span class="contact__item-value">Available for Projects</span>
+            </div>
+            <div class="contact__item">
+              <span class="contact__item-label">BASED IN</span>
+              <span class="contact__item-value">Tehran / Los Angeles</span>
+            </div>
+          </div>
+          <a href="mailto:amin@sonicarchitecture.com" class="contact__cta">
+            <span class="contact__cta-text">INITIATE SIGNAL</span>
+            <svg class="contact__cta-wave" viewBox="0 0 40 12" fill="none">
+              <path d="M0 6 Q5 1 10 6 Q15 11 20 6 Q25 1 30 6 Q35 11 40 6" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__workshop">
+        <div class="footer__workshop-label">THE WORKSHOP</div>
+        <div class="footer__workshop-vu">
+          <div class="footer__vu-bar" data-level="30"></div>
+          <div class="footer__vu-bar" data-level="50"></div>
+          <div class="footer__vu-bar" data-level="70"></div>
+          <div class="footer__vu-bar" data-level="40"></div>
+          <div class="footer__vu-bar" data-level="60"></div>
+          <div class="footer__vu-bar" data-level="45"></div>
+          <div class="footer__vu-bar" data-level="55"></div>
+          <div class="footer__vu-bar" data-level="35"></div>
+        </div>
+      </div>
+      <div class="footer__grid">
+        <div class="footer__col footer__col--identity">
+          <div class="footer__logo">
+            <svg viewBox="0 0 40 20" fill="none">
+              <path d="M0 10 Q5 2 10 10 Q15 18 20 10 Q25 2 30 10 Q35 18 40 10" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            </svg>
+          </div>
+          <span class="footer__name">Amin Hassani</span>
+          <span class="footer__role">Sound Designer / Technical Master</span>
+        </div>
+        <div class="footer__col footer__col--nav">
+          <a href="#philosophy">Philosophy</a>
+          <a href="#frequency">Frequency</a>
+          <a href="#filmstrip">Filmstrip</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+        </div>
+        <div class="footer__col footer__col--contact">
+          <a href="mailto:amin@sonicarchitecture.com">amin@sonicarchitecture.com</a>
+          <span>Tehran / Los Angeles</span>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">&copy; 2024 Amin Hassani</span>
+        <span class="footer__tagline">The sonic architect</span>
+        <span class="footer__signal">SIGNAL: ACTIVE</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor">
+    <div class="cursor__dot"></div>
+    <div class="cursor__ring"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script type="module" src="src/init.js"></script>
+</body>
+</html>

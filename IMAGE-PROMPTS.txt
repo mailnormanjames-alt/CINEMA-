@@ -1,0 +1,93 @@
+# Hero Image Prompts — Leonardo AI
+# 9 Filmmaker Profiles (Marie Dubois excluded — already has images)
+
+---
+
+## 1. THOMAS RENARD — Producer
+**Prompt:**
+Cinematic wide-angle photograph of a dimly lit film production office at night. A large mahogany desk covered with organized stacks of call sheets, production schedules, and storyboards. A single desk lamp casts warm amber light across printed documents. In the background, a wall of framed film posters and a whiteboard covered in budget calculations. Through the window, the city of Lyon glows at dusk. The atmosphere is precise, controlled, and quietly powerful. Shot on Kodak Vision3 500T film stock. Fine 35mm grain. Zeiss Master Prime lens. Low-key lighting with practical desk lamp as key light. Color grade: cool shadows, warm highlight rolloff on documents. Aspect ratio 16:9. Mood: technical mastery, clarity, precision.
+
+**Negative prompt:**
+cartoon, anime, illustration, drawing, sketch, blurry, low quality, oversaturated, people, faces, text, watermarks, logos
+
+---
+
+## 2. KOFI MENSAH — Cinematographer
+**Prompt:**
+Cinematic portrait of golden hour light streaming through a tall window onto a cinematographer's viewfinder resting on a wooden table. Dust particles float in the amber light beam. The viewfinder's glass reflects a warm, painterly scene. Behind it, soft-focus camera lenses and light meters are arranged with intention. The light creates a chiaroscuro effect — deep shadows contrasting with the golden warmth. Shot on Kodak Vision3 500T. Fine 35mm grain. Zeiss Master Prime 50mm lens. Natural available light, high contrast. Color grade: teal-orange cinematic, muted midtones, warm golden highlights. Aspect ratio 16:9. Mood: intimate, contemplative, the poetry of light.
+
+**Negative prompt:**
+cartoon, anime, illustration, drawing, sketch, blurry, low quality, oversaturated, people, faces, text, watermarks, logos, harsh lighting
+
+---
+
+## 3. LÉA MOREAU — Screenwriter
+**Prompt:**
+Cinematic overhead photograph of a writer's desk in a Parisian apartment at dawn. A leather-bound notebook lies open with handwritten French dialogue in blue ink. A fountain pen rests across the page. Beside it, a ceramic cup of black coffee, a stack of worn paperbacks (Camus, Duras), and a vintage typewriter with a half-finished page. Morning light filters through lace curtains, casting soft shadows across the manuscript pages. The atmosphere is literary, intimate, and deeply personal. Shot on Kodak Portra 400. Fine 35mm grain. 50mm editorial lens. Natural soft window light. Color grade: warm gold, soft saturation, paper tones. Aspect ratio 16:9. Mood: the silence between words, creative solitude.
+
+**Negative prompt:**
+cartoon, anime, illustration, drawing, sketch, blurry, low quality, oversaturated, people, faces, text, watermarks, logos, digital devices
+
+---
+
+## 4. YUKI TANAKA — Production Designer
+**Prompt:**
+Cinematic wide shot of a production design studio with architectural blueprints and set construction models spread across a large cutting table. Miniature building facades made from cardboard and balsa wood stand in careful arrangement. Technical drawings, scale rulers, and material samples surround the models. Practical task lamps illuminate the workspace with focused, matte light. The background shows shelves of material samples — fabrics, paints, wood textures. The atmosphere is architectural, precise, and deeply creative. Shot on Kodak Vision3 200T. Fine 35mm grain. Wide-angle lens capturing the full workspace. Practical lighting from desk lamps. Color grade: muted stone tones, matte finish, cool shadows. Aspect ratio 16:9. Mood: every frame is an architecture.
+
+**Negative prompt:**
+cartoon, anime, illustration, drawing, sketch, blurry, low quality, oversaturated, people, faces, text, watermarks, logos, glossy finish
+
+---
+
+## 5. CLARA VOSS — Editor
+**Prompt:**
+Cinematic photograph of a professional film editing suite at night. Three monitors display timeline interfaces with video tracks, audio waveforms, and color grading panels. The screens cast a cool blue-white glow across the dark room. An editing console with jog wheels and faders sits on the desk. A single coffee cup glows under the monitor light. The timeline shows precise cuts marked with colored flags. The atmosphere is clinical, precise, and focused. Shot on Kodak Vision3 500T. Fine 35mm grain. 35mm lens capturing the full workstation. Monitor light as key source. Color grade: cool clinical tones, high contrast, clean blacks. Aspect ratio 16:9. Mood: the cut that reveals the truth.
+
+**Negative prompt:**
+cartoon, anime, illustration, drawing, sketch, blurry, low quality, oversaturated, people, faces, text, watermarks, logos, warm tones, messy desk
+
+---
+
+## 6. AMIN HASSANI — Sound Designer
+**Prompt:**
+Cinematic photograph of a professional sound mixing stage at 2am. Large studio monitors glow with warm amber VU meter lights in a dark, acoustically treated room. A mixing console with hundreds of faders and knobs fills the foreground, illuminated by the soft glow of meter bridges. Headphones rest on the console. Through the glass partition, a dimly visible recording booth. The atmosphere is immersive, technical, and nocturnal. Shot on Kodak Vision3 500T. Fine 35mm grain. Wide-angle lens capturing the full mixing stage. Practical LED panel lighting and VU meter glow as key sources. Color grade: cool shadows, warm amber highlight rolloff from meters. Aspect ratio 16:9. Mood: the sonic architect at work.
+
+**Negative prompt:**
+cartoon, anime, illustration, drawing, sketch, blurry, low quality, oversaturated, people, faces, text, watermarks, logos, daylight, bright lighting
+
+---
+
+## 7. ISABELLE FROST — Casting Director
+**Prompt:**
+Cinematic photograph of a warm, intimate casting office. A comfortable reading chair sits beside a small table with a gooseneck lamp casting golden light across a stack of headshots and script sides. Behind the chair, a wall of organized filing cabinets labeled with project names. A vintage film reel sits on a shelf. Through the window, soft afternoon light filters through blinds, creating warm striped shadows. The atmosphere is personal, supportive, and craft-focused. Shot on Kodak Portra 400. Fine 35mm grain. 50mm lens, shallow depth of field. Warm overhead practical lamp as key light. Color grade: warm gold, soft saturation, reading lamp glow. Aspect ratio 16:9. Mood: the eye that discovers talent.
+
+**Negative prompt:**
+cartoon, anime, illustration, drawing, sketch, blurry, low quality, oversaturated, people, faces, text, watermarks, logos, cold lighting, clinical atmosphere
+
+---
+
+## 8. RAFAEL SANTOS — Composer
+**Prompt:**
+Cinematic photograph of a grand composition studio with a Steinway grand piano in the center, its lid propped open. Sheet music spills from the piano across a hardwood floor. A conductor's score stand holds orchestral manuscript paper with handwritten notes. In the background, a synthesizer and studio monitors are visible. Dramatic theatrical lighting — a single warm spotlight illuminates the piano while the rest of the room falls into rich, warm shadow. The atmosphere is grand, dramatic, and deeply artistic. Shot on Kodak Vision3 500T. Fine 35mm grain. 35mm lens capturing the full room. Dramatic stage lighting with warm spotlight as key. Color grade: rich orchestral reds, concert hall oak tones, warm pads. Aspect ratio 16:9. Mood: every frame deserves a score.
+
+**Negative prompt:**
+cartoon, anime, illustration, drawing, sketch, blurry, low quality, oversaturated, people, faces, text, watermarks, logos, flat lighting, small room
+
+---
+
+## 9. NADIA OKAFOR — Costume Designer
+**Prompt:**
+Cinematic photograph of a costume designer's workshop. Rolls of rich fabrics — silk, velvet, wool — are arranged on a large cutting table. Dress forms draped in half-finished garments stand in the background. Fabric swatches in jewel tones are pinned to a mood board. A vintage sewing machine sits beside spools of thread in deep crimson, indigo, and gold. Warm task lighting illuminates the textures and weaves of the fabrics. The atmosphere is creative, detailed, and textile-focused. Shot on Fujifilm Velvia 80. Fine 35mm grain. 50mm lens capturing fabric detail. Warm practical lighting highlighting textures. Color grade: vivid, rich fabric tones, silk sheen highlights. Aspect ratio 16:9. Mood: the body is the canvas.
+
+**Negative prompt:**
+cartoon, anime, illustration, drawing, sketch, blurry, low quality, oversaturated, people, faces, text, watermarks, logos, flat colors, plastic textures
+
+---
+
+## NOTES FOR LEONARDO AI
+- Use PhotoReal mode for best results
+- Set aspect ratio to 16:9 (landscape)
+- Use Alchemy V2 for highest quality
+- Recommended resolution: 1360x768 or higher
+- Style: Cinematic / Photography
+- Generate 4 variations and select the best

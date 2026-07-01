@@ -1,0 +1,97 @@
+ISABELLE FROST — ARCTIC MINIMAL
+25 Image Prompts for Profile Asset Generation
+============================================================
+
+STYLE NOTES: Cold tones, ice blue (#7BA7C2), arctic black (#080a0c), fabric textures, clean compositions, minimal backgrounds, Scandinavian/French aesthetic.
+
+------------------------------------------------------------
+HERO / BRANDING (4)
+------------------------------------------------------------
+
+1. "Wide hero shot of flowing silk fabric in ice blue tones, caught mid-drape against a pure black background, studio lighting with soft directional key, cold color temperature, minimal composition, 16:9 aspect ratio, high-end fashion photography"
+
+2. "Close-up macro photograph of silk weave texture in muted ice blue and silver tones, shallow depth of field, soft natural window light, Scandinavian interior, cold muted color palette, editorial style"
+
+3. "Portrait of a woman's silhouette backlit by cold winter light, wearing draped black wool coat, ice blue tones in shadows, Copenhagen architecture in soft bokeh background, cinematic color grading, 16:9"
+
+4. "Abstract fabric drape composition — layers of silk, wool, and linen in monochromatic ice blue palette, suspended in motion, black background, studio strobe lighting, fine art photography"
+
+------------------------------------------------------------
+STATEMENT / ABOUT (4)
+------------------------------------------------------------
+
+5. "Overhead flat lay of costume design materials — ice blue silk swatches, black wool samples, silver thread spools, French curves, on dark slate surface, cold natural light from north-facing window, editorial"
+
+6. "Hands carefully draping ice blue silk on a dress form, soft focused Copenhagen studio interior, natural winter light, minimal Scandinavian workspace, muted tones, behind-the-scenes documentary style"
+
+7. "Architectural detail of a Copenhagen building facade in winter — clean lines, cold stone texture, overcast sky, ice blue and grey tones, Scandinavian minimalism, cinematic composition"
+
+8. "Stack of vintage French textile reference books on dark wood table, single ice blue silk bookmark, soft window light, moody cold tones, shallow depth of field, still life"
+
+------------------------------------------------------------
+FILMS — THE THREAD (3)
+------------------------------------------------------------
+
+9. "Dramatic close-up of hands weaving on an antique wooden loom, ice blue and cream threads, warm but muted color palette, shallow depth of field, Scandinavian cinema still, cinematic lighting"
+
+10. "Wide shot of a textile workshop interior — shelves of fabric rolls, single figure in silhouette, cold light from window, muted ice blue and brown tones, atmospheric, 16:9 film still"
+
+11. "Detail shot of aged fabric being carefully folded, fingers touching threadbare silk, cold diffused light, intimate close-up, texture-focused, muted palette, cinematic color grade"
+
+------------------------------------------------------------
+FILMS — WHITE NOISE (3)
+------------------------------------------------------------
+
+12. "Abstract photograph of sound waves visualized on dark surface, ice blue and white tones, minimalist, scientific aesthetic, high contrast, macro detail, editorial"
+
+13. "Portrait silhouette wearing oversized headphones, cold blue backlight, pure black background, clinical lighting, modern Scandinavian interior blurred, cinematic composition"
+
+14. "Extreme close-up of human ear with delicate silver earring, soft cold light, muted ice blue tones, shallow depth of field, intimate, editorial photography"
+
+------------------------------------------------------------
+FILMS — FROZEN LIGHT (3)
+------------------------------------------------------------
+
+15. "Wide landscape of arctic ice formation at golden hour, ice blue and pale gold light, minimalist composition, vast negative space, cinematic 2.39:1 aspect ratio, fine art landscape"
+
+16. "Photographer with vintage camera standing on frozen lake, wearing layers of muted wool and linen, cold diffused light, Scandinavian winter, wide cinematic composition"
+
+17. "Close-up of ice crystal formation on black fabric surface, macro photography, cold blue and white tones, shallow depth of field, abstract, scientific beauty"
+
+------------------------------------------------------------
+FILMS — SILK (3)
+------------------------------------------------------------
+
+18. "18th-century Lyon silk workshop recreation — wooden beams, bolts of luminous silk in muted gold and ice blue, warm but restrained lighting, period detail, cinematic production design"
+
+19. "Extreme close-up of raw silk threads catching light, iridescent sheen, macro photography, cold and warm tones in tension, abstract textile art, shallow depth of field"
+
+20. "Two hands exchanging folded silk fabric, period costume cuffs visible, soft candlelight mixed with cold window light, intimate composition, period film still, muted palette"
+
+------------------------------------------------------------
+MATERIAL LIBRARY / FABRIC CARDS (4)
+------------------------------------------------------------
+
+21. "Elegant fabric swatch collection — silk, wool, leather, linen samples arranged in grid on dark surface, ice blue accent thread, overhead view, editorial flat lay, cold studio lighting"
+
+22. "Single silk fabric swatch draped over edge of dark table, ice blue color, soft directional light, minimal composition, shadow detail, editorial product photography"
+
+23. "Leather texture macro — deep black with subtle grain, cold blue reflected highlight, abstract, high contrast, tactile quality emphasized, studio photography"
+
+24. "Linen fabric in natural undyed state, folded with intentional wrinkles, soft cold window light, Scandinavian interior background blurred, organic texture, muted palette"
+
+------------------------------------------------------------
+CONTACT / FOOTER (1)
+------------------------------------------------------------
+
+25. "Minimalist Copenhagen streetscape in winter — empty cobblestone street, ice blue sky, clean architecture lines, single figure in distance, cold diffused light, cinematic wide composition, 2.39:1"
+
+============================================================
+NOTES:
+- All prompts calibrated for ice blue (#7BA7C2) × arctic black (#080a0c) palette
+- Maintain cold color temperature throughout (5500K-7000K daylight)
+- Prefer natural diffused light over harsh studio setups
+- Include Scandinavian/French architectural elements where appropriate
+- Fabric textures should feel tactile and lived-in, never sterile
+- Cinematic aspect ratios: 16:9 for hero/editorial, 2.39:1 for film stills
+- No warm tones — if gold appears, keep it pale and cold

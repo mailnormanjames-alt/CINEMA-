@@ -1,0 +1,182 @@
+# NADIA OKAFOR — Costume Designer | Image Prompts
+# 16 images needed (6 textures + 4 film stills + 4 hero swatches + 1 portrait + 1 about)
+
+---
+
+## HERO SWATCHES (4 images)
+
+### 1. swatch-silk.jpg — Silk Swatch
+**Section:** Hero / Swatch Grid
+**Prompt:**
+Extreme close-up of flowing silk fabric in deep ivory. The silk catches warm light, creating luminous highlights and rich shadows in the folds. The texture is smooth, luxurious, and tactile. Shot on Fujifilm Velvia 80. Fine 35mm grain. Macro lens. Warm practical lighting. Color grade: warm ivory, silk sheen highlights, rich shadows. Aspect ratio 1:1 (square). Mood: luxury, texture, the language of fabric.
+
+**Negative prompt:**
+cartoon, anime, illustration, rough texture, cotton, denim, text, watermarks, logos, flat lighting
+
+---
+
+### 2. swatch-velvet.jpg — Velvet Swatch
+**Section:** Hero / Swatch Grid
+**Prompt:**
+Extreme close-up of crushed velvet fabric in deep burgundy. The velvet absorbs light, creating rich, deep shadows and subtle highlights where the pile is crushed. The texture is plush, dramatic, and tactile. Shot on Fujifilm Velvia 80. Fine 35mm grain. Macro lens. Warm practical lighting. Color grade: deep burgundy, rich shadows, plush highlights. Aspect ratio 1:1 (square). Mood: drama, depth, the weight of character.
+
+**Negative prompt:**
+cartoon, anime, illustration, smooth texture, silk, satin, text, watermarks, logos, flat lighting
+
+---
+
+### 3. swatch-linen.jpg — Linen Swatch
+**Section:** Hero / Swatch Grid
+**Prompt:**
+Extreme close-up of natural linen fabric in warm oatmeal. The linen has a visible weave — threads crossing in a simple pattern. The texture is organic, honest, and beautifully imperfect. Shot on Fujifilm Velvia 80. Fine 35mm grain. Macro lens. Natural soft lighting. Color grade: warm oatmeal, natural fiber tones, honest texture. Aspect ratio 1:1 (square). Mood: simplicity, honesty, the beauty of natural fibers.
+
+**Negative prompt:**
+cartoon, anime, illustration, synthetic, shiny, perfect weave, text, watermarks, logos, flat lighting
+
+---
+
+### 4. swatch-chiffon.jpg — Chiffon Swatch
+**Section:** Hero / Swatch Grid
+**Prompt:**
+Extreme close-up of layered silk chiffon in soft blush pink. The chiffon is translucent, with light passing through the layers, creating depth and ethereal beauty. The texture is delicate, weightless, and dreamlike. Shot on Fujifilm Velvia 80. Fine 35mm grain. Macro lens. Soft backlighting. Color grade: soft blush, translucent layers, ethereal light. Aspect ratio 1:1 (square). Mood: delicacy, weightlessness, the whisper of character.
+
+**Negative prompt:**
+cartoon, anime, illustration, heavy fabric, opaque, rough texture, text, watermarks, logos, flat lighting
+
+---
+
+## FABRIC LIBRARY TEXTURES (6 images)
+
+### 5. texture-silk.jpg — Habotai Silk Texture
+**Section:** Fabric Library
+**Prompt:**
+Extreme close-up of Habotai silk fabric, showing the fine weave and luminous surface. The silk has a subtle sheen that catches light in soft gradients. The color is a warm champagne. The texture is smooth, fluid, and luxurious. Shot on Fujifilm Velvia 80. Fine 35mm grain. Macro lens. Warm practical lighting. Color grade: warm champagne, silk sheen, fluid texture. Aspect ratio 1:1 (square). Mood: fluidity, elegance, the foundation of costume.
+
+**Negative prompt:**
+cartoon, anime, illustration, rough, matte, cotton, text, watermarks, logos, flat lighting
+
+---
+
+### 6. texture-velvet.jpg — Silk Velvet Texture
+**Section:** Fabric Library
+**Prompt:**
+Extreme close-up of silk velvet fabric, showing the dense pile and rich depth. The velvet absorbs light in the shadows and reflects it in subtle highlights where the pile is compressed. The color is deep emerald green. The texture is plush, dramatic, and tactile. Shot on Fujifilm Velvia 80. Fine 35mm grain. Macro lens. Warm practical lighting. Color grade: deep emerald, plush shadows, dramatic highlights. Aspect ratio 1:1 (square). Mood: richness, depth, the weight of period drama.
+
+**Negative prompt:**
+cartoon, anime, illustration, smooth, shiny, thin fabric, text, watermarks, logos, flat lighting
+
+---
+
+### 7. texture-linen.jpg — Belgian Linen Texture
+**Section:** Fabric Library
+**Prompt:**
+Extreme close-up of Belgian linen fabric, showing the coarse, honest weave. The linen has visible natural variations — thicker and thinner threads crossing. The color is warm flax. The texture is organic, durable, and beautifully imperfect. Shot on Fujifilm Velvia 80. Fine 35mm grain. Macro lens. Natural soft lighting. Color grade: warm flax, natural fiber tones, honest texture. Aspect ratio 1:1 (square). Mood: durability, authenticity, the backbone of workwear.
+
+**Negative prompt:**
+cartoon, anime, illustration, synthetic, shiny, perfect weave, text, watermarks, logos, flat lighting
+
+---
+
+### 8. texture-chiffon.jpg — Silk Chiffon Texture
+**Section:** Fabric Library
+**Prompt:**
+Extreme close-up of silk chiffon fabric, showing the fine, gauze-like weave. The chiffon is sheer, with light passing through, creating ethereal depth. The color is soft ivory. The texture is delicate, weightless, and dreamlike. Shot on Fujifilm Velvia 80. Fine 35mm grain. Macro lens. Soft backlighting. Color grade: soft ivory, translucent layers, ethereal light. Aspect ratio 1:1 (square). Mood: delicacy, transparency, the ghost of costume.
+
+**Negative prompt:**
+cartoon, anime, illustration, heavy, opaque, rough texture, text, watermarks, logos, flat lighting
+
+---
+
+### 9. texture-brocade.jpg — Gold Brocade Texture
+**Section:** Fabric Library
+**Prompt:**
+Extreme close-up of gold brocade fabric, showing the raised metallic pattern on a deep red background. The gold threads catch light, creating a rich, regal surface. The pattern is intricate — floral or geometric motifs. The texture is heavy, ornate, and historically rich. Shot on Fujifilm Velvia 80. Fine 35mm grain. Macro lens. Warm practical lighting. Color grade: rich gold, deep red, ornate detail. Aspect ratio 1:1 (square). Mood: royalty, period grandeur, the language of power.
+
+**Negative prompt:**
+cartoon, anime, illustration, simple, modern, plain weave, text, watermarks, logos, flat lighting
+
+---
+
+### 10. texture-wool.jpg — Harris Tweed Texture
+**Section:** Fabric Library
+**Prompt:**
+Extreme close-up of Harris Tweed fabric, showing the hand-woven pattern of colored wool threads. The tweed has a complex weave — earthy browns, greens, and rusts interlocking. The texture is warm, durable, and distinctly Scottish. Shot on Fujifilm Velvia 80. Fine 35mm grain. Macro lens. Warm practical lighting. Color grade: earthy tones, complex weave, warm shadows. Aspect ratio 1:1 (square). Mood: heritage, warmth, the character of place.
+
+**Negative prompt:**
+cartoon, anime, illustration, smooth, synthetic, plain, text, watermarks, logos, flat lighting
+
+---
+
+## FILM STRIP STILLS (4 images)
+
+### 11. filmstrip-01.jpg — "The Silk Road" (Feature Film)
+**Section:** Filmstrip 01
+**Prompt:**
+Cinematic still from a film about the history of silk. A woman in a flowing silk gown stands in a traditional silk-weaving workshop in China. Wooden looms stretch into the background. Warm afternoon light streams through paper screens, illuminating the silk threads. The atmosphere is historical, tactile, and deeply textured. Shot on Kodak Vision3 500T. Fine 35mm grain. 50mm lens. Natural window light. Color grade: warm silk tones, golden light, rich shadows. Aspect ratio 16:9. Mood: the journey of fabric, the history of costume.
+
+**Negative prompt:**
+cartoon, anime, illustration, modern, synthetic fabric, text, watermarks, logos, cold lighting, factory
+
+---
+
+### 12. filmstrip-02.jpg — "Threads" (Short Film)
+**Section:** Filmstrip 02
+**Prompt:**
+Cinematic still from a short film about the connections between people through clothing. Close-up of hands stitching a seam — a needle pulling thread through fabric. Warm lamplight illuminates the detailed work. The fabric is a rich wool, the thread a contrasting red. The atmosphere is intimate, craft-focused, and deeply personal. Shot on Kodak Vision3 500T. Fine 35mm grain. 50mm macro lens. Warm practical lamp light. Color grade: warm wool tones, red thread accent, intimate shadows. Aspect ratio 16:9. Mood: connection through craft, the thread that binds.
+
+**Negative prompt:**
+cartoon, anime, illustration, machine sewing, factory, text, watermarks, logos, cold lighting, fast
+
+---
+
+### 13. filmstrip-03.jpg — "The Wardrobe" (Documentary)
+**Section:** Filmstrip 03
+**Prompt:**
+Cinematic documentary still from a film about the art of costume design. A wardrobe room filled with costumes on racks — period gowns, modern suits, character outfits. The costumes are organized by color and period. Warm overhead light illuminates the fabrics. A dress form stands in the center, draped in muslin. The atmosphere is creative, organized, and inspiring. Shot on Kodak Vision3 500T. Fine 35mm grain. 35mm lens. Warm practical lighting. Color grade: varied costume colors, warm shadows, creative chaos. Aspect ratio 16:9. Mood: the archive of characters, every costume a story.
+
+**Negative prompt:**
+cartoon, anime, illustration, empty, modern closet, text, watermarks, logos, cold lighting, organized perfection
+
+---
+
+### 14. filmstrip-04.jpg — "Period Piece" (Feature Film)
+**Section:** Filmstrip 04
+**Prompt:**
+Cinematic still from a film about the intersection of period costume and modern identity. A woman stands before a mirror, wearing a Regency-era gown. But her posture is modern — confident, direct. The costume is historically accurate but her attitude is contemporary. Warm dressing room light illuminates the scene. The atmosphere is playful, intelligent, and meta-cinematic. Shot on Kodak Vision3 500T. Fine 35mm grain. 50mm lens. Warm practical lighting. Color grade: warm period tones, modern edge, mirror reflection. Aspect ratio 16:9. Mood: then and now, costume as time travel.
+
+**Negative prompt:**
+cartoon, anime, illustration, accurate museum display, stiff, text, watermarks, logos, cold lighting, modern clothing
+
+---
+
+## PORTRAIT (1 image)
+
+### 15. portrait.jpg — Nadia Okafor Portrait
+**Section:** About / Portrait
+**Prompt:**
+Cinematic portrait of a Nigerian-British woman in her late 30s standing in a costume workshop. She wears a simple dark dress, her hands stained with fabric dye. Behind her, costume racks and dress forms are visible in soft focus. Warm task lighting illuminates her face from the side. The atmosphere is creative, confident, and deeply skilled. Shot on Kodak Portra 400. Fine 35mm grain. 85mm portrait lens. Warm practical lighting. Color grade: warm skin tones, creative workshop warmth, soft shadows. Aspect ratio 4:5 (portrait). Mood: the hands that dress characters.
+
+**Negative prompt:**
+cartoon, anime, illustration, glamour, fashion pose, studio backdrop, text, watermarks, logos, cold lighting, busy background
+
+---
+
+## ABOUT BACKGROUND (1 image)
+
+### 16. about-bg.jpg — About Section Background
+**Section:** About background
+**Prompt:**
+Cinematic photograph of a costume designer's cutting table from above. Fabric swatches, pattern paper, dressmaker's pins, and measuring tapes are scattered across the table. A half-drawn costume sketch lies beside scissors and chalk. Warm task lighting illuminates the creative workspace. The atmosphere is busy, creative, and tactile. Shot on Kodak Portra 400. Fine 35mm grain. 35mm overhead lens. Warm practical lighting. Color grade: warm fabric tones, creative chaos, tactile detail. Aspect ratio 16:9. Mood: the process of creation, from sketch to costume.
+
+**Negative prompt:**
+cartoon, anime, illustration, clean, organized, digital, text, watermarks, logos, cold lighting, empty
+
+---
+
+## LEONARDO AI SETTINGS
+- Mode: PhotoReal
+- Aspect ratio: 1:1 (square) for textures/swatches, 4:5 (portrait) for portrait, 16:9 (landscape) for film stills
+- Resolution: 1360x768 or higher
+- Style: Cinematic / Photography
+- Alchemy V2: ON
+- Generate 4 variations per prompt, select best

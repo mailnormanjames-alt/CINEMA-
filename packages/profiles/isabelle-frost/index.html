@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isabelle Frost — Casting Director | Intimate Storyteller</title>
+  <meta name="description" content="Isabelle Frost. Casting Director. The eye that discovers talent. Intimate Storyteller aesthetic.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,300;1,8..60,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/styles/isabelle-frost.css">
+</head>
+<body data-profile="isabelle-frost">
+
+  <div class="preloader" id="preloader">
+    <div class="preloader__page preloader__page--left"></div>
+    <div class="preloader__page preloader__page--right"></div>
+    <div class="preloader__content">
+      <div class="preloader__book">
+        <div class="preloader__spine"></div>
+        <div class="preloader__cover">
+          <span class="preloader__name">Isabelle Frost</span>
+          <span class="preloader__tagline">The eye that discovers talent</span>
+        </div>
+      </div>
+      <div class="preloader__progress-track">
+        <div class="preloader__progress-fill" id="preloader-progress"></div>
+      </div>
+      <span class="preloader__hint">Opening the reading room&hellip;</span>
+    </div>
+  </div>
+
+  <div class="cursor" id="cursor">
+    <div class="cursor__dot"></div>
+    <div class="cursor__ring"></div>
+  </div>
+
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav__brand magnetic">
+      <span class="nav__brand-name">Isabelle Frost</span>
+      <span class="nav__brand-role">Casting Director</span>
+    </a>
+    <div class="nav__links">
+      <a href="#philosophy" class="nav__link magnetic" data-cursor="link">Philosophy</a>
+      <a href="#casting-tape" class="nav__link magnetic" data-cursor="link">Casting Tape</a>
+      <a href="#filmstrip" class="nav__link magnetic" data-cursor="link">Films</a>
+      <a href="#about" class="nav__link magnetic" data-cursor="link">About</a>
+      <a href="#services" class="nav__link magnetic" data-cursor="link">Services</a>
+      <a href="#contact" class="nav__link magnetic" data-cursor="link">Contact</a>
+    </div>
+    <button class="nav__menu-btn magnetic" id="menu-btn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu__inner">
+      <a href="#philosophy" class="mobile-menu__link">Philosophy</a>
+      <a href="#casting-tape" class="mobile-menu__link">Casting Tape</a>
+      <a href="#filmstrip" class="mobile-menu__link">Films</a>
+      <a href="#about" class="mobile-menu__link">About</a>
+      <a href="#services" class="mobile-menu__link">Services</a>
+      <a href="#contact" class="mobile-menu__link">Contact</a>
+    </div>
+    <div class="mobile-menu__footer">
+      <span class="mobile-menu__email">isabelle@frostcasting.com</span>
+    </div>
+  </div>
+
+  <main>
+
+    <section class="hero" id="hero">
+      <div class="hero__glow"></div>
+      <div class="hero__lamp"></div>
+      <div class="hero__content">
+        <div class="hero__stage">
+          <div class="hero__chair">
+            <div class="hero__chair-back"></div>
+            <div class="hero__chair-arm hero__chair-arm--left"></div>
+            <div class="hero__chair-arm hero__chair-arm--right"></div>
+          </div>
+          <div class="hero__nameplate">
+            <span class="hero__nameplate-text">Isabelle Frost</span>
+          </div>
+        </div>
+        <div class="hero__text">
+          <div class="hero__label">
+            <span class="hero__label-line">Casting Director</span>
+            <span class="hero__label-divider">/</span>
+            <span class="hero__label-line">Intimate Storyteller</span>
+          </div>
+          <h1 class="hero__title" data-reveal>
+            <span class="hero__title-line">The eye that</span>
+            <span class="hero__title-line hero__title-line--accent">discovers talent</span>
+          </h1>
+          <p class="hero__subtitle" data-reveal data-delay="200">Every face tells a story. Every casting tape holds a revelation. I sit in the reading room and watch characters come alive — one audition at a time.</p>
+          <div class="hero__cta">
+            <a href="#casting-tape" class="btn btn--warm magnetic" data-cursor="link">View Casting Tape</a>
+            <a href="#contact" class="btn btn--outline magnetic" data-cursor="link">Get in Touch</a>
+          </div>
+          <div class="hero__scroll-hint">
+            <span class="hero__scroll-text">Scroll to begin</span>
+            <div class="hero__scroll-line"></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__papers">
+        <div class="hero__paper hero__paper--1"></div>
+        <div class="hero__paper hero__paper--2"></div>
+        <div class="hero__paper hero__paper--3"></div>
+      </div>
+    </section>
+
+    <section class="philosophy" id="philosophy">
+      <div class="section-container">
+        <div class="philosophy__grid">
+          <div class="philosophy__left" data-reveal>
+            <span class="section-number">01</span>
+            <h2 class="philosophy__title">Casting is the first act of <em>storytelling</em></h2>
+          </div>
+          <div class="philosophy__right" data-reveal data-delay="200">
+            <p class="philosophy__text">The best casting decisions happen in the quiet moments. Not when an actor nails the monologue, but when they're waiting between takes and you see the character flicker across their face unbidden.</p>
+            <p class="philosophy__text">I keep a notebook for every project. Not sides or breakdowns — just observations. The way someone holds their coffee cup. How they laugh when they think no one is watching. These are the details that make a performance truthful, and they're what I look for in the reading room.</p>
+            <p class="philosophy__text">Directors hire me because I see what's possible, not just what's present. I've learned to recognize the spark — that electric moment when an actor stops performing and starts inhabiting a role. You can't manufacture it, but you can create the conditions for it to appear.</p>
+            <div class="philosophy__signature">
+              <div class="philosophy__sig-line"></div>
+              <span class="philosophy__sig-name">Isabelle Frost</span>
+              <span class="philosophy__sig-role">Casting Director</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="casting-tape" id="casting-tape">
+      <div class="section-container">
+        <div class="casting-tape__header">
+          <span class="section-number">02</span>
+          <h2 class="casting-tape__title">Casting Tape Mosaic</h2>
+          <p class="casting-tape__subtitle">Hover to explore each actor's journey. The reading room reveals its secrets.</p>
+        </div>
+        <div class="casting-tape__mosaic" id="casting-tape-mosaic">
+          <article class="casting-tape" data-cursor="tape">
+            <div class="casting-tape__reel">
+              <div class="casting-tape__sprocket casting-tape__sprocket--top"></div>
+              <div class="casting-tape__frame">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=800&fit=crop&crop=face" alt="Casting tape - The Discovery" loading="lazy">
+                <div class="casting-tape__timecode">01:42:17</div>
+              </div>
+              <div class="casting-tape__sprocket casting-tape__sprocket--bottom"></div>
+            </div>
+            <div class="casting-tape__info">
+              <span class="casting-tape__type">Feature Film</span>
+              <h3 class="casting-tape__name">The Discovery</h3>
+              <p class="casting-tape__note">Lead — Elena, 32. The archaeologist who unearths more than artifacts.</p>
+            </div>
+          </article>
+          <article class="casting-tape" data-cursor="tape">
+            <div class="casting-tape__reel">
+              <div class="casting-tape__sprocket casting-tape__sprocket--top"></div>
+              <div class="casting-tape__frame">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&h=800&fit=crop&crop=face" alt="Casting tape - New Faces" loading="lazy">
+                <div class="casting-tape__timecode">00:38:05</div>
+              </div>
+              <div class="casting-tape__sprocket casting-tape__sprocket--bottom"></div>
+            </div>
+            <div class="casting-tape__info">
+              <span class="casting-tape__type">Documentary</span>
+              <h3 class="casting-tape__name">New Faces</h3>
+              <p class="casting-tape__note">Ensemble — Young actors finding their voice in the industry.</p>
+            </div>
+          </article>
+          <article class="casting-tape" data-cursor="tape">
+            <div class="casting-tape__reel">
+              <div class="casting-tape__sprocket casting-tape__sprocket--top"></div>
+              <div class="casting-tape__frame">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&h=800&fit=crop&crop=face" alt="Casting tape - The Ensemble" loading="lazy">
+                <div class="casting-tape__timecode">01:15:33</div>
+              </div>
+              <div class="casting-tape__sprocket casting-tape__sprocket--bottom"></div>
+            </div>
+            <div class="casting-tape__info">
+              <span class="casting-tape__type">Feature Film</span>
+              <h3 class="casting-tape__name">The Ensemble</h3>
+              <p class="casting-tape__note">Supporting — Marcus, 45. The conductor who loses his hearing.</p>
+            </div>
+          </article>
+          <article class="casting-tape" data-cursor="tape">
+            <div class="casting-tape__reel">
+              <div class="casting-tape__sprocket casting-tape__sprocket--top"></div>
+              <div class="casting-tape__frame">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&h=800&fit=crop&crop=face" alt="Casting tape - First Read" loading="lazy">
+                <div class="casting-tape__timecode">00:22:11</div>
+              </div>
+              <div class="casting-tape__sprocket casting-tape__sprocket--bottom"></div>
+            </div>
+            <div class="casting-tape__info">
+              <span class="casting-tape__type">Short Film</span>
+              <h3 class="casting-tape__name">First Read</h3>
+              <p class="casting-tape__note">Lead — Sophie, 28. A casting director reflecting on her first audition.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="filmstrip" id="filmstrip">
+      <div class="section-container">
+        <div class="filmstrip__header">
+          <span class="section-number">03</span>
+          <h2 class="filmstrip__title">Selected Works</h2>
+        </div>
+        <div class="filmstrip__grid">
+          <article class="filmstrip__card" data-cursor="film">
+            <div class="filmstrip__card-img">
+              <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&h=1100&fit=crop" alt="The Discovery" loading="lazy">
+              <div class="filmstrip__card-overlay">
+                <span class="filmstrip__card-year">2024</span>
+                <span class="filmstrip__card-type">Feature Film</span>
+              </div>
+            </div>
+            <div class="filmstrip__card-info">
+              <h3 class="filmstrip__card-title">The Discovery</h3>
+              <p class="filmstrip__card-desc">A casting director discovers an unknown actress who changes the course of a filmmaker's career. The search for authenticity over artifice.</p>
+            </div>
+          </article>
+          <article class="filmstrip__card" data-cursor="film">
+            <div class="filmstrip__card-img">
+              <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&h=1100&fit=crop" alt="New Faces" loading="lazy">
+              <div class="filmstrip__card-overlay">
+                <span class="filmstrip__card-year">2023</span>
+                <span class="filmstrip__card-type">Documentary</span>
+              </div>
+            </div>
+            <div class="filmstrip__card-info">
+              <h3 class="filmstrip__card-title">New Faces</h3>
+              <p class="filmstrip__card-desc">Following twelve young actors through the audition process, from open calls to final callbacks. The vulnerable beginning of every career.</p>
+            </div>
+          </article>
+          <article class="filmstrip__card" data-cursor="film">
+            <div class="filmstrip__card-img">
+              <img src="https://images.unsplash.com/photo-1524712245354-2c4e5e7121c0?w=800&h=1100&fit=crop" alt="The Ensemble" loading="lazy">
+              <div class="filmstrip__card-overlay">
+                <span class="filmstrip__card-year">2022</span>
+                <span class="filmstrip__card-type">Feature Film</span>
+              </div>
+            </div>
+            <div class="filmstrip__card-info">
+              <h3 class="filmstrip__card-title">The Ensemble</h3>
+              <p class="filmstrip__card-desc">A musical drama where the casting itself becomes the story — five strangers who must become a family through rehearsal and trust.</p>
+            </div>
+          </article>
+          <article class="filmstrip__card" data-cursor="film">
+            <div class="filmstrip__card-img">
+              <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=800&h=1100&fit=crop" alt="First Read" loading="lazy">
+              <div class="filmstrip__card-overlay">
+                <span class="filmstrip__card-year">2023</span>
+                <span class="filmstrip__card-type">Short Film</span>
+              </div>
+            </div>
+            <div class="filmstrip__card-info">
+              <h3 class="filmstrip__card-title">First Read</h3>
+              <p class="filmstrip__card-desc">A meditative short about a casting director revisiting the tapes that launched her career. Memory, film, and the faces that stay with you.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section-container">
+        <div class="about__grid">
+          <div class="about__left" data-reveal>
+            <span class="section-number">04</span>
+            <h2 class="about__title">The reading room is where stories begin</h2>
+          </div>
+          <div class="about__right" data-reveal data-delay="200">
+            <p class="about__text">I started as a casting assistant in New York, sorting headshots in a basement office on West 27th Street. My boss handed me a stack of eight hundred photos and said, "Find me someone who looks like they've never been loved." I found her in twenty minutes. She got the part.</p>
+            <p class="about__text">Since then, I've cast over sixty films, from small independents to studio tentpoles. My office smells like coffee and old script pages. I keep every breakdown I've ever written — they're stacked in boxes along the back wall, a paper archive of stories that found their faces.</p>
+            <p class="about__text">Based in Los Angeles with regular trips to London, Toronto, and Berlin, I maintain relationships with casting offices worldwide. But my favorite part of the job still happens in small rooms with bad lighting, watching someone become someone else for the first time.</p>
+            <div class="about__awards">
+              <div class="about__award">
+                <span class="about__award-year">2024</span>
+                <span class="about__award-name">CSA Artios Award — Outstanding Achievement in Casting</span>
+              </div>
+              <div class="about__award">
+                <span class="about__award-year">2023</span>
+                <span class="about__award-name">BAFTA — Best Casting (Nomination)</span>
+              </div>
+              <div class="about__award">
+                <span class="about__award-year">2022</span>
+                <span class="about__award-name">IFP Gotham Awards — Breakthrough Casting</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="section-container">
+        <div class="services__header">
+          <span class="section-number">05</span>
+          <h2 class="services__title">Services</h2>
+        </div>
+        <div class="services__list">
+          <div class="services__row" data-reveal>
+            <span class="services__number">01</span>
+            <div class="services__content">
+              <h3 class="services__name">Feature Film Casting</h3>
+              <p class="services__desc">Full-service casting for independent and studio features. From script breakdown to final callbacks, I guide every decision with narrative intent.</p>
+            </div>
+            <span class="services__arrow">&rarr;</span>
+          </div>
+          <div class="services__row" data-reveal data-delay="50">
+            <span class="services__number">02</span>
+            <div class="services__content">
+              <h3 class="services__name">TV Series Casting</h3>
+              <p class="services__desc">Pilot to series regular, recurring to guest. Building ensembles that sustain character across seasons and surprise audiences episode after episode.</p>
+            </div>
+            <span class="services__arrow">&rarr;</span>
+          </div>
+          <div class="services__row" data-reveal data-delay="100">
+            <span class="services__number">03</span>
+            <div class="services__content">
+              <h3 class="services__name">Short Film Casting</h3>
+              <p class="services__desc">Emerging talent discovery for short-form projects. Festival circuit strategy, actor-filmaker matching, and creative risk-taking in compressed narratives.</p>
+            </div>
+            <span class="services__arrow">&rarr;</span>
+          </div>
+          <div class="services__row" data-reveal data-delay="150">
+            <span class="services__number">04</span>
+            <div class="services__content">
+              <h3 class="services__name">Workshop Direction</h3>
+              <p class="services__desc">Acting workshops and audition coaching sessions. Creating safe spaces for actors to explore vulnerability and discover their authentic voice.</p>
+            </div>
+            <span class="services__arrow">&rarr;</span>
+          </div>
+          <div class="services__row" data-reveal data-delay="200">
+            <span class="services__number">05</span>
+            <div class="services__content">
+              <h3 class="services__name">Talent Discovery</h3>
+              <p class="services__desc">Open calls, self-tape review, and international talent scouting. Finding faces the industry hasn't met yet and connecting them with the right projects.</p>
+            </div>
+            <span class="services__arrow">&rarr;</span>
+          </div>
+          <div class="services__row" data-reveal data-delay="250">
+            <span class="services__number">06</span>
+            <div class="services__content">
+              <h3 class="services__name">International Casting</h3>
+              <p class="services__desc">Cross-border casting partnerships for productions requiring authentic international talent. Networks spanning Europe, Asia, and Latin America.</p>
+            </div>
+            <span class="services__arrow">&rarr;</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-container">
+        <div class="contact__grid">
+          <div class="contact__left" data-reveal>
+            <span class="section-number">06</span>
+            <h2 class="contact__title">The reading room is open</h2>
+            <p class="contact__text">Available for feature films, series, shorts, and creative collaborations. The reading room is always open.</p>
+          </div>
+          <div class="contact__right" data-reveal data-delay="200">
+            <div class="contact__info">
+              <div class="contact__info-item">
+                <span class="contact__info-label">Email</span>
+                <a href="mailto:isabelle@frostcasting.com" class="contact__link" data-cursor="link">isabelle@frostcasting.com</a>
+              </div>
+              <div class="contact__info-item">
+                <span class="contact__info-label">Office — Los Angeles</span>
+                <span class="contact__detail">Sunset Blvd, Los Angeles, CA</span>
+              </div>
+              <div class="contact__info-item">
+                <span class="contact__info-label">Office — London</span>
+                <span class="contact__detail">Soho, London, UK</span>
+              </div>
+              <div class="contact__info-item">
+                <span class="contact__info-label">Representation</span>
+                <span class="contact__detail">Verve Talent & Literary</span>
+              </div>
+            </div>
+            <div class="contact__social">
+              <a href="#" class="contact__social-link magnetic" data-cursor="link" aria-label="Instagram">Instagram</a>
+              <a href="#" class="contact__social-link magnetic" data-cursor="link" aria-label="IMDb">IMDb</a>
+              <a href="#" class="contact__social-link magnetic" data-cursor="link" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer footer--premiere">
+    <div class="section-container">
+      <div class="footer__top">
+        <div class="footer__curtain">
+          <div class="footer__curtain-fold footer__curtain-fold--left"></div>
+          <div class="footer__curtain-fold footer__curtain-fold--right"></div>
+        </div>
+      </div>
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="footer__logo">The Premiere</span>
+          <span class="footer__logo-sub">by Isabelle Frost</span>
+        </div>
+        <div class="footer__columns">
+          <div class="footer__col">
+            <span class="footer__col-title">Navigate</span>
+            <a href="#philosophy" class="footer__col-link">Philosophy</a>
+            <a href="#casting-tape" class="footer__col-link">Casting Tape</a>
+            <a href="#filmstrip" class="footer__col-link">Films</a>
+            <a href="#about" class="footer__col-link">About</a>
+          </div>
+          <div class="footer__col">
+            <span class="footer__col-title">Connect</span>
+            <a href="#services" class="footer__col-link">Services</a>
+            <a href="#contact" class="footer__col-link">Contact</a>
+            <a href="mailto:isabelle@frostcasting.com" class="footer__col-link">Email</a>
+          </div>
+          <div class="footer__col">
+            <span class="footer__col-title">Find Me</span>
+            <span class="footer__col-text">Los Angeles, CA</span>
+            <span class="footer__col-text">Soho, London</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">&copy; 2024 Isabelle Frost. All rights reserved.</span>
+        <span class="footer__credit">made with love by Empathy Studio</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="src/init.js" type="module"></script>
+</body>
+</html>

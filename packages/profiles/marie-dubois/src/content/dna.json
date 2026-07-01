@@ -1,0 +1,63 @@
+{
+  "profile": {
+    "id": "marie-dubois",
+    "name": "Marie Dubois",
+    "role": "Director",
+    "archetype": "Intimate Storyteller",
+    "tagline": "Stories that breathe between the frames",
+    "email": "marie@mariedubois.film",
+    "social": {
+      "vimeo": "https://vimeo.com/mariedubois",
+      "instagram": "https://instagram.com/marie.dubois"
+    },
+    "bio": "French filmmaker known for intimate character studies and poetic realism."
+  },
+  "heroSystem": "CinematicFrame",
+  "hero": {
+    "image": "/images/hero.jpg",
+    "overline": "Marie Dubois",
+    "title": "Stories that breathe between the frames",
+    "subtitle": "Director — Paris",
+    "ctaLabel": "View Work"
+  },
+  "scenes": [
+    { "id": "hero", "type": "hero" },
+    { "id": "statement", "type": "text" },
+    { "id": "work", "type": "gallery" },
+    { "id": "signature", "type": "interaction" },
+    { "id": "about", "type": "text" },
+    { "id": "filmography", "type": "list" },
+    { "id": "footer", "type": "footer" }
+  ],
+  "footer": {
+    "identity": "TheCredits"
+  },
+  "imageContinuity": {
+    "palette": "warm",
+    "treatment": "grain",
+    "anchor": "natural-light"
+  },
+  "work": [
+    {
+      "title": "Les Courants",
+      "year": "2024",
+      "category": "Short Film",
+      "image": "/images/work-01.jpg",
+      "description": "A meditation on grief set on the Normandy coast."
+    },
+    {
+      "title": "Entre Deux",
+      "year": "2023",
+      "category": "Feature Film",
+      "image": "/images/work-02.jpg",
+      "description": "Twin sisters navigate identity in post-pandemic Paris."
+    },
+    {
+      "title": "La Dernière Lumière",
+      "year": "2022",
+      "category": "Short Film",
+      "image": "/images/work-03.jpg",
+      "description": "A photographer confronts fading memory."
+    }
+  ]
+}

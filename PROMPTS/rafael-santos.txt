@@ -1,0 +1,62 @@
+# RAFAEL SANTOS — Composer | Image Prompts
+# 5 images needed (1 portrait + 4 film posters/stills)
+
+---
+
+## 1. portrait.jpg — Rafael Santos Portrait
+**Section:** About / Portrait
+**Prompt:**
+Cinematic portrait of a Brazilian man in his late 30s sitting at a grand piano. He wears a dark suit, no tie, collar open. His hands rest on the keys, paused mid-composition. Warm spotlight illuminates his face and hands from above. The background is a dark composition studio with studio monitors and sheet music visible in soft focus. The atmosphere is dramatic, artistic, and deeply focused. Shot on Kodak Portra 400. Fine 35mm grain. 85mm portrait lens. Dramatic spotlight as key light. Color grade: warm skin tones, deep shadows, concert hall warmth. Aspect ratio 4:5 (portrait). Mood: the composer at work.
+
+**Negative prompt:**
+cartoon, anime, illustration, casual, bright, text, watermarks, logos, cold lighting, busy background
+
+---
+
+## 2. filmstrip-01.jpg — "The Last Symphony" (Feature Film)
+**Section:** Filmstrip / Score Card 01
+**Prompt:**
+Cinematic still from a film about a composer's final orchestral work. A conductor's score stand holds orchestral manuscript paper with handwritten notes. A single cello rests against the stand. Warm theatrical spotlight illuminates the score, casting dramatic shadows. The background is a dark concert hall, empty seats fading into darkness. The atmosphere is grand, melancholic, and deeply emotional. Shot on Kodak Vision3 500T. Fine 35mm grain. 50mm lens. Dramatic theatrical lighting. Color grade: warm gold, deep shadows, orchestral richness. Aspect ratio 16:9. Mood: the final notes, legacy in music.
+
+**Negative prompt:**
+cartoon, anime, illustration, bright, full orchestra, audience, text, watermarks, logos, modern, digital
+
+---
+
+## 3. filmstrip-02.jpg — "Nocturne for Two" (Short Film)
+**Section:** Filmstrip / Score Card 02
+**Prompt:**
+Cinematic still from an intimate duet scored in a single night. A grand piano in a small, candlelit room. Two chairs face each other across the keyboard. Sheet music lies open, notes flowing across the page. Candlelight flickers across the polished piano surface. The atmosphere is intimate, romantic, and musically charged. Shot on Kodak Vision3 500T. Fine 35mm grain. 50mm lens. Candlelight as key source. Color grade: warm amber, deep shadows, intimate warmth. Aspect ratio 16:9. Mood: two voices, one conversation, recorded at dawn.
+
+**Negative prompt:**
+cartoon, anime, illustration, bright, concert hall, audience, text, watermarks, logos, electric light, modern
+
+---
+
+## 4. filmstrip-03.jpg — "The Cartographer" (Feature Film)
+**Section:** Filmstrip / Score Card 03
+**Prompt:**
+Cinematic still from a kinetic adventure score. A composer's desk covered in manuscript paper with rapid, energetic notation. Percussion mallets and a small drum sit beside the score. Through the window, a cityscape at night — lights blurred by motion. The atmosphere is restless, kinetic, and creatively charged. Shot on Kodak Vision3 500T. Fine 35mm grain. 35mm lens. Mixed practical and city light. Color grade: warm amber, cool city blues, high contrast. Aspect ratio 16:9. Mood: mapping uncharted emotional territory.
+
+**Negative prompt:**
+cartoon, anime, illustration, calm, still, classical, text, watermarks, logos, bright, modern studio
+
+---
+
+## 5. filmstrip-04.jpg — "Silence in C" (Documentary)
+**Section:** Filmstrip / Score Card 04
+**Prompt:**
+Cinematic still from a minimalist score built from absence. An empty concert hall, perfectly still. A single music stand holds a score with minimal notation — a few notes, much white space. A single sustained light illuminates the stand. The hall is vast, silent, architectural. The atmosphere is minimalist, contemplative, and profoundly quiet. Shot on Kodak Vision3 500T. Fine 35mm grain. 35mm lens. Single practical light source. Color grade: cool whites, deep shadows, architectural geometry. Aspect ratio 16:9. Mood: the architecture of quietness, absence as music.
+
+**Negative prompt:**
+cartoon, anime, illustration, crowded, loud, colorful, text, watermarks, logos, warm lighting, modern
+
+---
+
+## LEONARDO AI SETTINGS
+- Mode: PhotoReal
+- Aspect ratio: 4:5 (portrait) for portrait, 16:9 (landscape) for film stills
+- Resolution: 1360x768 or higher
+- Style: Cinematic / Photography
+- Alchemy V2: ON
+- Generate 4 variations per prompt, select best

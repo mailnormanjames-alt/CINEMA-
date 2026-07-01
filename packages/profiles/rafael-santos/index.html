@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rafael Santos — Composer & Artistic Auteur</title>
+  <meta name="description" content="Rafael Santos — Film Composer & Artistic Auteur. Every frame deserves a score. Concert hall grandeur meets cinematic intimacy.">
+  <meta name="theme-color" content="#1a1410">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/styles/rafael-santos.css">
+</head>
+<body>
+
+  <!-- PRELOADER — Musical Score Animation -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__inner">
+      <div class="preloader__staff">
+        <div class="preloader__line"></div>
+        <div class="preloader__line"></div>
+        <div class="preloader__line"></div>
+        <div class="preloader__line"></div>
+        <div class="preloader__line"></div>
+        <span class="preloader__clef">&#119070;</span>
+        <span class="preloader__note preloader__note--1">&#9833;</span>
+        <span class="preloader__note preloader__note--2">&#9834;</span>
+        <span class="preloader__note preloader__note--3">&#9835;</span>
+        <span class="preloader__note preloader__note--4">&#9836;</span>
+      </div>
+      <p class="preloader__text">Attuning...</p>
+    </div>
+  </div>
+
+  <!-- SCROLL PROGRESS -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- NAVIGATION — Musical Score Style with Staff Lines -->
+  <nav class="nav" id="nav">
+    <div class="nav__staff">
+      <span class="nav__staff-line"></span>
+      <span class="nav__staff-line"></span>
+      <span class="nav__staff-line"></span>
+      <span class="nav__staff-line"></span>
+      <span class="nav__staff-line"></span>
+    </div>
+    <a href="#hero" class="nav__logo font-display">
+      <span class="nav__logo-clef">&#119070;</span>
+      <span class="nav__logo-text">R.S.</span>
+    </a>
+    <div class="nav__center">
+      <span class="nav__center-label font-mono">Compositions</span>
+    </div>
+    <ul class="nav__links">
+      <li><a href="#philosophy" data-magnetic>Philosophy</a></li>
+      <li><a href="#score" data-magnetic>Score</a></li>
+      <li><a href="#filmstrip" data-magnetic>Films</a></li>
+      <li><a href="#about" data-magnetic>About</a></li>
+      <li><a href="#services" data-magnetic>Services</a></li>
+      <li><a href="#contact" data-magnetic>Contact</a></li>
+    </ul>
+    <button class="nav__menu-btn" id="menuBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu__bg">
+      <div class="mobile-menu__staff">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+    <ul class="mobile-menu__links">
+      <li><a href="#philosophy"><span class="mobile-menu__num font-mono">I.</span> Philosophy</a></li>
+      <li><a href="#score"><span class="mobile-menu__num font-mono">II.</span> Score</a></li>
+      <li><a href="#filmstrip"><span class="mobile-menu__num font-mono">III.</span> Films</a></li>
+      <li><a href="#about"><span class="mobile-menu__num font-mono">IV.</span> About</a></li>
+      <li><a href="#services"><span class="mobile-menu__num font-mono">V.</span> Services</a></li>
+      <li><a href="#contact"><span class="mobile-menu__num font-mono">VI.</span> Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- SCENE 1: HERO — Concert Hall / Composition Studio -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="hero__glow hero__glow--spotlight"></div>
+      <div class="hero__glow hero__glow--orchestra"></div>
+      <div class="hero__glow hero__glow--warmth"></div>
+      <div class="hero__grain"></div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__staff-bg">
+        <span class="hero__staff-line"></span>
+        <span class="hero__staff-line"></span>
+        <span class="hero__staff-line"></span>
+        <span class="hero__staff-line"></span>
+        <span class="hero__staff-line"></span>
+      </div>
+      <p class="hero__tag font-mono" data-reveal>Composer & Artistic Auteur</p>
+      <h1 class="hero__name font-display" data-reveal>
+        <span class="hero__name-line">Rafael</span>
+        <span class="hero__name-line hero__name-line--accent">Santos</span>
+      </h1>
+      <p class="hero__subtitle font-sans" data-reveal>"Every frame deserves a score"</p>
+      <div class="hero__meta" data-reveal>
+        <span class="hero__meta-item font-mono">CinematicFrame</span>
+        <span class="hero__meta-divider">|</span>
+        <span class="hero__meta-item font-mono">Film Scoring</span>
+        <span class="hero__meta-divider">|</span>
+        <span class="hero__meta-item font-mono">Orchestration</span>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span class="font-mono">Overture</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- SCENE 2: PHILOSOPHY STATEMENT -->
+  <section class="philosophy" id="philosophy">
+    <div class="container">
+      <p class="philosophy__label font-mono" data-reveal>I. PHILOSOPHY</p>
+      <blockquote class="philosophy__text font-display" data-reveal>
+        "Music doesn't accompany cinema — it breathes inside it. I compose for the space between frames, the heartbeat a director can't film, the breath an audience doesn't know they're holding."
+      </blockquote>
+      <div class="philosophy__grid" data-reveal>
+        <div class="philosophy__item">
+          <span class="philosophy__item-num font-mono">01</span>
+          <h3 class="font-display">Emotional Architecture</h3>
+          <p class="font-sans">Every orchestration is a structure. I build sound like a cathedral — from the foundation of bass frequencies to the soaring heights of violins in resonance.</p>
+        </div>
+        <div class="philosophy__item">
+          <span class="philosophy__item-num font-mono">02</span>
+          <h3 class="font-display">CinematicFrame</h3>
+          <p class="font-sans">My composition system syncs musical phrasing to visual frames. Each cue is measured not in bars, but in cuts, dissolves, and the rhythm of the edit.</p>
+        </div>
+        <div class="philosophy__item">
+          <span class="philosophy__item-num font-mono">03</span>
+          <h3 class="font-display">Grand Dramatic</h3>
+          <p class="font-sans">From whispered piano to thundering brass — I compose in extremes. The concert hall is my canvas, the orchestra my palette of infinite color.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCENE 3: SCORE GALLERY — Signature Interaction: ScoreToSceneSync -->
+  <section class="score" id="score">
+    <div class="container">
+      <p class="score__label font-mono" data-reveal>II. SCORE GALLERY</p>
+      <h2 class="score__title font-display" data-reveal>Compositions</h2>
+      <p class="score__sub font-sans" data-reveal>Each piece is a living score. Hover to feel the rhythm — watch the bars respond to your presence.</p>
+    </div>
+    <div class="score__gallery" id="scoreGallery">
+      <div class="score__card" data-tempo="adagio" data-reveal>
+        <div class="score__bars">
+          <span class="score__bar" style="--h:60%"></span>
+          <span class="score__bar" style="--h:80%"></span>
+          <span class="score__bar" style="--h:45%"></span>
+          <span class="score__bar" style="--h:90%"></span>
+          <span class="score__bar" style="--h:55%"></span>
+          <span class="score__bar" style="--h:70%"></span>
+          <span class="score__bar" style="--h:40%"></span>
+          <span class="score__bar" style="--h:85%"></span>
+          <span class="score__bar" style="--h:50%"></span>
+          <span class="score__bar" style="--h:75%"></span>
+          <span class="score__bar" style="--h:65%"></span>
+          <span class="score__bar" style="--h:95%"></span>
+        </div>
+        <div class="score__card-content">
+          <span class="score__tempo font-mono">Adagio</span>
+          <h3 class="font-display">The Last Symphony</h3>
+          <p class="font-sans">2024 — Feature Film</p>
+          <p class="score__card-desc font-sans">A sweeping orchestral meditation on legacy, silence, and the final notes a composer leaves behind. Full 80-piece orchestra with solo cello.</p>
+        </div>
+      </div>
+      <div class="score__card" data-tempo="andante" data-reveal>
+        <div class="score__bars">
+          <span class="score__bar" style="--h:70%"></span>
+          <span class="score__bar" style="--h:55%"></span>
+          <span class="score__bar" style="--h:85%"></span>
+          <span class="score__bar" style="--h:40%"></span>
+          <span class="score__bar" style="--h:75%"></span>
+          <span class="score__bar" style="--h:60%"></span>
+          <span class="score__bar" style="--h:90%"></span>
+          <span class="score__bar" style="--h:50%"></span>
+          <span class="score__bar" style="--h:65%"></span>
+          <span class="score__bar" style="--h:80%"></span>
+          <span class="score__bar" style="--h:45%"></span>
+          <span class="score__bar" style="--h:70%"></span>
+        </div>
+        <div class="score__card-content">
+          <span class="score__tempo font-mono">Andante</span>
+          <h3 class="font-display">Nocturne for Two</h3>
+          <p class="font-sans">2023 — Short Film</p>
+          <p class="score__card-desc font-sans">Piano and strings converse like lovers who've run out of words. An intimate duet scored in a single night, recorded at dawn.</p>
+        </div>
+      </div>
+      <div class="score__card" data-tempo="allegro" data-reveal>
+        <div class="score__bars">
+          <span class="score__bar" style="--h:90%"></span>
+          <span class="score__bar" style="--h:50%"></span>
+          <span class="score__bar" style="--h:75%"></span>
+          <span class="score__bar" style="--h:60%"></span>
+          <span class="score__bar" style="--h:95%"></span>
+          <span class="score__bar" style="--h:45%"></span>
+          <span class="score__bar" style="--h:80%"></span>
+          <span class="score__bar" style="--h:55%"></span>
+          <span class="score__bar" style="--h:70%"></span>
+          <span class="score__bar" style="--h:85%"></span>
+          <span class="score__bar" style="--h:40%"></span>
+          <span class="score__bar" style="--h:65%"></span>
+        </div>
+        <div class="score__card-content">
+          <span class="score__tempo font-mono">Allegro</span>
+          <h3 class="font-display">The Cartographer</h3>
+          <p class="font-sans">2022 — Feature Film</p>
+          <p class="score__card-desc font-sans">A restless, kinetic score mapping uncharted emotional territory. Percussion-driven with orchestral swells that chart unknown worlds.</p>
+        </div>
+      </div>
+      <div class="score__card" data-tempo="largo" data-reveal>
+        <div class="score__bars">
+          <span class="score__bar" style="--h:45%"></span>
+          <span class="score__bar" style="--h:60%"></span>
+          <span class="score__bar" style="--h:35%"></span>
+          <span class="score__bar" style="--h:70%"></span>
+          <span class="score__bar" style="--h:50%"></span>
+          <span class="score__bar" style="--h:80%"></span>
+          <span class="score__bar" style="--h:40%"></span>
+          <span class="score__bar" style="--h:65%"></span>
+          <span class="score__bar" style="--h:55%"></span>
+          <span class="score__bar" style="--h:75%"></span>
+          <span class="score__bar" style="--h:30%"></span>
+          <span class="score__bar" style="--h:60%"></span>
+        </div>
+        <div class="score__card-content">
+          <span class="score__tempo font-mono">Largo</span>
+          <h3 class="font-display">Silence in C</h3>
+          <p class="font-sans">2023 — Documentary</p>
+          <p class="score__card-desc font-sans">A minimalist score built from absence. Ambient textures, single sustained notes, and the architecture of quietness.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCENE 4: FILMSTRIP -->
+  <section class="filmstrip" id="filmstrip">
+    <div class="container">
+      <p class="filmstrip__label font-mono" data-reveal>III. SELECTED FILMS</p>
+      <h2 class="filmstrip__title font-display" data-reveal>Filmography</h2>
+    </div>
+    <div class="filmstrip__reel">
+      <div class="filmstrip__item" data-reveal>
+        <div class="filmstrip__frame">
+          <div class="filmstrip__sprocket filmstrip__sprocket--top"></div>
+          <div class="filmstrip__image" style="--poster: url('https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=600&h=800&fit=crop')"></div>
+          <div class="filmstrip__sprocket filmstrip__sprocket--bottom"></div>
+        </div>
+        <div class="filmstrip__info">
+          <span class="filmstrip__year font-mono">2024</span>
+          <h3 class="filmstrip__name font-display">The Last Symphony</h3>
+          <p class="filmstrip__type font-sans">Feature Film — Drama</p>
+        </div>
+      </div>
+      <div class="filmstrip__item" data-reveal>
+        <div class="filmstrip__frame">
+          <div class="filmstrip__sprocket filmstrip__sprocket--top"></div>
+          <div class="filmstrip__image" style="--poster: url('https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=600&h=800&fit=crop')"></div>
+          <div class="filmstrip__sprocket filmstrip__sprocket--bottom"></div>
+        </div>
+        <div class="filmstrip__info">
+          <span class="filmstrip__year font-mono">2023</span>
+          <h3 class="filmstrip__name font-display">Nocturne for Two</h3>
+          <p class="filmstrip__type font-sans">Short Film — Romance</p>
+        </div>
+      </div>
+      <div class="filmstrip__item" data-reveal>
+        <div class="filmstrip__frame">
+          <div class="filmstrip__sprocket filmstrip__sprocket--top"></div>
+          <div class="filmstrip__image" style="--poster: url('https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=600&h=800&fit=crop')"></div>
+          <div class="filmstrip__sprocket filmstrip__sprocket--bottom"></div>
+        </div>
+        <div class="filmstrip__info">
+          <span class="filmstrip__year font-mono">2022</span>
+          <h3 class="filmstrip__name font-display">The Cartographer</h3>
+          <p class="filmstrip__type font-sans">Feature Film — Adventure</p>
+        </div>
+      </div>
+      <div class="filmstrip__item" data-reveal>
+        <div class="filmstrip__frame">
+          <div class="filmstrip__sprocket filmstrip__sprocket--top"></div>
+          <div class="filmstrip__image" style="--poster: url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600&h=800&fit=crop')"></div>
+          <div class="filmstrip__sprocket filmstrip__sprocket--bottom"></div>
+        </div>
+        <div class="filmstrip__info">
+          <span class="filmstrip__year font-mono">2023</span>
+          <h3 class="filmstrip__name font-display">Silence in C</h3>
+          <p class="filmstrip__type font-sans">Documentary — Music</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCENE 5: ABOUT -->
+  <section class="about" id="about">
+    <div class="container about__grid">
+      <div class="about__portrait" data-reveal>
+        <div class="about__portrait-frame">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=800&fit=crop" alt="Rafael Santos" loading="lazy">
+        </div>
+        <div class="about__portrait-accent"></div>
+      </div>
+      <div class="about__content">
+        <p class="about__label font-mono" data-reveal>IV. ABOUT</p>
+        <h2 class="about__title font-display" data-reveal>Rafael Santos</h2>
+        <p class="about__role font-mono" data-reveal>Composer / Artistic Auteur</p>
+        <p class="about__bio font-sans" data-reveal>Rafael Santos grew up in the echo of concert halls, raised on the scores of Williams, Newman, and Morricone. He discovered that the space between notes carries more weight than the notes themselves. After studying composition at Juilliard, he scored his first independent feature at 24 — a low-budget drama that premiered at Sundance and changed the course of his career.</p>
+        <p class="about__bio font-sans" data-reveal>His approach — CinematicFrame — treats every visual cut as a musical rest, every fade as a diminuendo. He composes not to fill silence, but to give it shape. His work spans feature films, documentaries, and concert hall arrangements performed by philharmonic orchestras worldwide.</p>
+        <div class="about__stats" data-reveal>
+          <div class="about__stat">
+            <span class="about__stat-num font-display">47</span>
+            <span class="about__stat-label font-mono">Compositions</span>
+          </div>
+          <div class="about__stat">
+            <span class="about__stat-num font-display">12</span>
+            <span class="about__stat-label font-mono">Awards</span>
+          </div>
+          <div class="about__stat">
+            <span class="about__stat-num font-display">23</span>
+            <span class="about__stat-label font-mono">Festivals</span>
+          </div>
+        </div>
+        <div class="about__details" data-reveal>
+          <div class="about__detail">
+            <span class="font-mono">Influences</span>
+            <span class="font-sans">John Williams, Thomas Newman, Ennio Morricone</span>
+          </div>
+          <div class="about__detail">
+            <span class="font-mono">Studio</span>
+            <span class="font-sans">Composition studio with virtual synth & orchestral sample library</span>
+          </div>
+          <div class="about__detail">
+            <span class="font-mono">Philosophy</span>
+            <span class="font-sans">Observer → Participant</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCENE 6: SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <p class="services__label font-mono" data-reveal>V. SERVICES</p>
+      <h2 class="services__title font-display" data-reveal>What I Compose</h2>
+      <div class="services__grid">
+        <div class="services__card" data-reveal>
+          <div class="services__card-icon">
+            <span class="services__card-note">&#9833;</span>
+          </div>
+          <span class="services__card-num font-mono">01</span>
+          <h3 class="font-display">Film Scoring</h3>
+          <p class="font-sans">Full original scores for feature films, shorts, and episodic content. From concept to final mix — orchestral, electronic, or hybrid.</p>
+        </div>
+        <div class="services__card" data-reveal>
+          <div class="services__card-icon">
+            <span class="services__card-note">&#9834;</span>
+          </div>
+          <span class="services__card-num font-mono">02</span>
+          <h3 class="font-display">Orchestration</h3>
+          <p class="font-sans">Detailed orchestration for any ensemble size. Chamber strings to full symphonic — every instrument placed with precision and purpose.</p>
+        </div>
+        <div class="services__card" data-reveal>
+          <div class="services__card-icon">
+            <span class="services__card-note">&#9835;</span>
+          </div>
+          <span class="services__card-num font-mono">03</span>
+          <h3 class="font-display">Sound Design</h3>
+          <p class="font-sans">Atmospheric soundscapes that blur the line between music and environment. Textures woven from field recordings, synths, and silence.</p>
+        </div>
+        <div class="services__card" data-reveal>
+          <div class="services__card-icon">
+            <span class="services__card-note">&#9836;</span>
+          </div>
+          <span class="services__card-num font-mono">04</span>
+          <h3 class="font-display">Music Supervision</h3>
+          <p class="font-sans">Curating and licensing existing music for film and television. Finding the perfect needle drop or pre-existing piece to elevate a scene.</p>
+        </div>
+        <div class="services__card" data-reveal>
+          <div class="services__card-icon">
+            <span class="services__card-note">&#9833;</span>
+          </div>
+          <span class="services__card-num font-mono">05</span>
+          <h3 class="font-display">Concert Arrangements</h3>
+          <p class="font-sans">Adapting film scores for live concert performance. Arrangements designed for philharmonic orchestras and festival stages worldwide.</p>
+        </div>
+        <div class="services__card" data-reveal>
+          <div class="services__card-icon">
+            <span class="services__card-note">&#9834;</span>
+          </div>
+          <span class="services__card-num font-mono">06</span>
+          <h3 class="font-display">Theme Composition</h3>
+          <p class="font-sans">Signature themes and leitmotifs that become the identity of a project. Memorable, emotionally resonant, built to endure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCENE 7: CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container contact__grid">
+      <div class="contact__left">
+        <p class="contact__label font-mono" data-reveal>VI. CONTACT</p>
+        <h2 class="contact__title font-display" data-reveal>Let's Compose<br>Something Grand</h2>
+        <p class="contact__sub font-sans" data-reveal>Available for feature film scoring, concert arrangements, and collaborative artistic projects. Currently accepting commissions for 2026.</p>
+      </div>
+      <div class="contact__right" data-reveal>
+        <div class="contact__detail">
+          <span class="contact__detail-label font-mono">Email</span>
+          <a href="mailto:rafael@santoscompositions.com" class="contact__detail-value font-sans">rafael@santoscompositions.com</a>
+        </div>
+        <div class="contact__detail">
+          <span class="contact__detail-label font-mono">Studio</span>
+          <span class="contact__detail-value font-sans">Composition Studio — Virtual Synth & Orchestral</span>
+        </div>
+        <div class="contact__detail">
+          <span class="contact__detail-label font-mono">Representation</span>
+          <span class="contact__detail-value font-sans">TheFestival Commissions</span>
+        </div>
+        <div class="contact__social">
+          <a href="#" class="contact__social-link font-mono" data-magnetic>SoundCloud</a>
+          <a href="#" class="contact__social-link font-mono" data-magnetic>IMDb</a>
+          <a href="#" class="contact__social-link font-mono" data-magnetic>Spotify</a>
+          <a href="#" class="contact__social-link font-mono" data-magnetic>LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER — TheFestival Identity -->
+  <footer class="footer" id="footer">
+    <div class="footer__staff">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <span class="footer__logo font-display">TheFestival</span>
+        <span class="footer__tagline font-mono">Composer & Artistic Auteur</span>
+      </div>
+      <div class="footer__center">
+        <span class="footer__note font-display">&#119070;</span>
+      </div>
+      <div class="footer__right">
+        <p class="font-mono">&copy; 2026 Rafael Santos</p>
+        <p class="font-mono footer__made">Scored with passion</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="src/init.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+{
+  "profile": {
+    "id": "thomas-renard",
+    "name": "Thomas Renard",
+    "role": "Producer",
+    "archetype": "Technical Master",
+    "tagline": "The logistics of impossible stories",
+    "email": "thomas@renardprod.com",
+    "social": {
+      "linkedin": "https://linkedin.com/in/thomasrenard"
+    },
+    "bio": "Producer whose spreadsheets read like screenplays — every budget line a narrative choice, every schedule a story arc."
+  },
+  "heroSystem": "TechSpecSheet",
+  "hero": {
+    "image": "/images/hero.jpg",
+    "overline": "Thomas Renard",
+    "title": "The logistics of impossible stories",
+    "subtitle": "Producer — Lyon",
+    "ctaLabel": "View Projects"
+  },
+  "scenes": [
+    { "id": "hero", "type": "hero" },
+    { "id": "stats", "type": "text" },
+    { "id": "work", "type": "gallery" },
+    { "id": "signature", "type": "interaction" },
+    { "id": "approach", "type": "text" },
+    { "id": "filmography", "type": "list" },
+    { "id": "footer", "type": "footer" }
+  ],
+  "footer": {
+    "identity": "TheWorkshop"
+  },
+  "imageContinuity": {
+    "palette": "neutral",
+    "treatment": "clean",
+    "anchor": "studio-light"
+  },
+  "work": [
+    {
+      "title": "Industrie Silence",
+      "year": "2024",
+      "category": "Documentary",
+      "image": "/images/work-01.jpg",
+      "description": "The hidden cost of fast fashion in Eastern Europe."
+    },
+    {
+      "title": "Le Contrat",
+      "year": "2023",
+      "category": "Feature Film",
+      "image": "/images/work-02.jpg",
+      "description": "A corporate thriller set in the French wine industry."
+    }
+  ]
+}

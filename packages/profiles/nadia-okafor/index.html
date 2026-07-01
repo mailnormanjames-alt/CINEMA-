@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nadia Okafor — Costume Designer | The Body is the Canvas</title>
+  <meta name="description" content="Nadia Okafor — Costume Designer & Artistic Auteur. Transforming bodies into living art through fabric, texture, and meticulous craftsmanship.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/styles/nadia-okafor.css">
+</head>
+<body>
+
+  <!-- Preloader: Fabric Swatch Reveal -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__swatch preloader__swatch--1"></div>
+    <div class="preloader__swatch preloader__swatch--2"></div>
+    <div class="preloader__swatch preloader__swatch--3"></div>
+    <div class="preloader__swatch preloader__swatch--4"></div>
+    <div class="preloader__swatch preloader__swatch--5"></div>
+    <div class="preloader__text">
+      <span class="preloader__label">unfolding</span>
+      <span class="preloader__name">Nadia Okafor</span>
+    </div>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor">
+    <div class="cursor__dot"></div>
+    <div class="cursor__ring"></div>
+    <div class="cursor__fabric-trail"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__fabric-accent"></div>
+    <div class="nav__inner">
+      <a href="#" class="nav__logo" data-magnetic>
+        <span class="nav__logo-mark">N</span>
+        <span class="nav__logo-text">Nadia Okafor</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Menu">
+        <span class="nav__toggle-thread nav__toggle-thread--1"></span>
+        <span class="nav__toggle-thread nav__toggle-thread--2"></span>
+        <span class="nav__toggle-thread nav__toggle-thread--3"></span>
+      </button>
+      <div class="nav__links" id="navLinks">
+        <a href="#philosophy" class="nav__link" data-magnetic>Philosophy</a>
+        <a href="#fabric-library" class="nav__link" data-magnetic>Fabric Library</a>
+        <a href="#filmstrip" class="nav__link" data-magnetic>Filmstrip</a>
+        <a href="#about" class="nav__link" data-magnetic>About</a>
+        <a href="#services" class="nav__link" data-magnetic>Services</a>
+        <a href="#contact" class="nav__link nav__link--cta" data-magnetic>Commission</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero: Wardrobe Room -->
+  <header class="hero" id="hero">
+    <div class="hero__wardrobe">
+      <div class="hero__rack hero__rack--left">
+        <div class="hero__garment hero__garment--1"></div>
+        <div class="hero__garment hero__garment--2"></div>
+        <div class="hero__garment hero__garment--3"></div>
+      </div>
+      <div class="hero__rack hero__rack--right">
+        <div class="hero__garment hero__garment--4"></div>
+        <div class="hero__garment hero__garment--5"></div>
+        <div class="hero__garment hero__garment--6"></div>
+      </div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__swatch-grid">
+        <div class="hero__swatch hero__swatch--silk"></div>
+        <div class="hero__swatch hero__swatch--velvet"></div>
+        <div class="hero__swatch hero__swatch--linen"></div>
+        <div class="hero__swatch hero__swatch--chiffon"></div>
+      </div>
+      <p class="hero__role">Costume Designer & Artistic Auteur</p>
+      <h1 class="hero__title">
+        <span class="hero__title-line" data-geometric-reveal>The body</span>
+        <span class="hero__title-line hero__title-line--accent" data-geometric-reveal>is the canvas</span>
+      </h1>
+      <p class="hero__subtitle" data-geometric-reveal>Where fabric meets flesh, and character is woven from the thread up.</p>
+      <div class="hero__cta" data-geometric-reveal>
+        <a href="#fabric-library" class="btn btn--primary" data-magnetic>Explore the Collection</a>
+        <a href="#contact" class="btn btn--ghost" data-magnetic>Commission Work</a>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <div class="hero__scroll-thread"></div>
+      <span>Scroll to unfold</span>
+    </div>
+  </header>
+
+  <!-- Philosophy Statement -->
+  <section class="philosophy" id="philosophy">
+    <div class="philosophy__inner">
+      <div class="philosophy__label">
+        <span class="philosophy__label-line"></span>
+        <span class="philosophy__label-text">Philosophy</span>
+      </div>
+      <blockquote class="philosophy__statement" data-geometric-reveal>
+        <p>"Every costume tells the story the actor cannot speak. The drape of silk, the weight of wool, the whisper of chiffon — these are the languages of character. I dress bodies to give them voices."</p>
+      </blockquote>
+      <div class="philosophy__principles">
+        <div class="philosophy__principle" data-geometric-reveal>
+          <span class="philosophy__principle-num">01</span>
+          <h3 class="philosophy__principle-title">Fabric as Language</h3>
+          <p class="philosophy__principle-desc">Every textile speaks. Silk whispers intimacy. Wool declares resilience. Chiffon suggests vulnerability. I choose the vocabulary.</p>
+        </div>
+        <div class="philosophy__principle" data-geometric-reveal>
+          <span class="philosophy__principle-num">02</span>
+          <h3 class="philosophy__principle-title">Period Precision</h3>
+          <p class="philosophy__principle-desc">Authenticity isn't about replicas. It's about understanding the soul of an era — the constraints, the rebellions, the textures of daily life.</p>
+        </div>
+        <div class="philosophy__principle" data-geometric-reveal>
+          <span class="philosophy__principle-num">03</span>
+          <h3 class="philosophy__principle-title">Body Architecture</h3>
+          <p class="philosophy__principle-desc">The human form is not a hanger. It's architecture. Costumes must move, breathe, and transform with the performer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fabric Library (Signature) -->
+  <section class="fabric-library" id="fabric-library">
+    <div class="fabric-library__inner">
+      <div class="fabric-library__header">
+        <span class="fabric-library__label">Signature Collection</span>
+        <h2 class="fabric-library__title" data-geometric-reveal>Fabric Library</h2>
+        <p class="fabric-library__subtitle" data-geometric-reveal>Touch the textures that define a character's world.</p>
+      </div>
+      <div class="fabric-library__grid">
+        <div class="fabric-library__item fabric-library__item--large" data-geometric-reveal>
+          <div class="fabric-library__swatch fabric-library__swatch--silk">
+            <div class="fabric-library__texture"></div>
+          </div>
+          <div class="fabric-library__info">
+            <span class="fabric-library__tag">Hero Fabric</span>
+            <h3 class="fabric-library__name">Habotai Silk</h3>
+            <p class="fabric-library__desc">Weightless drape for flowing gowns and intimate scenes. Catches light like water.</p>
+            <span class="fabric-library__origin">Origin: Suzhou, China</span>
+          </div>
+        </div>
+        <div class="fabric-library__item" data-geometric-reveal>
+          <div class="fabric-library__swatch fabric-library__swatch--velvet">
+            <div class="fabric-library__texture"></div>
+          </div>
+          <div class="fabric-library__info">
+            <span class="fabric-library__tag">Period Essential</span>
+            <h3 class="fabric-library__name">Silk Velvet</h3>
+            <p class="fabric-library__desc">The fabric of royalty. Deep pile absorbs light, creating shadows within shadows.</p>
+            <span class="fabric-library__origin">Origin: Como, Italy</span>
+          </div>
+        </div>
+        <div class="fabric-library__item" data-geometric-reveal>
+          <div class="fabric-library__swatch fabric-library__swatch--linen">
+            <div class="fabric-library__texture"></div>
+          </div>
+          <div class="fabric-library__info">
+            <span class="fabric-library__tag">Workhorse</span>
+            <h3 class="fabric-library__name">Belgian Linen</h3>
+            <p class="fabric-library__desc">Structured yet breathable. The backbone of historical accuracy.</p>
+            <span class="fabric-library__origin">Origin: Flanders, Belgium</span>
+          </div>
+        </div>
+        <div class="fabric-library__item" data-geometric-reveal>
+          <div class="fabric-library__swatch fabric-library__swatch--chiffon">
+            <div class="fabric-library__texture"></div>
+          </div>
+          <div class="fabric-library__info">
+            <span class="fabric-library__tag">Atmosphere</span>
+            <h3 class="fabric-library__name">Silk Chiffon</h3>
+            <p class="fabric-library__desc">Transparency and movement. For characters caught between worlds.</p>
+            <span class="fabric-library__origin">Origin: Lyon, France</span>
+          </div>
+        </div>
+        <div class="fabric-library__item" data-geometric-reveal>
+          <div class="fabric-library__swatch fabric-library__swatch--brocade">
+            <div class="fabric-library__texture"></div>
+          </div>
+          <div class="fabric-library__info">
+            <span class="fabric-library__tag">Statement</span>
+            <h3 class="fabric-library__name">Gold Brocade</h3>
+            <p class="fabric-library__desc">Woven opulence for climactic moments. Every thread tells a story of power.</p>
+            <span class="fabric-library__origin">Origin: Varanasi, India</span>
+          </div>
+        </div>
+        <div class="fabric-library__item" data-geometric-reveal>
+          <div class="fabric-library__swatch fabric-library__swatch--wool">
+            <div class="fabric-library__texture"></div>
+          </div>
+          <div class="fabric-library__info">
+            <span class="fabric-library__tag">Foundation</span>
+            <h3 class="fabric-library__name">Harris Tweed</h3>
+            <p class="fabric-library__desc">Hand-woven character. Each piece carries the landscape of its making.</p>
+            <span class="fabric-library__origin">Origin: Outer Hebrides, Scotland</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filmstrip -->
+  <section class="filmstrip" id="filmstrip">
+    <div class="filmstrip__inner">
+      <div class="filmstrip__header">
+        <span class="filmstrip__label">Selected Works</span>
+        <h2 class="filmstrip__title" data-geometric-reveal>Filmstrip</h2>
+      </div>
+      <div class="filmstrip__reel">
+        <div class="filmstrip__item" data-geometric-reveal>
+          <div class="filmstrip__frame">
+            <div class="filmstrip__perforation filmstrip__perforation--top"></div>
+            <div class="filmstrip__image filmstrip__image--silk"></div>
+            <div class="filmstrip__perforation filmstrip__perforation--bottom"></div>
+          </div>
+          <div class="filmstrip__meta">
+            <span class="filmstrip__year">2024</span>
+            <h3 class="filmstrip__name">The Silk Road</h3>
+            <span class="filmstrip__type">Feature Film</span>
+          </div>
+        </div>
+        <div class="filmstrip__item" data-geometric-reveal>
+          <div class="filmstrip__frame">
+            <div class="filmstrip__perforation filmstrip__perforation--top"></div>
+            <div class="filmstrip__image filmstrip__image--threads"></div>
+            <div class="filmstrip__perforation filmstrip__perforation--bottom"></div>
+          </div>
+          <div class="filmstrip__meta">
+            <span class="filmstrip__year">2023</span>
+            <h3 class="filmstrip__name">Threads</h3>
+            <span class="filmstrip__type">Short Film</span>
+          </div>
+        </div>
+        <div class="filmstrip__item" data-geometric-reveal>
+          <div class="filmstrip__frame">
+            <div class="filmstrip__perforation filmstrip__perforation--top"></div>
+            <div class="filmstrip__image filmstrip__image--wardrobe"></div>
+            <div class="filmstrip__perforation filmstrip__perforation--bottom"></div>
+          </div>
+          <div class="filmstrip__meta">
+            <span class="filmstrip__year">2022</span>
+            <h3 class="filmstrip__name">The Wardrobe</h3>
+            <span class="filmstrip__type">Documentary</span>
+          </div>
+        </div>
+        <div class="filmstrip__item" data-geometric-reveal>
+          <div class="filmstrip__frame">
+            <div class="filmstrip__perforation filmstrip__perforation--top"></div>
+            <div class="filmstrip__image filmstrip__image--period"></div>
+            <div class="filmstrip__perforation filmstrip__perforation--bottom"></div>
+          </div>
+          <div class="filmstrip__meta">
+            <span class="filmstrip__year">2023</span>
+            <h3 class="filmstrip__name">Period Piece</h3>
+            <span class="filmstrip__type">Feature Film</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="about__inner">
+      <div class="about__portrait">
+        <div class="about__portrait-frame" data-geometric-reveal>
+          <div class="about__portrait-image"></div>
+          <div class="about__portrait-fabric"></div>
+        </div>
+        <div class="about__portrait-label">
+          <span class="about__portrait-location">London / Lagos</span>
+          <span class="about__portrait-availability">Available for commissions</span>
+        </div>
+      </div>
+      <div class="about__bio">
+        <span class="about__label">About Nadia</span>
+        <h2 class="about__title" data-geometric-reveal>From Thread to Screen</h2>
+        <div class="about__text" data-geometric-reveal>
+          <p>Nadia Okafor is a Costume Designer whose work bridges the precision of period craftsmanship with the boldness of contemporary fashion. She grew up in Lagos watching her mother transform Ankara fabric into architectural masterpieces — each fold a calculation, each seam a bridge between worlds. After studying at the Royal College of Art, she brought that global perspective to the art of dressing characters.</p>
+          <p>Her approach is rooted in deep research and material intimacy. Before sketching a single silhouette, Nadia spends weeks in fabric libraries, touching textiles, understanding their weight, their movement, their history. Every costume is built from the fiber up.</p>
+          <p>Her work has been recognized by the British Film Institute, the Costume Designers Guild, and威尼斯 Film Festival. She believes that costume design is not decoration — it is storytelling in its most tactile form.</p>
+        </div>
+        <div class="about__stats" data-geometric-reveal>
+          <div class="about__stat">
+            <span class="about__stat-num">24</span>
+            <span class="about__stat-label">Productions</span>
+          </div>
+          <div class="about__stat">
+            <span class="about__stat-num">8</span>
+            <span class="about__stat-label">Awards</span>
+          </div>
+          <div class="about__stat">
+            <span class="about__stat-num">150+</span>
+            <span class="about__stat-label">Original Costumes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="services__inner">
+      <div class="services__header">
+        <span class="services__label">The Workshop</span>
+        <h2 class="services__title" data-geometric-reveal>Services</h2>
+        <p class="services__subtitle" data-geometric-reveal>From concept to closing credits.</p>
+      </div>
+      <div class="services__grid">
+        <div class="services__item" data-geometric-reveal>
+          <div class="services__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M24 4v40M4 24h40M12 8l24 32M36 8L12 40"/>
+            </svg>
+          </div>
+          <h3 class="services__name">Costume Design</h3>
+          <p class="services__desc">Full character development through silhouette, color, and texture. From script breakdown to final fitting.</p>
+        </div>
+        <div class="services__item" data-geometric-reveal>
+          <div class="services__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="24" cy="24" r="16"/><path d="M24 8v32M12 16h24M12 32h24"/>
+            </svg>
+          </div>
+          <h3 class="services__name">Period Research</h3>
+          <p class="services__desc">Deep archival research to ensure historical authenticity. Fabric sourcing from period-appropriate mills.</p>
+        </div>
+        <div class="services__item" data-geometric-reveal>
+          <div class="services__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="8" y="8" width="32" height="32" rx="4"/><path d="M16 24h16M24 16v16"/>
+            </svg>
+          </div>
+          <h3 class="services__name">Fabric Sourcing</h3>
+          <p class="services__desc">Global network of mills, artisans, and vintage dealers. Rare textiles for distinctive productions.</p>
+        </div>
+        <div class="services__item" data-geometric-reveal>
+          <div class="services__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M8 40L24 8l16 32"/><path d="M16 32h16"/>
+            </svg>
+          </div>
+          <h3 class="services__name">Wardrobe Supervision</h3>
+          <p class="services__desc">On-set management of costume continuity, quick changes, and department coordination.</p>
+        </div>
+        <div class="services__item" data-geometric-reveal>
+          <div class="services__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="24" cy="24" r="8"/><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="24"/>
+            </svg>
+          </div>
+          <h3 class="services__name">Textile Innovation</h3>
+          <p class="services__desc">Collaboration with textile labs for custom fabrics, sustainable alternatives, and experimental materials.</p>
+        </div>
+        <div class="services__item" data-geometric-reveal>
+          <div class="services__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M24 4C12 4 4 24 4 24s8 20 20 20 20-20 20-20S36 4 24 4z"/><path d="M24 12v24M16 20l8-8 8 8"/>
+            </svg>
+          </div>
+          <h3 class="services__name">Character Development</h3>
+          <p class="services__desc">Collaborative workshops with directors and actors to build costume narratives from the inside out.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="contact__inner">
+      <div class="contact__header">
+        <span class="contact__label">Commission</span>
+        <h2 class="contact__title" data-geometric-reveal>Ready to dress your story</h2>
+        <p class="contact__subtitle" data-geometric-reveal>Every project begins with a conversation about fabric, character, and story.</p>
+      </div>
+      <div class="contact__content">
+        <div class="contact__info" data-geometric-reveal>
+          <div class="contact__detail">
+            <span class="contact__detail-label">Email</span>
+            <a href="mailto:nadia@okaforcostume.com" class="contact__detail-value" data-magnetic>nadia@okaforcostume.com</a>
+          </div>
+          <div class="contact__detail">
+            <span class="contact__detail-label">Representation</span>
+            <span class="contact__detail-value">WME Entertainment</span>
+          </div>
+          <div class="contact__detail">
+            <span class="contact__detail-label">Based in</span>
+            <span class="contact__detail-value">London / Lagos</span>
+          </div>
+        </div>
+        <form class="contact__form" data-geometric-reveal>
+          <div class="contact__form-group">
+            <label class="contact__form-label" for="name">Name</label>
+            <input type="text" id="name" class="contact__form-input" placeholder="Your name">
+          </div>
+          <div class="contact__form-group">
+            <label class="contact__form-label" for="project">Project Type</label>
+            <select id="project" class="contact__form-input">
+              <option value="">Select project type</option>
+              <option value="feature">Feature Film</option>
+              <option value="short">Short Film</option>
+              <option value="tv">Television</option>
+              <option value="theater">Theater</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="contact__form-group">
+            <label class="contact__form-label" for="message">Message</label>
+            <textarea id="message" class="contact__form-input contact__form-textarea" placeholder="Tell me about your project..." rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full" data-magnetic>Send Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer: The Workshop -->
+  <footer class="footer footer--workshop" id="footer">
+    <div class="footer__loom">
+      <div class="footer__thread footer__thread--1"></div>
+      <div class="footer__thread footer__thread--2"></div>
+      <div class="footer__thread footer__thread--3"></div>
+      <div class="footer__thread footer__thread--4"></div>
+      <div class="footer__thread footer__thread--5"></div>
+    </div>
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__identity">The Workshop</span>
+        <p class="footer__tagline">Where fabric becomes character.</p>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col">
+          <span class="footer__col-title">Navigate</span>
+          <a href="#philosophy" class="footer__link">Philosophy</a>
+          <a href="#fabric-library" class="footer__link">Fabric Library</a>
+          <a href="#filmstrip" class="footer__link">Filmstrip</a>
+          <a href="#about" class="footer__link">About</a>
+        </div>
+        <div class="footer__col">
+          <span class="footer__col-title">Services</span>
+          <a href="#services" class="footer__link">Costume Design</a>
+          <a href="#services" class="footer__link">Period Research</a>
+          <a href="#services" class="footer__link">Fabric Sourcing</a>
+          <a href="#services" class="footer__link">Textile Innovation</a>
+        </div>
+        <div class="footer__col">
+          <span class="footer__col-title">Connect</span>
+          <a href="mailto:nadia@okaforcostume.com" class="footer__link">Email</a>
+          <a href="#" class="footer__link">Instagram</a>
+          <a href="#" class="footer__link">IMDb</a>
+          <a href="#" class="footer__link">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">&copy; 2026 Nadia Okafor. All rights reserved.</span>
+        <span class="footer__signature">Handcrafted with care.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script type="module" src="src/init.js"></script>
+</body>
+</html>

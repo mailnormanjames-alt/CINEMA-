@@ -1,0 +1,52 @@
+# LÉA MOREAU — Screenwriter | Image Prompts
+# 4 images needed (filmstrip frames)
+
+---
+
+## 1. filmstrip-01.jpg — "Les Mots Manquants" (Feature Script)
+**Section:** Filmstrip Frame 01
+**Prompt:**
+Cinematic still from a film about a mute woman who finds her voice through handwriting. Close-up of a woman's hands writing frantically in a leather journal. The handwriting flows across the page — French words in blue ink. Warm afternoon light streams through a window, casting soft shadows across the manuscript. A cup of cold coffee sits beside the journal. The atmosphere is intimate, desperate, and deeply personal. Shot on Kodak Portra 400. Fine 35mm grain. 50mm macro lens. Natural window light. Color grade: warm gold, soft saturation, paper tones. Aspect ratio 16:9. Mood: the urgency of expression, words as salvation.
+
+**Negative prompt:**
+cartoon, anime, illustration, bright, digital, typing, computer, text, watermarks, logos, cold lighting
+
+---
+
+## 2. filmstrip-02.jpg — "Après la Pluie" (Short Script)
+**Section:** Filmstrip Frame 02
+**Prompt:**
+Cinematic still from a short film about two strangers sharing a bench during a rainstorm. A wet park bench in Paris after rain. Two cups of coffee sit on the bench, steam rising from them. Puddles reflect the grey sky and bare trees. A newspaper lies open beside the cups. The atmosphere is quiet, romantic, and fleeting. Shot on Kodak Portra 400. Fine 35mm grain. 50mm lens. Soft overcast light after rain. Color grade: cool grey tones, soft contrast, warm accents from coffee steam. Aspect ratio 16:9. Mood: chance encounter, the beauty of rain.
+
+**Negative prompt:**
+cartoon, anime, illustration, bright, sunny, crowds, text, watermarks, logos, modern bench, plastic
+
+---
+
+## 3. filmstrip-03.jpg — "Les Silences" (Feature Film)
+**Section:** Filmstrip Frame 03
+**Prompt:**
+Cinematic still from a film about a woman discovering her mother's secret letters. A wooden desk drawer pulled open, revealing a bundle of yellowed letters tied with faded ribbon. A woman's hand reaches for them. Warm lamplight illuminates the scene, casting long shadows. The letters are handwritten in elegant cursive. The atmosphere is mysterious, emotional, and revelatory. Shot on Kodak Portra 400. Fine 35mm grain. 50mm lens. Warm practical lamp light. Color grade: warm amber, soft shadows, aged paper tones. Aspect ratio 16:9. Mood: discovery, secrets, the weight of the past.
+
+**Negative prompt:**
+cartoon, anime, illustration, bright, modern, digital, text, watermarks, logos, cold lighting, plastic
+
+---
+
+## 4. filmstrip-04.jpg — "Le Dernier Été" (Feature Film)
+**Section:** Filmstrip Frame 04
+**Prompt:**
+Cinematic still from a film about a family's last summer in their coastal home. A weathered wooden table on a terrace overlooking the Mediterranean. Empty wine glasses, a half-eaten meal, and scattered newspaper pages. The late afternoon sun casts golden light across the scene. In the background, the sea stretches to the horizon. The atmosphere is nostalgic, bittersweet, and deeply French. Shot on Kodak Portra 400. Fine 35mm grain. 35mm lens. Natural golden hour light. Color grade: warm gold, Mediterranean blue, soft shadows. Aspect ratio 16:9. Mood: farewell, memory, the last golden hour.
+
+**Negative prompt:**
+cartoon, anime, illustration, bright, modern, pool, luxury, text, watermarks, logos, cold lighting, crowds
+
+---
+
+## LEONARDO AI SETTINGS
+- Mode: PhotoReal
+- Aspect ratio: 16:9 (landscape)
+- Resolution: 1360x768 or higher
+- Style: Cinematic / Photography
+- Alchemy V2: ON
+- Generate 4 variations per prompt, select best

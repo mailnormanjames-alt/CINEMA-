@@ -1,0 +1,46 @@
+# Kofi Mensah — IMAGE-PROMPTS.txt
+# Chiaroscuro Light · Deep crimson · London / Accra · Dramatic warm/cool tension
+# Usage: Copy each prompt into your image generation tool
+
+## Hero
+1. Portrait of a cinematographer at golden hour on a rooftop in Accra, warm amber light on face, city skyline in background, dramatic chiaroscuro lighting, 85mm lens, shallow depth of field, cinematic, emotional
+
+## Statement
+2. Close-up of a camera lens reflecting a scene, warm light inside, cool shadows outside, split lighting, dramatic, 50mm macro, cinematic color grading
+3. A cinematographer adjusting a light on set, dramatic side lighting, warm tones, documentary style, behind-the-scenes
+
+## Filmography
+4. A boxer in a dimly lit gym, single overhead light, dramatic shadows, golden hour light through windows, 35mm film grain, cinematic composition
+5. Aerial shot of a vanishing lake at sunset, warm golden light, dramatic clouds, documentary style, wide angle
+6. A musician performing on stage, blue and crimson stage lighting, dramatic chiaroscuro, music video aesthetic, dynamic
+7. A lighthouse at dusk, warm light from the lantern room, cool blue sky, dramatic contrast, cinematic, wide shot
+
+## Lenses
+8. Close-up of a 24mm lens on a camera, warm amber light reflecting off glass, product photography, shallow depth of field, 85mm
+9. A 50mm lens being held up to a scene, the world through the lens visible, warm tones, cinematic, documentary
+10. An 85mm portrait lens with shallow depth of field effect visible in background, warm light, professional setup
+11. A macro lens capturing texture of fabric, extreme close-up, warm light, detail shot, cinematic
+
+## About
+12. Portrait of a cinematographer looking through a viewfinder, warm golden hour light, London skyline in background, cinematic, 85mm
+13. A grandmother's face in golden hour light, warm tones, dramatic shadows, intimate portrait, emotional, 85mm
+14. Behind-the-scenes of a film set, crew working, warm practical lights, documentary style, high contrast
+15. A cinematographer reviewing footage on a monitor, warm glow from screen, dark room, professional, cinematic
+
+## Services
+16. A film set with dramatic lighting setup, warm and cool lights, behind-the-scenes, professional, wide shot
+17. Documentary shoot in Africa, natural light, crew working, golden hour, authentic, documentary style
+18. A music video set with colorful lighting, dramatic atmosphere, professional setup, cinematic
+19. A color grading suite, warm monitor glow, professional workspace, cinematic atmosphere
+
+## Work
+20. Feature film still: a boxer in a ring, dramatic overhead light, shadows, cinematic, emotional, 35mm
+21. Documentary still: a lake at sunset, warm golden light, natural beauty, documentary realism, wide shot
+22. Music video still: a performer on stage, dramatic lighting, blue and crimson, cinematic, dynamic
+23. Feature film still: a lighthouse at night, warm light, cool surroundings, dramatic, cinematic
+
+## Stats
+24. A cinematographer's desk with lens collection, warm light, professional tools, organized, cinematic atmosphere
+
+## Contact
+25. London skyline at dusk, warm golden hour light, Thames reflecting city lights, cinematic, atmospheric, professional

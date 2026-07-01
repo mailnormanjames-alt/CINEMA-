@@ -1,0 +1,55 @@
+{
+  "profile": {
+    "id": "yuki-tanaka",
+    "name": "Yuki Tanaka",
+    "role": "Production Designer",
+    "archetype": "Artistic Auteur",
+    "tagline": "Every frame is an architecture",
+    "email": "yuki@tanakadesign.jp",
+    "social": {
+      "instagram": "https://instagram.com/yuki.sets"
+    },
+    "bio": "Production designer building worlds from paper sketches to full-scale builds."
+  },
+  "heroSystem": "BTSInvitation",
+  "hero": {
+    "image": "/images/hero.jpg",
+    "overline": "Yuki Tanaka",
+    "title": "Every frame is an architecture",
+    "subtitle": "Production Designer — Tokyo",
+    "ctaLabel": "Behind the Sets"
+  },
+  "scenes": [
+    { "id": "hero", "type": "hero" },
+    { "id": "process", "type": "text" },
+    { "id": "work", "type": "gallery" },
+    { "id": "signature", "type": "interaction" },
+    { "id": "about", "type": "text" },
+    { "id": "filmography", "type": "list" },
+    { "id": "footer", "type": "footer" }
+  ],
+  "footer": {
+    "identity": "TheWorkshop"
+  },
+  "imageContinuity": {
+    "palette": "muted",
+    "treatment": "matte",
+    "anchor": "practical-light"
+  },
+  "work": [
+    {
+      "title": "Paper City",
+      "year": "2024",
+      "category": "Feature Film",
+      "image": "/images/work-01.jpg",
+      "description": "Miniature Tokyo built entirely from paper and cardboard."
+    },
+    {
+      "title": "Room 404",
+      "year": "2023",
+      "category": "Short Film",
+      "image": "/images/work-02.jpg",
+      "description": "A single room that changes with every visit."
+    }
+  ]
+}

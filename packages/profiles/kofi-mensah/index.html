@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kofi Mensah — Cinematographer</title>
+  <meta name="description" content="Kofi Mensah — Cinematographer. Accra / Berlin. Light is the first actor.">
+  <meta name="theme-color" content="#0a0606">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="src/styles/kofi-mensah.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+</head>
+
+<body>
+  <div class="noise-overlay" data-cinema-noise></div>
+  <canvas id="webgl-canvas" data-cinema-webgl></canvas>
+  <div class="scroll-progress" data-cinema-progress></div>
+
+  <!-- PRELOADER — Light leak animation -->
+  <div class="preloader" data-cinema-preloader>
+    <div class="preloader-inner">
+      <div class="preloader-aperture">
+        <div class="aperture-blade" style="--i:0"></div>
+        <div class="aperture-blade" style="--i:1"></div>
+        <div class="aperture-blade" style="--i:2"></div>
+        <div class="aperture-blade" style="--i:3"></div>
+        <div class="aperture-blade" style="--i:4"></div>
+        <div class="aperture-blade" style="--i:5"></div>
+      </div>
+      <div class="preloader-data">
+        <div class="preloader-brand">MENSAH LENS</div>
+        <div class="preloader-count">0</div>
+      </div>
+      <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor" id="cursor" data-cinema-cursor>
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+  <div class="cursor-text" id="cursorText"></div>
+
+  <!-- NAVIGATION — Floating glass -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo magnetic" data-cursor="pointer">Kofi Mensah</a>
+      <div class="nav-links">
+        <a href="#philosophy" class="magnetic" data-cursor="pointer">Philosophy</a>
+        <a href="#lenses" class="magnetic" data-cursor="pointer">Lenses</a>
+        <a href="#filmography" class="magnetic" data-cursor="pointer">Films</a>
+        <a href="#gear" class="magnetic" data-cursor="pointer">Gear</a>
+        <a href="#contact" class="magnetic" data-cursor="pointer">Contact</a>
+      </div>
+      <button class="nav-menu-btn" id="menuBtn" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#philosophy">Philosophy</a>
+    <a href="#lenses">Lenses</a>
+    <a href="#filmography">Films</a>
+    <a href="#gear">Gear</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- SIDE LABELS -->
+  <div class="side-label side-label-left">Cinematographer — Accra / Berlin</div>
+  <div class="side-label side-label-right">BSC</div>
+
+  <!-- HERO — Cinematic Frame with light leak -->
+  <section class="hero" id="hero">
+    <div class="hero-vignette"></div>
+    <div class="hero-light-leak"></div>
+    <div class="hero-image"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <div class="hero-eyebrow-line"></div>
+        <div class="hero-eyebrow-text">Accra / Berlin — BSC</div>
+      </div>
+      <h1 class="hero-title">
+        <span class="line"><span class="word">Kofi</span></span>
+        <span class="line"><span class="word"><em>Mensah</em></span></span>
+      </h1>
+      <div class="hero-subtitle">Light is the first actor</div>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Discipline</span>
+          <span class="hero-meta-value">Cinematography</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Based In</span>
+          <span class="hero-meta-value">Accra / Berlin</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Available</span>
+          <span class="hero-meta-value">Autumn 2027</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-cue">
+      <span class="hero-scroll-text">Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY — Full-width quote -->
+  <section class="philosophy" id="philosophy">
+    <div class="philosophy-bg"></div>
+    <div class="philosophy-inner">
+      <p class="philosophy-quote">
+        "Light is not decoration. It is the language of feeling. I don't light a scene — I translate emotion into photons."
+      </p>
+      <p class="philosophy-attr">— Kofi Mensah, BSC interview, 2024</p>
+    </div>
+  </section>
+
+  <!-- LENSES — Signature Interaction -->
+  <section class="lenses" id="lenses">
+    <div class="lenses-bg"></div>
+    <div class="lenses-header">
+      <div class="section-label">Lens & Lighting</div>
+      <h2 class="lenses-title">The tools of <em>feeling</em></h2>
+    </div>
+    <div class="lenses-grid">
+      <div class="lens-card" data-lens="wide" data-cursor="pointer">
+        <div class="lens-card-visual">
+          <div class="lens-card-circle"></div>
+          <div class="lens-card-ring"></div>
+        </div>
+        <div class="lens-card-name">24mm f/1.4</div>
+        <div class="lens-card-use">Wide Establishing</div>
+        <div class="lens-card-desc">For scale and context. The world before the person.</div>
+      </div>
+      <div class="lens-card" data-lens="normal" data-cursor="pointer">
+        <div class="lens-card-visual">
+          <div class="lens-card-circle"></div>
+          <div class="lens-card-ring"></div>
+        </div>
+        <div class="lens-card-name">50mm f/1.2</div>
+        <div class="lens-card-use">Human Eye</div>
+        <div class="lens-card-desc">The truth lens. No distortion. No escape.</div>
+      </div>
+      <div class="lens-card" data-lens="tele" data-cursor="pointer">
+        <div class="lens-card-visual">
+          <div class="lens-card-circle"></div>
+          <div class="lens-card-ring"></div>
+        </div>
+        <div class="lens-card-name">85mm f/1.4</div>
+        <div class="lens-card-use">Intimate Portrait</div>
+        <div class="lens-card-desc">Compression and isolation. The face as landscape.</div>
+      </div>
+      <div class="lens-card" data-lens="macro" data-cursor="pointer">
+        <div class="lens-card-visual">
+          <div class="lens-card-circle"></div>
+          <div class="lens-card-ring"></div>
+        </div>
+        <div class="lens-card-name">100mm f/2.8 Macro</div>
+        <div class="lens-card-use">Detail & Texture</div>
+        <div class="lens-card-desc">The world within the world. Tears, fabric, time.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILMSTRIP — Gallery -->
+  <section class="filmstrip" id="filmography">
+    <div class="filmstrip-bg"></div>
+    <div class="filmstrip-header">
+      <div>
+        <div class="section-label">Filmography</div>
+        <h2 class="filmstrip-title">Selected <em>works</em></h2>
+      </div>
+      <div class="filmstrip-counter">01 — 04</div>
+    </div>
+    <div class="filmstrip-track">
+      <div class="filmstrip-item" data-cursor="view">
+        <div class="filmstrip-item-img"><img src="assets/images/work-01.jpg" alt="The Weight of Gold" loading="lazy"></div>
+        <div class="filmstrip-item-gradient"></div>
+        <div class="filmstrip-item-border"></div>
+        <div class="filmstrip-item-info">
+          <div class="filmstrip-item-num">001 — Feature Film</div>
+          <div class="filmstrip-item-title">The Weight of Gold</div>
+          <div class="filmstrip-item-desc">A boxer's journey from Accra to London. BSC Award for Best Cinematography.</div>
+        </div>
+      </div>
+      <div class="filmstrip-item" data-cursor="view">
+        <div class="filmstrip-item-img"><img src="assets/images/work-02.jpg" alt="Still Water" loading="lazy"></div>
+        <div class="filmstrip-item-gradient"></div>
+        <div class="filmstrip-item-border"></div>
+        <div class="filmstrip-item-info">
+          <div class="filmstrip-item-num">002 — Documentary</div>
+          <div class="filmstrip-item-title">Still Water</div>
+          <div class="filmstrip-item-desc">The vanishing lakes of East Africa. Cannes Critics' Week selection.</div>
+        </div>
+      </div>
+      <div class="filmstrip-item" data-cursor="view">
+        <div class="filmstrip-item-img"><img src="assets/images/work-03.jpg" alt="Nocturne in Blue" loading="lazy"></div>
+        <div class="filmstrip-item-gradient"></div>
+        <div class="filmstrip-item-border"></div>
+        <div class="filmstrip-item-info">
+          <div class="filmstrip-item-num">003 — Music Video</div>
+          <div class="filmstrip-item-title">Nocturne in Blue</div>
+          <div class="filmstrip-item-desc">Visual album for Ghanaian-British artist. MTV VMA nomination.</div>
+        </div>
+      </div>
+      <div class="filmstrip-item" data-cursor="view">
+        <div class="filmstrip-item-img"><img src="assets/images/work-04.jpg" alt="The Keeper" loading="lazy"></div>
+        <div class="filmstrip-item-gradient"></div>
+        <div class="filmstrip-item-border"></div>
+        <div class="filmstrip-item-info">
+          <div class="filmstrip-item-num">004 — Feature Film</div>
+          <div class="filmstrip-item-title">The Keeper</div>
+          <div class="filmstrip-item-desc">A lighthouse keeper's solitude. TIFF platform selection.</div>
+        </div>
+      </div>
+    </div>
+    <div class="filmstrip-sprockets">
+      <div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+      <div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+      <div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+      <div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+    </div>
+  </section>
+
+  <!-- GEAR — Split layout -->
+  <section class="gear" id="gear">
+    <div class="gear-bg"></div>
+    <div class="gear-left">
+      <div class="section-label">About</div>
+      <h2 class="gear-title">
+        <span class="line"><span class="word">I paint</span></span>
+        <span class="line"><span class="word">with <em>light</em></span></span>
+        <span class="line"><span class="word">and <em>shadow</em></span></span>
+        <span class="line"><span class="word">to reveal</span></span>
+        <span class="line"><span class="word">truth.</span></span>
+      </h2>
+    </div>
+    <div class="gear-right">
+      <div class="gear-text">
+        <p>Born in Accra, raised between London and Kumasi. I learned cinematography not from textbooks but from watching how light falls on my grandmother's face at dusk — that golden hour when everything becomes sacred.</p>
+        <p>My work spans feature films, documentaries, and visual albums, with a focus on stories that explore the African diaspora. I believe in chiaroscuro — the tension between light and dark that mirrors the human condition.</p>
+        <p>Every frame I shoot is a painting. Every shadow is a decision. I don't just capture images — I translate emotion into light.</p>
+      </div>
+      <div class="gear-quote">
+        <p>"The camera doesn't lie. But it can choose which truth to tell. That choice is everything."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="services-bg"></div>
+    <div class="services-header">
+      <div class="section-label">Services</div>
+      <h2 class="services-title">What I do</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-row" data-cursor="pointer">
+        <span class="service-num">01</span>
+        <span class="service-name">Feature Film Cinematography</span>
+        <span class="service-arrow">&rarr;</span>
+      </div>
+      <div class="service-row" data-cursor="pointer">
+        <span class="service-num">02</span>
+        <span class="service-name">Documentary Cinematography</span>
+        <span class="service-arrow">&rarr;</span>
+      </div>
+      <div class="service-row" data-cursor="pointer">
+        <span class="service-num">03</span>
+        <span class="service-name">Music Video & Visual Albums</span>
+        <span class="service-arrow">&rarr;</span>
+      </div>
+      <div class="service-row" data-cursor="pointer">
+        <span class="service-num">04</span>
+        <span class="service-name">Commercial & Branded Content</span>
+        <span class="service-arrow">&rarr;</span>
+      </div>
+      <div class="service-row" data-cursor="pointer">
+        <span class="service-num">05</span>
+        <span class="service-name">Lighting Design</span>
+        <span class="service-arrow">&rarr;</span>
+      </div>
+      <div class="service-row" data-cursor="pointer">
+        <span class="service-num">06</span>
+        <span class="service-name">Post-Production Color</span>
+        <span class="service-arrow">&rarr;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stats-bg"></div>
+    <div class="stat">
+      <div class="stat-num" data-cinema-counter data-count="18">0</div>
+      <div class="stat-label">Films</div>
+      <div class="stat-line"></div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" data-cinema-counter data-count="12">0</div>
+      <div class="stat-label">Awards</div>
+      <div class="stat-line"></div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" data-cinema-counter data-count="9">0</div>
+      <div class="stat-label">Festivals</div>
+      <div class="stat-line"></div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" data-cinema-counter data-count="14">0</div>
+      <div class="stat-label">Years</div>
+      <div class="stat-line"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-bg"></div>
+    <div class="contact-inner">
+      <div class="section-label" style="justify-content:center;">Contact</div>
+      <h2 class="contact-title">
+        <span class="line"><span class="word">Let's</span></span>
+        <span class="line"><span class="word">paint</span></span>
+        <span class="line"><span class="word">with <em>light</em></span></span>
+      </h2>
+      <a href="mailto:kofi@mensahlens.com" class="contact-email magnetic" data-cursor="pointer">kofi@mensahlens.com</a>
+      <div class="contact-location">London / Accra</div>
+      <div class="contact-social">
+        <a href="#" class="magnetic" data-cursor="pointer">Instagram</a>
+        <a href="#" class="magnetic" data-cursor="pointer">IMDb</a>
+        <a href="#" class="magnetic" data-cursor="pointer">Vimeo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER — TheCredits -->
+  <footer class="footer">
+    <div class="footer-left">&copy; 2026 Kofi Mensah. All rights reserved.</div>
+    <div class="footer-center">The Credits</div>
+    <div class="footer-right">Accra / Berlin</div>
+  </footer>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <div class="site-footer-copy">&copy; Norman James</div>
+      <div class="site-footer-studio">made with love <span style="color:#e53e3e;">&#10084;</span> by Empathy Studio</div>
+    </div>
+  </footer>
+
+  <script type="module" src="src/init.js"></script>
+</body>
+</html>

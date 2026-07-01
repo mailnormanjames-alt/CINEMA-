@@ -1,0 +1,24 @@
+{
+  "name": "@cinema-sotd/profile-isabelle-frost",
+  "version": "1.0.0",
+  "description": "Isabelle Frost costume design profile — Arctic Minimal aesthetic",
+  "private": true,
+  "type": "module",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static profile — no build needed'"
+  },
+  "workspaces": [
+    "../.."
+  ],
+  "keywords": [
+    "costume-design",
+    "arctic-minimal",
+    "copenhagen",
+    "paris",
+    "isabelle-frost"
+  ],
+  "author": "Isabelle Frost",
+  "license": "UNLICENSED"
+}
