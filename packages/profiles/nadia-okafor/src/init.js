@@ -1,9 +1,6 @@
-import { GeometricReveal } from './components/GeometricReveal.js';
-
 (function() {
   'use strict';
 
-  // Preloader
   function initPreloader() {
     const preloader = document.getElementById('preloader');
     if (!preloader) return;
@@ -13,11 +10,10 @@ import { GeometricReveal } from './components/GeometricReveal.js';
         preloader.classList.add('hidden');
         document.body.style.overflow = '';
         initAnimations();
-      }, 2000);
+      }, 2500);
     });
   }
 
-  // Lenis Smooth Scroll
   let lenis;
   function initLenis() {
     lenis = new Lenis({
@@ -43,7 +39,6 @@ import { GeometricReveal } from './components/GeometricReveal.js';
     });
   }
 
-  // Cursor
   function initCursor() {
     const cursor = document.getElementById('cursor');
     if (!cursor || window.innerWidth < 768) return;
@@ -70,7 +65,6 @@ import { GeometricReveal } from './components/GeometricReveal.js';
     });
   }
 
-  // Magnetic Hover
   function initMagnetic() {
     if (window.innerWidth < 768) return;
 
@@ -90,7 +84,6 @@ import { GeometricReveal } from './components/GeometricReveal.js';
     });
   }
 
-  // Scroll Progress
   function initScrollProgress() {
     const progressBar = document.getElementById('scrollProgress');
     if (!progressBar) return;
@@ -103,7 +96,6 @@ import { GeometricReveal } from './components/GeometricReveal.js';
     });
   }
 
-  // Navigation
   function initNav() {
     const nav = document.getElementById('nav');
     const toggle = document.getElementById('navToggle');
@@ -134,11 +126,10 @@ import { GeometricReveal } from './components/GeometricReveal.js';
     }
   }
 
-  // GSAP Animations
   function initAnimations() {
+    if (typeof gsap === 'undefined') return;
     gsap.registerPlugin(ScrollTrigger);
 
-    // Hero animations
     gsap.from('.hero__swatch', {
       y: 30,
       opacity: 0,
@@ -181,7 +172,6 @@ import { GeometricReveal } from './components/GeometricReveal.js';
       delay: 1.4,
     });
 
-    // Garment float animation
     document.querySelectorAll('.hero__garment').forEach((garment, i) => {
       gsap.to(garment, {
         y: 20,
@@ -192,7 +182,6 @@ import { GeometricReveal } from './components/GeometricReveal.js';
       });
     });
 
-    // Philosophy statement
     gsap.from('.philosophy__statement p', {
       scrollTrigger: {
         trigger: '.philosophy__statement',
@@ -204,7 +193,6 @@ import { GeometricReveal } from './components/GeometricReveal.js';
       ease: 'power2.out',
     });
 
-    // Fabric library items
     gsap.from('.fabric-library__item', {
       scrollTrigger: {
         trigger: '.fabric-library__grid',
@@ -217,7 +205,6 @@ import { GeometricReveal } from './components/GeometricReveal.js';
       ease: 'power2.out',
     });
 
-    // Filmstrip items
     gsap.from('.filmstrip__item', {
       scrollTrigger: {
         trigger: '.filmstrip__reel',
@@ -230,7 +217,6 @@ import { GeometricReveal } from './components/GeometricReveal.js';
       ease: 'power2.out',
     });
 
-    // About section
     gsap.from('.about__portrait-frame', {
       scrollTrigger: {
         trigger: '.about__inner',
@@ -254,7 +240,6 @@ import { GeometricReveal } from './components/GeometricReveal.js';
       delay: 0.2,
     });
 
-    // Services
     gsap.from('.services__item', {
       scrollTrigger: {
         trigger: '.services__grid',
@@ -267,7 +252,6 @@ import { GeometricReveal } from './components/GeometricReveal.js';
       ease: 'power2.out',
     });
 
-    // Contact
     gsap.from('.contact__info', {
       scrollTrigger: {
         trigger: '.contact__content',
@@ -292,23 +276,6 @@ import { GeometricReveal } from './components/GeometricReveal.js';
     });
   }
 
-  // Fabric Texture Reveal on Scroll
-  function initFabricReveal() {
-    document.querySelectorAll('.fabric-library__swatch').forEach(swatch => {
-      gsap.from(swatch, {
-        scrollTrigger: {
-          trigger: swatch,
-          start: 'top 90%',
-          end: 'bottom 20%',
-          scrub: 1,
-        },
-        backgroundPosition: '200% center',
-        duration: 1,
-      });
-    });
-  }
-
-  // Initialize
   function init() {
     document.body.style.overflow = 'hidden';
     initPreloader();
@@ -317,10 +284,6 @@ import { GeometricReveal } from './components/GeometricReveal.js';
     initMagnetic();
     initScrollProgress();
     initNav();
-    initFabricReveal();
-
-    const geometricReveal = new GeometricReveal();
-    geometricReveal.init();
   }
 
   if (document.readyState === 'loading') {

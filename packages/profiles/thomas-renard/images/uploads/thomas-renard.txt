@@ -1,0 +1,52 @@
+# THOMAS RENARD — Producer | Image Prompts
+# 4 images needed (work stills)
+
+---
+
+## 1. work-01.jpg — "Industrie Silence" (Documentary)
+**Section:** Filmstrip / Work Card 01
+**Prompt:**
+Cinematic documentary still from a film about fast fashion in Eastern Europe. A young woman sits at a sewing machine in a dimly lit garment factory. Fluorescent overhead lights cast harsh shadows across rows of industrial sewing stations. Fabric scraps litter the concrete floor. The woman's hands move quickly, stitching a garment. The atmosphere is stark, honest, and quietly devastating. Shot on Kodak Vision3 500T. Fine 35mm grain. 35mm lens. Natural factory lighting with fluorescent key. Color grade: desaturated midtones, cool shadows, slight green tint from fluorescent lights. Aspect ratio 16:9. Mood: the hidden human cost of fast fashion.
+
+**Negative prompt:**
+cartoon, anime, illustration, happy, bright, colorful, text, watermarks, logos, clean factory, modern facility
+
+---
+
+## 2. work-02.jpg — "Le Contrat" (Feature Film)
+**Section:** Filmstrip / Work Card 02
+**Prompt:**
+Cinematic still from a corporate thriller set in the French wine industry. A dark wood boardroom table with a single contract document under warm tungsten light. A glass of deep red Burgundy wine sits beside it. Through the window, rolling vineyards at dusk. The atmosphere is tense, sophisticated, and dangerous. Shot on Kodak Vision3 500T. Fine 35mm grain. 50mm lens. Low-key lighting with practical table lamp. Color grade: warm amber tones, deep shadows, rich burgundy accents. Aspect ratio 16:9. Mood: power, precision, quiet menace.
+
+**Negative prompt:**
+cartoon, anime, illustration, bright, colorful, casual, text, watermarks, logos, modern office, technology
+
+---
+
+## 3. work-03.jpg — "L'Usine" (Documentary)
+**Section:** Filmstrip / Work Card 03
+**Prompt:**
+Cinematic documentary still from a film about the last textile factory in northern France. A vast, empty factory floor with abandoned looms and spinning machines covered in dust. Shafts of light penetrate through broken skylights, illuminating floating dust particles. The architecture is industrial — exposed brick, steel beams, concrete. The atmosphere is melancholic, reverent, and hauntingly beautiful. Shot on Kodak Vision3 500T. Fine 35mm grain. Wide-angle lens capturing the full space. Natural available light through broken skylights. Color grade: muted earth tones, cool shadows, warm highlight accents. Aspect ratio 16:9. Mood: industrial elegy, the beauty of abandonment.
+
+**Negative prompt:**
+cartoon, anime, illustration, bright, colorful, people, modern, text, watermarks, logos, clean, renovated
+
+---
+
+## 4. work-04.jpg — "Les Lumières de Lyon" (Feature Film)
+**Section:** Filmstrip / Work Card 04
+**Prompt:**
+Cinematic still from a family drama spanning three generations of Lyon silk workers. An elderly man's hands carefully guide silk fabric through a traditional wooden loom. Warm afternoon light streams through a workshop window, illuminating the golden silk threads. Behind him, finished silk fabrics hang like tapestries — rich patterns in gold, crimson, and deep blue. The atmosphere is intimate, generational, and deeply French. Shot on Kodak Vision3 500T. Fine 35mm grain. 50mm lens. Natural window light with warm practical. Color grade: warm gold tones, rich silk colors, soft shadows. Aspect ratio 16:9. Mood: heritage, craft, the weight of tradition.
+
+**Negative prompt:**
+cartoon, anime, illustration, bright, modern, factory, industrial, text, watermarks, logos, cold lighting
+
+---
+
+## LEONARDO AI SETTINGS
+- Mode: PhotoReal
+- Aspect ratio: 16:9 (landscape)
+- Resolution: 1360x768 or higher
+- Style: Cinematic / Photography
+- Alchemy V2: ON
+- Generate 4 variations per prompt, select best
