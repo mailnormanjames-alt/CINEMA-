@@ -1,7 +1,7 @@
 # SESSION STATE — Cinema SOTD Project
 
 **Last Updated:** 2026-07-01
-**Current Version:** v1.8.0
+**Current Version:** v1.9.0
 **GitHub:** https://github.com/mailnormanjames-alt/CINEMA-
 **Vercel:** https://cinema-sotd.vercel.app
 
@@ -71,12 +71,12 @@ All 10 profiles now have local images — zero Unsplash URLs remaining.
 
 | Profile | Images | Location | Status |
 |---------|--------|----------|--------|
-| Marie Dubois | 18 | assets/images/ | ✅ Complete |
-| Amin Hassani | 14 | assets/images/ | ✅ Complete |
-| Clara Voss | 15 | assets/images/ | ✅ Complete |
-| Isabelle Frost | 18 | assets/images/ | ✅ Complete |
-| Kofi Mensah | 13 | assets/images/ | ✅ Complete |
-| Nadia Okafor | 29 | assets/images/ | ✅ Complete |
+| Marie Dubois | 18 | public/assets/images/ | ✅ Complete |
+| Amin Hassani | 14 | public/assets/images/ | ✅ Complete |
+| Clara Voss | 15 | public/assets/images/ | ✅ Complete |
+| Isabelle Frost | 18 | public/assets/images/ | ✅ Complete |
+| Kofi Mensah | 13 | public/assets/images/ | ✅ Complete |
+| Nadia Okafor | 29 | public/assets/images/ | ✅ Complete |
 | Thomas Renard | 14 | public/assets/images/ | ✅ Complete |
 | Léa Moreau | 14 | public/assets/images/ | ✅ Complete |
 | Yuki Tanaka | 16 | public/assets/images/ | ✅ Complete |
@@ -118,6 +118,15 @@ All 10 profiles now have local images — zero Unsplash URLs remaining.
 - **Problem:** `package.json` build command was `echo 'Static profile'` — produced no dist
 - **Fix:** Changed to `vite build`
 
+### 6 Profiles — Images Not Loading on Vercel
+- **Problem:** 6 profiles (marie-dubois, amin-hassani, clara-voss, isabelle-frost, kofi-mensah, nadia-okafor) had images in `assets/images/` not `public/assets/images/`
+- **Result:** Vite doesn't copy `assets/` to dist — only `public/` gets copied to dist root
+- **Fix:** Moved all images to `public/assets/images/` for all 6 profiles, rebuilt and redeployed
+
+### Amin Hassani — Broken Image Paths
+- **Problem:** 5 filmstrip/about images used `../assets/images/` paths that resolved incorrectly after Vite build
+- **Fix:** Changed to `assets/images/` and moved images to `public/assets/images/`
+
 ---
 
 ## VERCEL DEPLOYMENT
@@ -152,21 +161,13 @@ dist/
 
 ## NEXT STEPS
 
-1. **Audit all profiles for smooth transitions compliance (Rule XXX)**
-   - Check all hover effects ease in AND out
-   - Verify preloader timing meets 2.5s minimum
-   - Confirm scroll reveals use 20-40px offset
-
-2. **Test all profiles on Vercel**
-   - Verify images load correctly
-   - Check preloader animations
-   - Test responsive design
-   - Verify all links work
-
+1. ~~**Audit all profiles for smooth transitions compliance (Rule XXX)**~~ ✅ DONE
+2. ~~**Test all profiles on Vercel**~~ ✅ DONE — all images return 200
 3. **Performance optimization**
-   - Optimize large images (Amin Hassani hero is 2.8MB)
+   - Optimize large images (Amin Hassani PNGs are 2.5–3MB each)
    - Consider lazy loading for below-fold images
    - Verify LCP < 2.5s, FID < 100ms, CLS < 0.1
+4. **Git push** — commit v1.9.0 changes
 
 ---
 

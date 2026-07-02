@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.9.0] — 2026-07-01
+
+### Fixed — Images not loading on Vercel for 6 profiles
+6 profiles (marie-dubois, amin-hassani, clara-voss, isabelle-frost, kofi-mensah, nadia-okafor) had images in `assets/images/` instead of `public/assets/images/`. Vite doesn't copy `assets/` to dist — only `public/` gets copied. Moved all images to `public/assets/images/` for these profiles so Vite processes and serves them correctly.
+
+### Fixed — Amin Hassani broken image paths
+5 filmstrip/about images used `../assets/images/` paths (going up from profile dir) which resolved incorrectly after Vite build. Changed to `assets/images/` and moved images to `public/assets/images/`.
+
+### Verified — All 10 profiles on Vercel
+All image URLs return 200. Confirmed every profile loads correctly at https://cinema-sotd.vercel.app.
+
 ## [v1.8.0] — 2026-07-01
 
 ### Added — Images to all remaining profiles
